@@ -6,6 +6,7 @@ import torch
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from transformers import AutoTokenizer, pipeline
+from sklearn.model_selection import train_test_split
 
 # env
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -69,8 +70,8 @@ def process_option(x):
 
 
 def prepare_df():
-    df_test = pd.read_csv(eedi_test_csv)
-    df_test["CorrectAnswerText"] = df_test.apply(get_correct_answer, axis=1)
+    df = pd.read_csv(eedi_train_csv)
+    df["CorrectAnswerText"] = df.apply(get_correct_answer, axis=1)
     id_vars = [
         "QuestionId",
         "ConstructName",
@@ -81,7 +82,7 @@ def prepare_df():
     ]
     value_vars = [f"Answer{ans}Text" for ans in ["A", "B", "C", "D"]]
     df = pd.melt(
-        df_test,
+        df,
         id_vars=id_vars,
         value_vars=value_vars,
         var_name="Option",
@@ -142,9 +143,9 @@ def generate_submission(df):
 
 def main():
     df = prepare_df()
-    df = generate_zeroshot(df)
-    df_submission = generate_submission(df)
-    print(df_submission.head())
+    # df = generate_zeroshot(df)
+    # df_submission = generate_submission(df)
+    # print(df_submission.head())
 
 
 if __name__ == "__main__":
