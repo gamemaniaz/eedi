@@ -3,6 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 import torch
+from tqdm import tqdm
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
@@ -10,7 +11,6 @@ from transformers import (
     pipeline,
 )
 from transformers.models.llama.modeling_llama import LlamaForCausalLM
-from tqdm import tqdm
 
 model_id = "meta-llama/Llama-3.2-3B-Instruct"
 train_file = "data/train.csv"
@@ -36,6 +36,7 @@ Subject Name: {SubjectName}
 
 Your main task is to explain the misconception behind Incorrect Answer. Before answering the next task, think step by step concisely in 1-2 sentences inside the tag <response>$$INSERT TEXT HERE$$</response>."""
 
+
 def apply_template(row, tokenizer):
     messages = [
         {
@@ -49,10 +50,9 @@ def apply_template(row, tokenizer):
             ),
         }
     ]
-    text = tokenizer.apply_chat_template(
-        messages, tokenize=False, add_generation_prompt=True
-    )
+    text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
     return text
+
 
 def get_correct_answer(row):
     if row["CorrectAnswer"] == "A":
@@ -65,6 +65,7 @@ def get_correct_answer(row):
         return row["AnswerDText"]
     else:
         return None
+
 
 df_test["CorrectAnswerText"] = df_test.apply(get_correct_answer, axis=1)
 select_column = [
@@ -83,11 +84,13 @@ df_answer = pd.melt(
     value_name="AnswerText",
 ).sort_values("QuestionId")
 
+
 def process_option(x):
     out = re.search(r"Answer([A-D])", x)
     if out:
         return out.group(1)
     return None
+
 
 df_answer["Option"] = df_answer["Option"].apply(process_option)
 
@@ -104,9 +107,7 @@ tokenizer.chat_template = custom_chattemp
 #     "{% endif %}"
 # )
 df_answer = df_answer[df_answer["CorrectAnswer"] != df_answer["Option"]]
-df_answer["Prompt"] = df_answer.apply(
-    lambda row: apply_template(row, tokenizer), axis=1
-)
+df_answer["Prompt"] = df_answer.apply(lambda row: apply_template(row, tokenizer), axis=1)
 df_answer.to_parquet("test.parquet", index=False)
 
 df = pd.read_parquet("test.parquet")
@@ -132,8 +133,10 @@ for v in tqdm(df["Prompt"].values):
 responses = [x[0]["generated_text"] for x in responses]
 df["FullResponse"] = responses
 
+
 def extract_response(text):
     return ",".join(re.findall(r"<response>(.*?)</response>", text)).strip()
+
 
 responses = [extract_response(x) for x in responses]
 df["Misconception"] = responses

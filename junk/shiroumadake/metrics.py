@@ -1,6 +1,8 @@
 # Credit: https://www.kaggle.com/code/abdullahmeda/eedi-map-k-metric
 
 import numpy as np
+
+
 def apk(actual, predicted, k=25):
     """
     Computes the average precision at k.
@@ -26,20 +28,21 @@ def apk(actual, predicted, k=25):
     if not actual:
         return 0.0
 
-    if len(predicted)>k:
+    if len(predicted) > k:
         predicted = predicted[:k]
 
     score = 0.0
     num_hits = 0.0
 
-    for i,p in enumerate(predicted):
+    for i, p in enumerate(predicted):
         # first condition checks whether it is valid prediction
         # second condition checks if prediction is not repeated
         if p in actual and p not in predicted[:i]:
             num_hits += 1.0
-            score += num_hits / (i+1.0)
+            score += num_hits / (i + 1.0)
 
     return score / min(len(actual), k)
+
 
 def mapk(actual, predicted, k=25):
     """
@@ -65,4 +68,4 @@ def mapk(actual, predicted, k=25):
             The mean average precision at k over the input lists
     """
 
-    return np.mean([apk(a,p,k) for a,p in zip(actual, predicted)])
+    return np.mean([apk(a, p, k) for a, p in zip(actual, predicted)])
