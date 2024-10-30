@@ -6,5 +6,5 @@
 #SBATCH --mail-user=e1374073@u.nus.edu
 #SBATCH --cpus-per-task=10
 #SBATCH --mem=64G
-
-python baseline2.py
+$HOME/miniforge3/condabin/mamba env create -f environment.yml -y
+$HOME/miniforge3/envs/eedi/bin/python baseline2.py

@@ -1,0 +1,23 @@
+name: eedi
+channels:
+  - conda-forge
+dependencies:
+  - pip=24.3.1
+  - python=3.10.15
+  - pip:
+    - black
+    - isort
+    - jupyter
+    - matplotlib
+    - numpy
+    - pandas
+    - requests
+    - scikit-learn
+    - scipy
+    - seaborn
+    - sentence-transformers
+    - torch
+    - torchaudio
+    - torchvision
+    - tqdm
+    - transformers
