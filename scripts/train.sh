@@ -17,5 +17,5 @@ cd $TMPDIR
 jupyter nbconvert --to notebook --execute train.ipynb --inplace --debug
 
 cp -r model train.ipynb $WORK_DIR
-rm -rf $WORK_DIR
+rm -rf $TMPDIR
 
