@@ -1,4 +1,4 @@
-name: eedi
+name: eedi2
 channels:
   - conda-forge
 dependencies:

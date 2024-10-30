@@ -7,4 +7,4 @@
 #SBATCH --cpus-per-task=10
 #SBATCH --mem=64G
 $HOME/miniforge3/condabin/mamba env create -f environment.yml -y
-$HOME/miniforge3/envs/eedi/bin/python baseline2.py
+$HOME/miniforge3/envs/eedi2/bin/python baseline2.py
