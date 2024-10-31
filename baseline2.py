@@ -10,10 +10,11 @@ import torch
 from IPython.display import display
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+from torch import Tensor
+from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers.models.llama.modeling_llama import LlamaForCausalLM
 from transformers.tokenization_utils_base import BatchEncoding
-from torch import Tensor
 from transformers.tokenization_utils_fast import PreTrainedTokenizerFast
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -27,7 +28,7 @@ sbert_model_id = "BAAI/bge-small-en-v1.5"
 submission_csv = "submission.csv"
 intermediate_dir = ".intm"
 random_seed = 20241030
-sample_size = -1
+sample_size = -1  # -1 to run all data
 batch_size = 100
 
 prompt = """Question: {Question}
@@ -219,7 +220,7 @@ def tokenize_for_llm(
     persist: bool = False,
     persist_fn: str = "df_prompt.parquet",
     run_id: str = None,
-) -> tuple[pd.DataFrame, BatchEncoding]:
+) -> tuple[pd.DataFrame, list[BatchEncoding]]:
     df_prompt = df_xy.copy(deep=True)
     df_prompt["Prompt"] = df_prompt.apply(
         partial(apply_template, tokenizer=tokenizer),
@@ -227,14 +228,19 @@ def tokenize_for_llm(
     )
     df_prompt = df_prompt[["QuestionId_Answer", "Prompt"]]
     dfpersist(persist, df_prompt, intermediate_dir, run_id, persist_fn)
-    model_inputs = tokenizer(df_prompt["Prompt"].to_list(), return_tensors="pt", padding=True).to(device)
-    return df_prompt, model_inputs
+    prompts = df_prompt["Prompt"].to_list()
+    prompt_batches = [prompts[i : i + batch_size] for i in range(0, len(prompts), batch_size)]
+    model_inputs_batches = []
+    for pb in prompt_batches:
+        model_inputs = tokenizer(pb, return_tensors="pt", padding=True).to(device)
+        model_inputs_batches.append(model_inputs)
+    return df_prompt, model_inputs_batches
 
 
 def generate_zeroshot(
     model: LlamaForCausalLM,
     tokenizer: PreTrainedTokenizerFast,
-    tokens: BatchEncoding,
+    token_batches: list[BatchEncoding],
     df_prompt,
     *,
     persist: bool = False,
@@ -243,14 +249,13 @@ def generate_zeroshot(
 ) -> pd.DataFrame:
     model.eval()
     with torch.no_grad():
-        input_tokens: Tensor = tokens.input_ids
-        tokens_batches = input_tokens.split(batch_size)
         output_ids_batches: list[Tensor] = []
-        for tokens_batch in tokens_batches:
+        for tokens in token_batches:
             output_ids_batch: Tensor = model.generate(
-                tokens_batch,
+                tokens.input_ids,
                 max_new_tokens=4096,
                 num_return_sequences=1,
+                attention_mask=tokens.attention_mask,
             )
             output_ids_batches.append(output_ids_batch)
     responses = []
@@ -332,12 +337,13 @@ def main() -> None:
     df_xy = filter_data(df_xy, persist=True, run_id=run_id)
     if sample_size > 0:
         df_xy = df_xy.sample(sample_size)
-    tokenizer = AutoTokenizer.from_pretrained(llm_model_id)
-    tokenizer.pad_token = tokenizer.eos_token
+    tokenizer = AutoTokenizer.from_pretrained(llm_model_id, padding_side="left")
+    tokenizer.pad_token = tokenizer.eos_token  # TODO review
     model: LlamaForCausalLM = AutoModelForCausalLM.from_pretrained(llm_model_id).to(device)
+    model.generation_config.pad_token_id = tokenizer.pad_token_id
     sbert_model = SentenceTransformer(sbert_model_id)
-    df_prompt, tokens = tokenize_for_llm(tokenizer, df_xy, persist=True, run_id=run_id)
-    df_responses = generate_zeroshot(model, tokenizer, tokens, df_prompt, persist=True, run_id=run_id)
+    df_prompt, token_batches = tokenize_for_llm(tokenizer, df_xy, persist=True, run_id=run_id)
+    df_responses = generate_zeroshot(model, tokenizer, token_batches, df_prompt, persist=True, run_id=run_id)
     df_submission = generate_misconceptions(sbert_model, df_responses, df_miscon, persist=True, run_id=run_id)
     evaluate(df_xy, df_submission, run_id=run_id)
 
