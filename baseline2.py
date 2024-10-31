@@ -17,8 +17,6 @@ from transformers.tokenization_utils_base import BatchEncoding
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("DEVICE:", device)
 
-# %%
-# constants
 eedi_train_csv = "data/train.csv"
 eedi_test_csv = "data/test.csv"
 eedi_miscon_csv = "data/misconception_mapping.csv"
@@ -229,7 +227,7 @@ def tokenize_for_llm(
 
 
 def generate_zeroshot(
-    model,
+    model: LlamaForCausalLM,
     tokenizer,
     tokens,
     df_prompt,
@@ -238,7 +236,9 @@ def generate_zeroshot(
     persist_fn: str = "df_responses.parquet",
     run_id: str = None,
 ) -> pd.DataFrame:
-    output_ids = model.generate(tokens.input_ids, max_new_tokens=4096, num_return_sequences=1)
+    model.eval()
+    with torch.no_grad():
+        output_ids = model.generate(tokens.input_ids, max_new_tokens=4096, num_return_sequences=1)
     responses = tokenizer.batch_decode(output_ids, skip_special_tokens=True)  # list[str]
     df_prompt["FullResponse"] = responses
     df_prompt["Misconception"] = [extract_response(x) for x in df_prompt["FullResponse"]]
@@ -247,7 +247,7 @@ def generate_zeroshot(
 
 
 def generate_misconceptions(
-    model,
+    model: SentenceTransformer,
     df_responses,
     df_miscon,
     *,
@@ -256,8 +256,10 @@ def generate_misconceptions(
     run_id: str = None,
 ):
     print(">> generate_misconceptions")
-    embedding_query = model.encode(df_responses["Misconception"].values)
-    embedding_miscon = model.encode(df_miscon["MisconceptionName"].values)
+    model.eval()
+    with torch.no_grad():
+        embedding_query = model.encode(df_responses["Misconception"].values)
+        embedding_miscon = model.encode(df_miscon["MisconceptionName"].values)
     cosine_similarities = cosine_similarity(embedding_query, embedding_miscon)
     rev_sorted_indices = np.argsort(-cosine_similarities, axis=1)
     df_responses["MisconceptionId"] = rev_sorted_indices[:, :25].tolist()
