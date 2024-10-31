@@ -1,6 +1,6 @@
 #!/bin/sh
 #SBATCH --time=5-00:00:00
-#SBATCH --gpus=a100:2
+#SBATCH --gpus=a100-80:1
 #SBATCH --job-name=run_baseline
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=e1374073@u.nus.edu
