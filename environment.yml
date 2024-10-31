@@ -6,11 +6,13 @@ dependencies:
   - python=3.10.15
   - pip:
     - black
+    - fastparquet
     - isort
     - jupyter
     - matplotlib
     - numpy
     - pandas
+    - pyarrow
     - requests
     - scikit-learn
     - scipy
