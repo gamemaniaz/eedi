@@ -29,7 +29,8 @@ submission_csv = "submission.csv"
 intermediate_dir = ".intm"
 random_seed = 20241030
 sample_size = -1  # -1 to run all data
-batch_size = 100
+batch_size = 20
+disable_tqdm = True
 
 prompt = """Question: {Question}
 Incorrect Answer: {IncorrectAnswer}
@@ -103,7 +104,7 @@ def dfpersist(trigger: bool, df: pd.DataFrame, int_dir: str, run_id: str, fn: st
     if not trigger:
         return
     assert run_id is not None
-    d = Path(intermediate_dir) / run_id
+    d = Path(int_dir) / run_id
     d.mkdir(parents=True, exist_ok=True)
     p = d / fn
     if p.exists():
@@ -250,14 +251,14 @@ def generate_zeroshot(
     model.eval()
     with torch.no_grad():
         output_ids_batches: list[Tensor] = []
-        for tokens in token_batches:
+        for tokens in tqdm(token_batches, disable=disable_tqdm):
             output_ids_batch: Tensor = model.generate(
                 tokens.input_ids,
                 max_new_tokens=4096,
                 num_return_sequences=1,
                 attention_mask=tokens.attention_mask,
             )
-            output_ids_batches.append(output_ids_batch)
+            output_ids_batches.append(output_ids_batch.cpu())
     responses = []
     for output_ids_batch in output_ids_batches:
         responses.extend(tokenizer.batch_decode(output_ids_batch, skip_special_tokens=True))
