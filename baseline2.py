@@ -13,6 +13,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers.models.llama.modeling_llama import LlamaForCausalLM
 from transformers.tokenization_utils_base import BatchEncoding
+from torch import Tensor
+from transformers.tokenization_utils_fast import PreTrainedTokenizerFast
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("DEVICE:", device)
@@ -26,6 +28,7 @@ submission_csv = "submission.csv"
 intermediate_dir = ".intm"
 random_seed = 20241030
 sample_size = -1
+batch_size = 100
 
 prompt = """Question: {Question}
 Incorrect Answer: {IncorrectAnswer}
@@ -77,7 +80,9 @@ def process_option(x, regex):
 
 def remove_prompt(record):
     l = len(record["Prompt"])
-    value = record["FullResponse"][l:]
+    value = record["FullResponse"][l:].strip()
+    if value == "":
+        value = "No Misconception Found"
     return value
 
 
@@ -228,8 +233,8 @@ def tokenize_for_llm(
 
 def generate_zeroshot(
     model: LlamaForCausalLM,
-    tokenizer,
-    tokens,
+    tokenizer: PreTrainedTokenizerFast,
+    tokens: BatchEncoding,
     df_prompt,
     *,
     persist: bool = False,
@@ -238,9 +243,21 @@ def generate_zeroshot(
 ) -> pd.DataFrame:
     model.eval()
     with torch.no_grad():
-        output_ids = model.generate(tokens.input_ids, max_new_tokens=4096, num_return_sequences=1)
-    responses = tokenizer.batch_decode(output_ids, skip_special_tokens=True)  # list[str]
+        input_tokens: Tensor = tokens.input_ids
+        tokens_batches = input_tokens.split(batch_size)
+        output_ids_batches: list[Tensor] = []
+        for tokens_batch in tokens_batches:
+            output_ids_batch: Tensor = model.generate(
+                tokens_batch,
+                max_new_tokens=4096,
+                num_return_sequences=1,
+            )
+            output_ids_batches.append(output_ids_batch)
+    responses = []
+    for output_ids_batch in output_ids_batches:
+        responses.extend(tokenizer.batch_decode(output_ids_batch, skip_special_tokens=True))
     df_prompt["FullResponse"] = responses
+    df_prompt["FullResponse"] = df_prompt.apply(remove_prompt, axis=1)
     df_prompt["Misconception"] = [extract_response(x) for x in df_prompt["FullResponse"]]
     dfpersist(persist, df_prompt, intermediate_dir, run_id, persist_fn)
     return df_prompt
@@ -248,8 +265,8 @@ def generate_zeroshot(
 
 def generate_misconceptions(
     model: SentenceTransformer,
-    df_responses,
-    df_miscon,
+    df_responses: pd.DataFrame,
+    df_miscon: pd.DataFrame,
     *,
     persist: bool = False,
     persist_fn: str = "df_submission.parquet",
