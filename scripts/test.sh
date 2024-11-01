@@ -16,5 +16,5 @@ cp -r dataset model test.ipynb $TMPDIR
 cd $TMPDIR
 jupyter nbconvert --to notebook --execute test.ipynb --inplace --debug
 
-cp -r test.ipynb $WORK_DIR
+cp -r submission.csv test.ipynb $WORK_DIR
 rm -rf $TMPDIR
