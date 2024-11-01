@@ -15,7 +15,7 @@ cp -r dataset train.ipynb $TMPDIR
 
 cd $TMPDIR
 jupyter nbconvert --to notebook --execute train.ipynb --inplace --debug
-zip -r model.zip model
+tar -czf model.tar.gz model
 
-cp -r model train.ipynb model.zip $WORK_DIR
+cp -r model train.ipynb model.tar.gz $WORK_DIR
 rm -rf $TMPDIR
