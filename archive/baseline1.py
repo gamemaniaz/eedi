@@ -6,7 +6,6 @@ import torch
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from transformers import AutoTokenizer, pipeline
-from sklearn.model_selection import train_test_split
 
 # env
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

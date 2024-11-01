@@ -306,8 +306,6 @@ def apk(actual, predicted, k=25):
     num_hits = 0.0
 
     for i, p in enumerate(predicted):
-        # first condition checks whether it is valid prediction
-        # second condition checks if prediction is not repeated
         if p in actual and p not in predicted[:i]:
             num_hits += 1.0
             score += num_hits / (i + 1.0)
@@ -339,7 +337,7 @@ def main() -> None:
     if sample_size > 0:
         df_xy = df_xy.sample(sample_size)
     tokenizer = AutoTokenizer.from_pretrained(llm_model_id, padding_side="left")
-    tokenizer.pad_token = tokenizer.eos_token  # TODO review
+    tokenizer.pad_token = tokenizer.eos_token
     model: LlamaForCausalLM = AutoModelForCausalLM.from_pretrained(llm_model_id).to(device)
     model.generation_config.pad_token_id = tokenizer.pad_token_id
     sbert_model = SentenceTransformer(sbert_model_id)
