@@ -34,7 +34,7 @@ intermediate_dir = ".intm"
 last_dir = ".last"
 random_seed = 20241030
 sample_size =-1  # -1 to run all data
-batch_size = 50
+batch_size = 20
 disable_tqdm = True
 
 # %%
