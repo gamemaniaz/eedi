@@ -11,11 +11,11 @@ TMPDIR=`mktemp -d`
 WORK_DIR=$HOME/coursework/eedi
 
 cd $WORK_DIR
-cp -r dataset train.ipynb $TMPDIR
+cp -r dataset train.py $TMPDIR
 
 cd $TMPDIR
-jupyter nbconvert --to notebook --execute train.ipynb --inplace --debug
+python3 train.py
 tar -czf model.tar.gz model
 
-cp -r model train.ipynb model.tar.gz $WORK_DIR
+cp -r model model.tar.gz $WORK_DIR
 rm -rf $TMPDIR

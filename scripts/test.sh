@@ -11,10 +11,10 @@ TMPDIR=`mktemp -d`
 WORK_DIR=$HOME/coursework/eedi
 
 cd $WORK_DIR
-cp -r dataset model test.ipynb $TMPDIR
+cp -r dataset model test.py $TMPDIR
 
 cd $TMPDIR
-jupyter nbconvert --to notebook --execute test.ipynb --inplace --debug
+python3 test.py
 
-cp -r submission.csv test.ipynb $WORK_DIR
+cp -r submission.csv $WORK_DIR
 rm -rf $TMPDIR
