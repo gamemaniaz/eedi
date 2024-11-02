@@ -139,7 +139,6 @@ for iteration in range(ITERATIONS):
         warmup_steps=warmup_steps,
         output_path=None,
         use_amp=True,
-        gradient_accumulation_steps=GRAD_ACC_STEPS,
         show_progress_bar=True
     )
 
