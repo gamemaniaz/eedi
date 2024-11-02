@@ -28,12 +28,12 @@ eedi_train_csv = "data/train.csv"
 eedi_test_csv = "data/test.csv"
 eedi_miscon_csv = "data/misconception_mapping.csv"
 llm_model_id = "meta-llama/Llama-3.2-3B-Instruct"
-sbert_model_id = "BAAI/bge-small-en-v1.5"
+sbert_model_id = "/home/e/e1374073/models/bge-large-en-finetune-v1"
 submission_csv = "submission.csv"
 intermediate_dir = ".intm"
 last_dir = ".last"
 random_seed = 20241030
-sample_size =-1  # -1 to run all data
+sample_size = -1  # -1 to run all data
 batch_size = 20
 disable_tqdm = True
 
