@@ -15,7 +15,7 @@ RETRIEVE_NUM_HARD_NEGATIVES = 200  # Number of hard negatives for embedding mode
 RETRIEVE_NUM_RERANK = 100  # Number of hard negatives for rerank model training
 ITERATIONS = 5
 
-BATCH_SIZE = 8  # Adjust based on your GPU memory
+BATCH_SIZE = 32  # Adjust based on your GPU memory
 EPOCHS = 1  # Number of epochs in each iteration
 LR = 1e-5  # Learning rate suitable for large models
 
