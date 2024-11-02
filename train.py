@@ -9,6 +9,7 @@ import os
 
 # Set paths and parameters
 DATA_PATH = 'dataset'
+CACHE_DIR = 'pretrained_model/'
 EMBEDDING_MODEL_NAME = 'meta-llama/Meta-Llama-3.1-70B-Instruct'
 RERANK_MODEL_NAME = 'upstage/SOLAR-10.7B-Instruct-v1.0'
 RETRIEVE_NUM_HARD_NEGATIVES = 200  # Number of hard negatives for embedding model training
@@ -146,8 +147,8 @@ for iteration in range(ITERATIONS):
     # Step 1: Use current embedding model to mine hard negatives
     if iteration == 0:
         # Load initial embedding model m0_0
-        embedding_tokenizer = AutoTokenizer.from_pretrained(EMBEDDING_MODEL_NAME, cache_dir='pretrained_model/')
-        embedding_model = AutoModel.from_pretrained(EMBEDDING_MODEL_NAME, cache_dir='pretrained_model/').to(device)
+        embedding_tokenizer = AutoTokenizer.from_pretrained(EMBEDDING_MODEL_NAME, cache_dir=CACHE_DIR)
+        embedding_model = AutoModel.from_pretrained(EMBEDDING_MODEL_NAME, cache_dir=CACHE_DIR).to(device)
     else:
         # Load the fine-tuned embedding model from previous iteration
         embedding_model_path = os.path.join(MODEL_OUTPUT_PATH, f"embedding_model_iteration_{iteration}")
@@ -292,8 +293,8 @@ for iteration in range(ITERATIONS):
     print(f"Fine-tuning the rerank model for iteration {iteration+1}...")
     # Load rerank model (SOLAR-10.7B-Instruct-v1.0)
     # if iteration == 0:
-    rerank_tokenizer = AutoTokenizer.from_pretrained(RERANK_MODEL_NAME, cache_dir='pretrained_model/')
-    rerank_model = AutoModel.from_pretrained(RERANK_MODEL_NAME, cache_dir='pretrained_model/').to(device)
+    rerank_tokenizer = AutoTokenizer.from_pretrained(RERANK_MODEL_NAME, cache_dir=CACHE_DIR)
+    rerank_model = AutoModel.from_pretrained(RERANK_MODEL_NAME, cache_dir=CACHE_DIR).to(device)
     # else:
     #     rerank_model_path = os.path.join(MODEL_OUTPUT_PATH, f"rerank_model_iteration_{iteration}")
     #     rerank_tokenizer = AutoTokenizer.from_pretrained(rerank_model_path)

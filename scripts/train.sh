@@ -3,7 +3,7 @@
 #SBATCH -t 5-00:00:00
 #SBATCH -c 20
 #SBATCH --gpus=h100-96:1
-#SBATCH --mem=128G
+#SBATCH --mem=200G
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=tienkhoa@comp.nus.edu.sg
 
