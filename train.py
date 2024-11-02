@@ -17,7 +17,7 @@ RETRIEVE_NUM_RERANK = 100  # Number of hard negatives for rerank model training
 ITERATIONS = 5
 
 BATCH_SIZE = 16
-EPOCHS = 1  # Number of epochs in each iteration
+EPOCHS = 2  # Number of epochs in each iteration
 LR = 1e-5  # Learning rate suitable for large models
 
 MODEL_OUTPUT_PATH = 'model/'
