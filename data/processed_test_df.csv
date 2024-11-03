@@ -1,0 +1,1264 @@
+,SubjectName,ConstructName,QuestionText,AnswerText,MisconceptionId,MisconceptionName
+0,Probability of Single Events,Know that the probabilities of exhaustive events must sum to 1,"A bag contains some strawberry sweets, some orange sweets and some blackcurrant sweets.
+
+The probability of choosing a strawberry sweet is \( 0.8 \).
+
+What is the probability of choosing an orange sweet?",\( \frac{1}{3} \),2265.0,Thinks that probabilities of an event occurring or not occurring must be equal
+1,Probability of Single Events,Know that the probabilities of exhaustive events must sum to 1,"A bag contains some strawberry sweets, some orange sweets and some blackcurrant sweets.
+
+The probability of choosing a strawberry sweet is \( 0.8 \).
+
+What is the probability of choosing an orange sweet?",\( 0.2 \),1511.0,Does not understand that the probability of something not happening is 1 minus the probability of it happening
+2,Quadratic Graphs-Others,Recognise a quadratic graph from its shape,Which of the following is an example of a quadratic graph?,![A graph showing a straight line from top left to bottom right.](),1133.0,Does not recognise a quadratic graph
+3,Quadratic Graphs-Others,Recognise a quadratic graph from its shape,Which of the following is an example of a quadratic graph?,"![A graph showing a curve that starts in the bottom left, moves steeply up and right, levels off briefly, then continues steeply up and right.]()",694.0,Confuses cubic and quadratic graphs
+4,Quadratic Graphs-Others,Recognise a quadratic graph from its shape,Which of the following is an example of a quadratic graph?,"![A graph with two curves. One curve is in the positive x, positive y quadrant. It starts at the top close to the y axis, as we move right it drops very quickly towards the x axis then levels off to travel almost parallel to the x axis.
+The other curve is in the negative x, negative y quadrant. It starts at the top left close to the x axis, as we move right it drops very quickly towards the y axis then becomes almost vertical to travel almost parallel to the y axis. ]()",332.0,Confuses reciprocal and quadratic graphs
+5,Fractions of an Amount,Identify percentages of a shape where the percent is a multiple of 10,What percentage of this shape is shaded? ![A bar split into 5 equal parts. 3 parts are shaded.](),\( 30 \% \),302.0,Assumed each part of a fraction diagram is worth 10%
+6,Fractions of an Amount,Identify percentages of a shape where the percent is a multiple of 10,What percentage of this shape is shaded? ![A bar split into 5 equal parts. 3 parts are shaded.](),\( 3 \% \),329.0,Does not understand a percentage is out of 100
+7,Fractions of an Amount,Identify percentages of a shape where the percent is a multiple of 10,What percentage of this shape is shaded? ![A bar split into 5 equal parts. 3 parts are shaded.](),\( 55 \% \),1764.0,Estimated when not appropriate
+8,Place Value,Recognise the place value of each digit in integers,"What is the value of the \( 3 \) in the number below?
+\(
+43075
+\)",\( 30000 \),22.0,Confuses the ten thousands and thousands place value columns
+9,Place Value,Recognise the place value of each digit in integers,"What is the value of the \( 3 \) in the number below?
+\(
+43075
+\)",\( 3 \),2395.0,"When asked for the value of a digit, just gives the digit"
+10,Place Value,Recognise the place value of each digit in integers,"What is the value of the \( 3 \) in the number below?
+\(
+43075
+\)",\( 30 \),2375.0,Does not equate the value of a number with the place value column it is in
+11,BIDMAS,"Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division",\( 18 \div 2+2 \times 2= \),\( 3 \),15.0,"Confuses the order of operations, believes addition comes before division"
+12,BIDMAS,"Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division",\( 18 \div 2+2 \times 2= \),\( 22 \),1507.0,Carries out operations from left to right regardless of priority order
+13,Rounding to Decimal Places,Round numbers to two decimal places,What is \( \mathbf{3 . 5 1 6 3} \) rounded to \( 2 \) decimal places?,\( 3.51 \),1379.0,Rounds down instead of up
+14,Rounding to Decimal Places,Round numbers to two decimal places,What is \( \mathbf{3 . 5 1 6 3} \) rounded to \( 2 \) decimal places?,\( 4.51 \),2330.0,Rounds incorrectly by changing multiple place values
+15,Rounding to Decimal Places,Round numbers to two decimal places,What is \( \mathbf{3 . 5 1 6 3} \) rounded to \( 2 \) decimal places?,\( 4.52 \),2330.0,Rounds incorrectly by changing multiple place values
+16,Quadratic Graphs-Others,Identify the line of symmetry of curves in the form (x + a)(x + b),This is the graph of \( y=(x+4)(x-2) \) ![\( W \)]() What is the equation of the line of symmetry?,\( y=-1 \),2113.0,Confuses the equations of vertical and horizontal lines
+17,Volume and Capacity Units,"Given the perimeter, work out a missing length requiring knowledge of the geometrical properties of the shape","The perimeter of this rectangle is \( 1.6 \mathrm{~m} \).
+
+What is the length of the side marked with a star? ![A rectangle with base length 0.35 m and the side length labelled with a gold, star]()",\( 1.25 \mathrm{~m} \),1706.0,"When calculating perimeter, only adds the marked lengths"
+18,Adding and Subtracting Negative Numbers,Carry out addition problems involving one negative integer,"Jamie is counting up in threes. He starts at \( -14 \).
+
+What is the \( 5^{\text {th }} \) number he says?",\( -26 \),2185.0,Believes negative numbers with a larger absolute value are greater
+19,Adding and Subtracting Negative Numbers,Carry out addition problems involving one negative integer,"Jamie is counting up in threes. He starts at \( -14 \).
+
+What is the \( 5^{\text {th }} \) number he says?",\( -29 \),2185.0,Believes negative numbers with a larger absolute value are greater
+20,Linear Equations,"Solve linear equations with the variable appearing on both sides, with all positive integers","Jo and Paul are arguing about a first step to solve this equation:
+\(2 v-5=6 v-3\)
+
+Jo says you can write: \( 2 v-8=6 v \)
+
+Paul says you can write: \( 2 v=6 v-8 \)
+
+Who is correct?","Only
+Jo",1214.0,"When solving an equation, uses the same operation rather than the inverse."
+21,Linear Equations,"Solve linear equations with the variable appearing on both sides, with all positive integers","Jo and Paul are arguing about a first step to solve this equation:
+\(2 v-5=6 v-3\)
+
+Jo says you can write: \( 2 v-8=6 v \)
+
+Paul says you can write: \( 2 v=6 v-8 \)
+
+Who is correct?","Only
+Paul",1214.0,"When solving an equation, uses the same operation rather than the inverse."
+22,Linear Equations,"Solve linear equations with the variable appearing on both sides, with all positive integers","Jo and Paul are arguing about a first step to solve this equation:
+\(2 v-5=6 v-3\)
+
+Jo says you can write: \( 2 v-8=6 v \)
+
+Paul says you can write: \( 2 v=6 v-8 \)
+
+Who is correct?",Both Jo and Paul,1214.0,"When solving an equation, uses the same operation rather than the inverse."
+23,Factorising into a Single Bracket,Factorise a single bracket containing a non-linear expression by taking out a single algebraic common factor (e.g. a),"Factorise this expression, if possible:
+\(
+p^{2}-99p
+\)",\( (p+9)(p-9) \),838.0,"When factorising a quadratic without a non variable term, tries to double bracket factorise"
+24,Factorising into a Single Bracket,Factorise a single bracket containing a non-linear expression by taking out a single algebraic common factor (e.g. a),"Factorise this expression, if possible:
+\(
+p^{2}-99p
+\)",\( (p+3 \sqrt{11})(p-3 \sqrt{11}) \),838.0,"When factorising a quadratic without a non variable term, tries to double bracket factorise"
+25,Names and Properties of 3D Shapes,"Identify and count the faces, vertices and edges of a 3D shape",![Line drawing of a triangular prism]() How many faces does this prism have?,\( 9 \),207.0,Confuses the terms faces and edges
+26,Names and Properties of 3D Shapes,"Identify and count the faces, vertices and edges of a 3D shape",![Line drawing of a triangular prism]() How many faces does this prism have?,\( 6 \),450.0,Confuses the terms faces and vertices
+27,Names and Properties of 3D Shapes,"Identify and count the faces, vertices and edges of a 3D shape",![Line drawing of a triangular prism]() How many faces does this prism have?,\( 3 \),1927.0,Does not know the definition of a prism
+28,Linear Sequences (nth term),Generate an ascending integer linear sequence from the nth term rule,"What is the first term of the sequence with the nth-term rule:
+\[
+5 n-7
+\]",\( 5 \),2376.0,"When finding the nth term of a linear sequence, thinks the the first term is the coefficient in front of n."
+29,Linear Sequences (nth term),Generate an ascending integer linear sequence from the nth term rule,"What is the first term of the sequence with the nth-term rule:
+\[
+5 n-7
+\]",\( -7 \),936.0,Thinks the first term in a sequence is the term before the sequence begins (0th term)
+30,Linear Sequences (nth term),Generate an ascending integer linear sequence from the nth term rule,"What is the first term of the sequence with the nth-term rule:
+\[
+5 n-7
+\]",\( 1 \),1240.0,Thinks the first term of a sequence must be 1
+31,Systematic Listing Strategies,Identify the total number of combinations in a given scenario by using the product rule for counting where duplicates are considered different,"Jumbo Restaurant has \( 34 \) choices of starters, \( 92 \) choices of main course, and \( 27 \) choices of dessert.
+Sally wants a starter, main course and dessert.
+
+Which of the following calculations would correctly work out the total possible combinations of available to Sally?",\( 34+92+27 \),2279.0,Adds rather than multiplies when using the product rule for counting
+32,Averages and Range from Grouped Data,Calculate the mean from a frequency table,"The table below is a summary of the number of spots counted on \( 25 \) ladybirds. Calculate the mean number of spots per ladybird. ![\begin{tabular}{|c|c|}
+Number of spots\\ & Frequency 
+\hline \( 5 \) & \( 4 \) \\
+\hline \( 6 \) & \( 9 \) \\
+\hline \( 7 \) & \( 9 \) \\
+\hline \( 8 \) & \( 3 \) \\
+\hline
+\end{tabular}]()",\( 0.96(2 d p) \),1522.0,Believes the mean is total frequency divided by sum of categories given
+33,Averages and Range from Grouped Data,Calculate the mean from a frequency table,"The table below is a summary of the number of spots counted on \( 25 \) ladybirds. Calculate the mean number of spots per ladybird. ![\begin{tabular}{|c|c|}
+Number of spots\\ & Frequency 
+\hline \( 5 \) & \( 4 \) \\
+\hline \( 6 \) & \( 9 \) \\
+\hline \( 7 \) & \( 9 \) \\
+\hline \( 8 \) & \( 3 \) \\
+\hline
+\end{tabular}]()",\( 40.25 \),650.0,Believes mean is total divided by number of groups
+34,Averages and Range from Grouped Data,Calculate the mean from a frequency table,"The table below is a summary of the number of spots counted on \( 25 \) ladybirds. Calculate the mean number of spots per ladybird. ![\begin{tabular}{|c|c|}
+Number of spots\\ & Frequency 
+\hline \( 5 \) & \( 4 \) \\
+\hline \( 6 \) & \( 9 \) \\
+\hline \( 7 \) & \( 9 \) \\
+\hline \( 8 \) & \( 3 \) \\
+\hline
+\end{tabular}]()",\( 0.16 \) (2dp),1561.0,Believes the mean is total frequency divided by something
+35,"Squares, Cubes, etc",Recognise cube numbers,Which of these is a cube number?,\( 15 \),1884.0,Thinks numbers are a multiple of their index
+36,"Squares, Cubes, etc",Recognise cube numbers,Which of these is a cube number?,\( 100 \),2576.0,Mixes up square numbers and cube numbers
+37,"Squares, Cubes, etc",Recognise cube numbers,Which of these is a cube number?,\( 3 \),1884.0,Thinks numbers are a multiple of their index
+38,Plotting Quadratics from Tables of Values,"Given a positive x value, find the corresponding y value for curves in the form y = ax² + bx + c","This is a part of the table of values for the equation
+\[y=3 x^{2}\] \begin{tabular}{|l|l|}
+\hline\( x \) & \( 0.3 \) \\
+\hline\( y \) & \( \bigstar \) \\
+\hline
+\end{tabular} What should replace the star?",\( 0.81 \),1507.0,Carries out operations from left to right regardless of priority order
+39,Plotting Quadratics from Tables of Values,"Given a positive x value, find the corresponding y value for curves in the form y = ax² + bx + c","This is a part of the table of values for the equation
+\[y=3 x^{2}\] \begin{tabular}{|l|l|}
+\hline\( x \) & \( 0.3 \) \\
+\hline\( y \) & \( \bigstar \) \\
+\hline
+\end{tabular} What should replace the star?",\( 1.8 \),2316.0,Mixes up squaring and multiplying by 2 or doubling
+40,Plotting Quadratics from Tables of Values,"Given a positive x value, find the corresponding y value for curves in the form y = ax² + bx + c","This is a part of the table of values for the equation
+\[y=3 x^{2}\] \begin{tabular}{|l|l|}
+\hline\( x \) & \( 0.3 \) \\
+\hline\( y \) & \( \bigstar \) \\
+\hline
+\end{tabular} What should replace the star?",\( 2.7 \),2481.0,"When multiplying decimals, divides by the wrong power of 10 when reinserting the decimal"
+41,Real Life Graphs,Interpret linear sections of real life graphs,"The graph on the right shows the mass of sand in a bucket over time
+
+The gradient of the positive sloping section would tell us... ![A graph with time (secs) on the horizontal axis and mass (g) on the vertical axis. The graph starts at the origin, travels in a straight line up and right, travels horizontally, then travels in a straight line down and right back to the x-axis, more steeply than the start. ]()",The mass of sand in the bucket,1187.0,Does not realise that gradient represents rate of change
+42,Volume and Capacity Units,Identify a unit of volume or capacity,"Sally has answered a question on volume. Her answer is \( 500 \).
+Behind the star she has written the units that she used.
+Which of the following units is definitely wrong?
+
+\( 500 \,\bigstar \)
+
+",\( \mathrm{mm}^{3} \),996.0,Does not know that units of volume are usually cubed
+43,Volume and Capacity Units,Identify a unit of volume or capacity,"Sally has answered a question on volume. Her answer is \( 500 \).
+Behind the star she has written the units that she used.
+Which of the following units is definitely wrong?
+
+\( 500 \,\bigstar \)
+
+",\( m^{3} \),996.0,Does not know that units of volume are usually cubed
+44,Volume and Capacity Units,Identify a unit of volume or capacity,"Sally has answered a question on volume. Her answer is \( 500 \).
+Behind the star she has written the units that she used.
+Which of the following units is definitely wrong?
+
+\( 500 \,\bigstar \)
+
+",\( l \),1520.0,Does not recognise litres as a unit of volume
+45,Volume and Capacity Units,Convert between cl and l,"\[
+650 \text { centilitres }=\bigstar \text { litres }
+\]
+What should replace the star?",\( 0.65 \),2505.0,Confuses cl and ml
+46,Volume and Capacity Units,Convert between cl and l,"\[
+650 \text { centilitres }=\bigstar \text { litres }
+\]
+What should replace the star?",\( 65000 \),1651.0,Multiplies when converting to a larger unit
+47,Volume and Capacity Units,Convert between cl and l,"\[
+650 \text { centilitres }=\bigstar \text { litres }
+\]
+What should replace the star?",\( 65 \),187.0,Thinks there are 10cl in a litre
+48,Sequences-Others,Use a linear sequence expressed as a pattern to make a prediction about another term in the sequence other than the next one,"What is the 7th pattern in this sequence? ![Three consecutive patterns in a sequence. The first pattern is 1 orange square. The second pattern is 3 orange squares arranged as an incomplete rectangle of base 2 and height 2, with the top left orange square missing. The third pattern is 5 orange squares arranged as an incomplete rectangle of base 3 and height 2, with the top left orange square missing.]()","![7 orange squares arranged as an incomplete rectangle of base 4 and height 2, with the top left orange square missing.]()",2284.0,When asked for a specific term in a sequence just gives the next term
+49,Sequences-Others,Use a linear sequence expressed as a pattern to make a prediction about another term in the sequence other than the next one,"What is the 7th pattern in this sequence? ![Three consecutive patterns in a sequence. The first pattern is 1 orange square. The second pattern is 3 orange squares arranged as an incomplete rectangle of base 2 and height 2, with the top left orange square missing. The third pattern is 5 orange squares arranged as an incomplete rectangle of base 3 and height 2, with the top left orange square missing.]()","![9 orange squares arranged as an incomplete rectangle of base 5 and height 2, with the top left orange square missing.]()",713.0,"When asked for a specific term in a sequence gives a different term, which is not the next"
+50,Sequences-Others,Use a linear sequence expressed as a pattern to make a prediction about another term in the sequence other than the next one,"What is the 7th pattern in this sequence? ![Three consecutive patterns in a sequence. The first pattern is 1 orange square. The second pattern is 3 orange squares arranged as an incomplete rectangle of base 2 and height 2, with the top left orange square missing. The third pattern is 5 orange squares arranged as an incomplete rectangle of base 3 and height 2, with the top left orange square missing.]()","![11 orange squares arranged as an incomplete rectangle of base 6 and height 2, with the top left orange square missing.]()",713.0,"When asked for a specific term in a sequence gives a different term, which is not the next"
+51,Volume of Non-Prisms,Calculate the volume of a cone where the dimensions are all given in the same units,"STEP \( 2 \)
+
+Jessica is trying to work out the volume of this cone. ![A cone with the slant height labelled 9cm, the perpendicular height labelled h and half the cone's base (forming a right angled triangle with the slant and perpendicular heights) is labelled 6cm.]() First she needs the perpendicular height.
+
+Which of the following equations is true?",\( h^{2}=9^{2}+6^{2} \),2517.0,Does not rearrange the Pythagoras' Theorem formula accurately
+52,Volume of Non-Prisms,Calculate the volume of a cone where the dimensions are all given in the same units,"STEP \( 2 \)
+
+Jessica is trying to work out the volume of this cone. ![A cone with the slant height labelled 9cm, the perpendicular height labelled h and half the cone's base (forming a right angled triangle with the slant and perpendicular heights) is labelled 6cm.]() First she needs the perpendicular height.
+
+Which of the following equations is true?",\( h^{2}=12^{2}-9^{2} \),307.0,"When using Pythagoras to find the height of an isosceles triangle, uses the whole base instead of half"
+53,Quadratic Equations,Solve quadratic equations using balancing,"A student wishes to solve the equation below.
+
+Which of the following is a correct next step?
+\(
+(d-6)^{2}-16=0
+\)
+
+Step \( 1 \)
+\(
+(d-6)^{2}=16
+\)",\( d^{2}=22 \),969.0,Believes you can subtract from inside brackets without expanding when solving an equation
+54,Quadratic Equations,Solve quadratic equations using balancing,"A student wishes to solve the equation below.
+
+Which of the following is a correct next step?
+\(
+(d-6)^{2}-16=0
+\)
+
+Step \( 1 \)
+\(
+(d-6)^{2}=16
+\)",\( d-6=4 \),132.0,Only considers the positive solution when calculating a square root
+55,Range and Interquartile Range from a List of Data,Calculate the range from a list of data,"Tom and Katie are discussing the \( 5 \) plants with these heights:
+\[
+23 \mathrm{~cm}, \quad 17 \mathrm{~cm}, \quad 40 \mathrm{~cm}, \quad 25 \mathrm{~cm}, \quad 31 \mathrm{~cm}
+\]
+
+Tom says if all the plants doubled in height, the range wouldn't change.
+
+Katie says if all the plants grew by \( 12 \mathrm{~cm} \) each, the range wouldn't change.
+Who do you agree with?",Only Tom,1287.0,Believes if you changed all values by the same proportion the range would not change
+56,Range and Interquartile Range from a List of Data,Calculate the range from a list of data,"Tom and Katie are discussing the \( 5 \) plants with these heights:
+\[
+23 \mathrm{~cm}, \quad 17 \mathrm{~cm}, \quad 40 \mathrm{~cm}, \quad 25 \mathrm{~cm}, \quad 31 \mathrm{~cm}
+\]
+
+Tom says if all the plants doubled in height, the range wouldn't change.
+
+Katie says if all the plants grew by \( 12 \mathrm{~cm} \) each, the range wouldn't change.
+Who do you agree with?",Both Tom and Katie,1287.0,Believes if you changed all values by the same proportion the range would not change
+57,Range and Interquartile Range from a List of Data,Calculate the range from a list of data,"Tom and Katie are discussing the \( 5 \) plants with these heights:
+\[
+23 \mathrm{~cm}, \quad 17 \mathrm{~cm}, \quad 40 \mathrm{~cm}, \quad 25 \mathrm{~cm}, \quad 31 \mathrm{~cm}
+\]
+
+Tom says if all the plants doubled in height, the range wouldn't change.
+
+Katie says if all the plants grew by \( 12 \mathrm{~cm} \) each, the range wouldn't change.
+Who do you agree with?",Neither is correct,1073.0,Believes if you add the same value to all numbers in the dataset the range will change
+58,Perimeter,Use the properties of an isosceles triangle to find missing lengths,"What is the difference between the perimeters of these two shapes? ![Beige rectangle with base length 13cm and side length 5cm]() ![Pink, isosceles triangle with base length 4cm and side length 16cm]()",\( 4 \mathrm{~cm} \),1706.0,"When calculating perimeter, only adds the marked lengths"
+59,Perimeter,Use the properties of an isosceles triangle to find missing lengths,"What is the difference between the perimeters of these two shapes? ![Beige rectangle with base length 13cm and side length 5cm]() ![Pink, isosceles triangle with base length 4cm and side length 16cm]()",\( 48 \mathrm{~cm} \),1706.0,"When calculating perimeter, only adds the marked lengths"
+60,Perimeter,Use the properties of an isosceles triangle to find missing lengths,"What is the difference between the perimeters of these two shapes? ![Beige rectangle with base length 13cm and side length 5cm]() ![Pink, isosceles triangle with base length 4cm and side length 16cm]()",\( 72 \mathrm{~cm} \),1887.0,Adds instead of subtracts when asked to find the difference
+61,Factors and Highest Common Factor,Identify factors of a number,"\begin{tabular}{|c|c|c|}
+      & Multiple of \( 4 \) & Not a multiple of \( 4 \) \\
+\hline Factor of \( 60 \) & A & B \\
+\hline Not a factor of \( 60 \) & C & D \\
+\hline
+\end{tabular} In which box should you place \( \mathbf{3 0} \) ?",D,331.0,Does not understand the term factor
+62,Area of Simple Shapes,Calculate the area of a parallelogram where the dimensions are given in the same units,What is the area of this shape? ![A parallelogram drawn on a square grid in purple with an area of 9 square units. The base is length 3 squares and the perpendicular height is also length 3 squares.](),\( 12 \),2345.0,Counts half-squares as full squares when calculating area on a square grid
+63,Area of Simple Shapes,Calculate the area of a parallelogram where the dimensions are given in the same units,What is the area of this shape? ![A parallelogram drawn on a square grid in purple with an area of 9 square units. The base is length 3 squares and the perpendicular height is also length 3 squares.](),\( 8 \),584.0,Underestimates the area of shapes when counting squares when some squares are neither wholes nor halves
+64,Area of Simple Shapes,Calculate the area of a parallelogram where the dimensions are given in the same units,What is the area of this shape? ![A parallelogram drawn on a square grid in purple with an area of 9 square units. The base is length 3 squares and the perpendicular height is also length 3 squares.](),\( 6 \),1996.0,Only includes fully shaded squares when counting area
+65,Graphical Solution of Simultaneous Equations,Given a sketch of a linear graph solve f(x) = n,"This is a graph of
+\(y=4 x-1\) ![A set of axes with y=4x-1 drawn on.]() Use the graph to solve
+\(4 x-1=-3\)",\( x=0.25 \),57.0,Believes the solution to mx + c = a is the x intercept of y = mx +c
+66,Graphical Solution of Simultaneous Equations,Given a sketch of a linear graph solve f(x) = n,"This is a graph of
+\(y=4 x-1\) ![A set of axes with y=4x-1 drawn on.]() Use the graph to solve
+\(4 x-1=-3\)",\( x=-3 \),337.0,Believes the solution of mx + c = a is x =a
+67,Mental Multiplication and Division,Multiply 3 digit integers by 1 digit integers using the grid method,\( 427 \times 6= \),\( 240+120+42 \),779.0,"When multiplying multiples of ten and the answer requires an extra digit, leaves off that extra digit"
+68,Place Value,Recognise the place value of each digit in integers,"What is the value of the \( 2 \) in the number below?
+\(
+12030
+\)",\( 20000 \),45.0,"When asked for the value of a digit, gives an answer 10 times too big"
+69,Place Value,Recognise the place value of each digit in integers,"What is the value of the \( 2 \) in the number below?
+\(
+12030
+\)",\( 200 \),2402.0,"When asked for the value of a digit, gives an answer 10 times too small"
+70,Place Value,Recognise the place value of each digit in integers,"What is the value of the \( 2 \) in the number below?
+\(
+12030
+\)",\( 2 \),2395.0,"When asked for the value of a digit, just gives the digit"
+71,Place Value,Divide integers by 1000,\( 609 \div 1000= \),\( 6.09 \),1398.0,Divided by 100 rather than 1000
+72,Place Value,Divide integers by 1000,\( 609 \div 1000= \),\( 609.000 \),424.0,Adds 3 decimal places rather than moving 3 places
+73,Multiplying and Dividing with Decimals,Divide two decimals with the same number of decimal places,\( 0.2 \div 0.4= \),\( 0.08 \),1074.0,Multiplies rather than divides
+74,Multiplying and Dividing with Decimals,Divide two decimals with the same number of decimal places,\( 0.2 \div 0.4= \),\( 0.8 \),1074.0,Multiplies rather than divides
+75,Multiplying and Dividing with Decimals,Divide two decimals with the same number of decimal places,\( 0.2 \div 0.4= \),\( 2 \),2359.0,Believes division is commutative 
+76,Trial and Improvement and Iterative Methods,Carry out the first stage in an iteration solution,"\(
+x_{n+1}=5-\frac{1}{x_{n}}
+\)
+
+Using a starting value of \( x_{1}=2 \), what is the value of \( x_{2} \) ?
+",\( 2 \),1394.0,Identifies the first term rather than the next term in a sequence
+77,Trial and Improvement and Iterative Methods,Carry out the first stage in an iteration solution,"\(
+x_{n+1}=5-\frac{1}{x_{n}}
+\)
+
+Using a starting value of \( x_{1}=2 \), what is the value of \( x_{2} \) ?
+",\( 4.7777 \ldots \),1631.0,When asked for a specific term in a sequence gives the term after
+78,Graphing Linear Inequalities (Shading Regions),"Mark a point in the second quadrant of a 2D grid having been given its coordinates, where both values are integers",Which region describes where \( \boldsymbol{x}>\mathbf{0} \) and \( \boldsymbol{y}<\mathbf{0} \) ? ![A set of axis showing all four quadrants. y axis from -3 to 3 and x axis from -3 to 3](),D,1880.0,Mixes up greater than and less than symbols
+79,Ordering Negative Numbers,Identify where negative non-integers lie on a number line,"Here is a number line: ![A horizontal number-line with 13 vertical, equally spaced, dashes representing the position of numbers. The 1st dash is labelled with ""-6"", the 3rd dash is labelled ""-4"", the 5th dash is labelled ""-2"", the 7th dash is labelled ""0"", the 9th dash is labelled ""2"", the 11th dash is labelled ""4"" and the 13th dash is labelled ""6""    A red arrow, labelled with a question mark is pointing halfway between the 3rd and 4th dashes. ]() Which of the following numbers could be indicated by the arrow?",\( -3 \),1760.0,"Reads the position of a number from the space between the line marked, rather than the line marked"
+80,Ordering Negative Numbers,Identify where negative non-integers lie on a number line,"Here is a number line: ![A horizontal number-line with 13 vertical, equally spaced, dashes representing the position of numbers. The 1st dash is labelled with ""-6"", the 3rd dash is labelled ""-4"", the 5th dash is labelled ""-2"", the 7th dash is labelled ""0"", the 9th dash is labelled ""2"", the 11th dash is labelled ""4"" and the 13th dash is labelled ""6""    A red arrow, labelled with a question mark is pointing halfway between the 3rd and 4th dashes. ]() Which of the following numbers could be indicated by the arrow?",\( -2.75 \),2049.0,Believes a gap of 2 is a gap of 1 on a numberline
+81,Ordering Negative Numbers,Identify where negative non-integers lie on a number line,"Here is a number line: ![A horizontal number-line with 13 vertical, equally spaced, dashes representing the position of numbers. The 1st dash is labelled with ""-6"", the 3rd dash is labelled ""-4"", the 5th dash is labelled ""-2"", the 7th dash is labelled ""0"", the 9th dash is labelled ""2"", the 11th dash is labelled ""4"" and the 13th dash is labelled ""6""    A red arrow, labelled with a question mark is pointing halfway between the 3rd and 4th dashes. ]() Which of the following numbers could be indicated by the arrow?",\( -4.5 \),2109.0,Counts on in the wrong direction on a number line
+82,Plotting Quadratics from Tables of Values,"Given a positive x value, find the corresponding y value for curves in the form y = x² + c","This is a part of the table of values for the equation
+\(
+y=x^{2}-1
+\) \begin{tabular}{|c|c|}
+\hline\( x \) & \( 5 \) \\
+\hline\( y \) & \( \color{gold}\bigstar \) \\
+\hline
+\end{tabular} What should replace the star?",\( 9 \),2316.0,Mixes up squaring and multiplying by 2 or doubling
+83,Plotting Quadratics from Tables of Values,"Given a positive x value, find the corresponding y value for curves in the form y = x² + c","This is a part of the table of values for the equation
+\(
+y=x^{2}-1
+\) \begin{tabular}{|c|c|}
+\hline\( x \) & \( 5 \) \\
+\hline\( y \) & \( \color{gold}\bigstar \) \\
+\hline
+\end{tabular} What should replace the star?",\( 16 \),2532.0,Believes order of operations does not affect the answer to a calculation
+84,Factors and Highest Common Factor,Identify factors of algebraic expressions,"Tom and Katie are discussing factors
+
+Tom says \( 4 \) is a common factor of \( 6 x \) and \( 9 y^{2} \)
+
+Katie says \( y \) is a common factor of \( 6 x \) and \( 9 y^{2} \)
+
+Who is correct?","Only
+Tom",1554.0,Does not know how to identify common factors from algebraic terms
+85,Factors and Highest Common Factor,Identify factors of algebraic expressions,"Tom and Katie are discussing factors
+
+Tom says \( 4 \) is a common factor of \( 6 x \) and \( 9 y^{2} \)
+
+Katie says \( y \) is a common factor of \( 6 x \) and \( 9 y^{2} \)
+
+Who is correct?","Only
+Katie",1554.0,Does not know how to identify common factors from algebraic terms
+86,Factors and Highest Common Factor,Identify factors of algebraic expressions,"Tom and Katie are discussing factors
+
+Tom says \( 4 \) is a common factor of \( 6 x \) and \( 9 y^{2} \)
+
+Katie says \( y \) is a common factor of \( 6 x \) and \( 9 y^{2} \)
+
+Who is correct?",Both Tom and Katie,1554.0,Does not know how to identify common factors from algebraic terms
+87,Multiplying and Dividing Negative Numbers,Carry out multiplication problems involving one negative integer,\( 3 \times(-5)= \),\( 15 \),1082.0,"When multiplying with negative numbers, assumes any negative sign can be ignored"
+88,BIDMAS,Use the order of operations to carry out calculations involving powers,\( 2 \times 3^{2}= \),\( 12 \),2316.0,Mixes up squaring and multiplying by 2 or doubling
+89,BIDMAS,Use the order of operations to carry out calculations involving powers,\( 2 \times 3^{2}= \),\( 36 \),1507.0,Carries out operations from left to right regardless of priority order
+90,BIDMAS,Use the order of operations to carry out calculations involving powers,\( 2 \times 3^{2}= \),\( 11 \),1416.0,Adds instead of multiplies
+91,Solving Linear Inequalities,Solve linear inequalities in one variable where the unknown appears on boths sides of the equation,"Solve
+\[
+2 n+3 \leq 3 n-7
+\]",\( 2 \leq n \),1214.0,"When solving an equation, uses the same operation rather than the inverse."
+92,Solving Linear Inequalities,Solve linear inequalities in one variable where the unknown appears on boths sides of the equation,"Solve
+\[
+2 n+3 \leq 3 n-7
+\]",\( n \leq 10 \),811.0,Believes they can multiply/divide through by a negative number without changing the direction of the inequality
+93,Solving Linear Inequalities,Solve linear inequalities in one variable where the unknown appears on boths sides of the equation,"Solve
+\[
+2 n+3 \leq 3 n-7
+\]",\( -4 \leq n \),1214.0,"When solving an equation, uses the same operation rather than the inverse."
+94,Operations with Surds,Multiply surds by an integer,"\(9 \times \sqrt{3}\)
+
+Simplify, if possible.",\( \sqrt{12} \),19.0,"When multiplying a surd by an integer, adds the integer to the number under the surd"
+95,Operations with Surds,Multiply surds by an integer,"\(9 \times \sqrt{3}\)
+
+Simplify, if possible.",\( \sqrt{27} \),2082.0,"When multiplying a surd by an integer, multiplies the integer with the number under the surd"
+96,Operations with Surds,Multiply surds by an integer,"\(9 \times \sqrt{3}\)
+
+Simplify, if possible.",Cannot be simplified,754.0,Does not recognise that an integer multiplied by a surd can be simplified
+97,Expanding Double Brackets,Expand two brackets with linear terms in the form (ax + b)²,"Expand and simplify:
+\(
+(3 y-4)^{2}
+\)",\( 9 y^{2}-16 \),1872.0,Believes they only need to multiply the first and last pairs of terms when expanding double brackets
+98,Expanding Double Brackets,Expand two brackets with linear terms in the form (ax + b)²,"Expand and simplify:
+\(
+(3 y-4)^{2}
+\)",\( 9 y^{2}+16 \),1872.0,Believes they only need to multiply the first and last pairs of terms when expanding double brackets
+99,Expanding Double Brackets,Expand two brackets with linear terms in the form (ax + b)²,"Expand and simplify:
+\(
+(3 y-4)^{2}
+\)",\( (3 y-4)(3 y-4) \),894.0,Believes expanding a squared expression means writing it as a set of double brackets
+100,Factorising into a Double Bracket,Factorise a quadratic expression in the form x² + bx + c,When factorising \( x^{2}+6 x+8 \) we need two numbers that:,Add to give \( 6 x \) and multiply to give \( 8 \),1432.0,"When factorising into double brackets, believes the sum of the two values in the brackets equals bx rather than b"
+101,Factorising into a Double Bracket,Factorise a quadratic expression in the form x² + bx + c,When factorising \( x^{2}+6 x+8 \) we need two numbers that:,Add to give \( 8 \) and multiply to give \( 6 \),2142.0,"Does not know that to factorise a quadratic expression, to find two numbers that add to give the coefficient of the x term, and multiply to give the non variable term
+"
+102,Adding and Subtracting Negative Numbers,Perform calculations with temperature when given in the same units,Which statement about the temperatures \( -7^{\circ} \mathrm{C} \) and \( 5^{\circ} \mathrm{C} \) is true?,"\( 5^{\circ} \mathrm{C} \) is \( 2^{\circ} \mathrm{C} \) 
+colder than 
+\( -7^{\circ} \mathrm{C} \)",1231.0,Does not know that 7 and -7 are different
+103,Adding and Subtracting Negative Numbers,Perform calculations with temperature when given in the same units,Which statement about the temperatures \( -7^{\circ} \mathrm{C} \) and \( 5^{\circ} \mathrm{C} \) is true?,"\( 5^{\circ} \mathrm{C} \) is \( 12^{\circ} \mathrm{C} \) 
+colder than 
+\( -7^{\circ} \mathrm{C} \)",1471.0,Mixes up colder and hotter when comparing temperatures
+104,Adding and Subtracting Negative Numbers,Perform calculations with temperature when given in the same units,Which statement about the temperatures \( -7^{\circ} \mathrm{C} \) and \( 5^{\circ} \mathrm{C} \) is true?,"\( 5^{\circ} \mathrm{C} \) is \( 2^{\circ} \mathrm{C} \)
+hotter than
+\( -7^{\circ} \mathrm{C} \)",2119.0,Ignores the negative sign
+105,Linear Sequences (nth term),Write a missing term of a descending integer linear sequence,"\begin{tabular}{lclclclc|c|} \hline \(\bigstar\) & \( \;\) & 712 & \( \;\) &  \( \;\)\end{tabular} A descending linear sequence has a constant difference of \( 22 \) and the \( 3^{\text {rd }} \) term is \( 712 \).
+What should replace the star?",\( 734 \),672.0,When asked for a specific term in a sequence gives the next term
+106,Linear Sequences (nth term),Write a missing term of a descending integer linear sequence,"\begin{tabular}{lclclclc|c|} \hline \(\bigstar\) & \( \;\) & 712 & \( \;\) &  \( \;\)\end{tabular} A descending linear sequence has a constant difference of \( 22 \) and the \( 3^{\text {rd }} \) term is \( 712 \).
+What should replace the star?",\( 690 \),672.0,When asked for a specific term in a sequence gives the next term
+107,Linear Sequences (nth term),Write a missing term of a descending integer linear sequence,"\begin{tabular}{lclclclc|c|} \hline \(\bigstar\) & \( \;\) & 712 & \( \;\) &  \( \;\)\end{tabular} A descending linear sequence has a constant difference of \( 22 \) and the \( 3^{\text {rd }} \) term is \( 712 \).
+What should replace the star?",\( 668 \),81.0,Thinks you subtract rather than add when finding the previous term in a descending linear sequence
+108,Linear Sequences (nth term),Write the next term of an ascending integer linear sequence,"\[
+5,12,19,26, \ldots ?
+\]
+
+What number comes next in this sequence?",\( 40 \),1631.0,When asked for a specific term in a sequence gives the term after
+109,Adding and Subtracting with Decimals,Subtract decimals where the numbers involved have a different number of decimal places,\( 0.26-0.6= \),\( 0.34 \),1510.0,Believes subtraction is commutative 
+110,Adding and Subtracting with Decimals,Subtract decimals where the numbers involved have a different number of decimal places,\( 0.26-0.6= \),\( -0.44 \),1795.0,"Believes you subtract the smaller digit from the larger digit in column subtraction, regardless of position"
+111,Adding and Subtracting with Decimals,Subtract decimals where the numbers involved have a different number of decimal places,\( 0.26-0.6= \),\( 0.2 \),2346.0,"When subtracting decimals with a different number of decimal places, lines up the digits incorrectly"
+112,Substitution into Formula,Substitute positive integer values into expressions involving no powers or roots,"When \( h=15 \)
+
+\(
+\frac{h}{3}=
+\)
+",\( 12 \),2093.0,Thinks the fraction bar means subtract rather than divide
+113,Substitution into Formula,Substitute positive integer values into expressions involving no powers or roots,"When \( h=15 \)
+
+\(
+\frac{h}{3}=
+\)
+",\( -5 \),1648.0,Believes dividing two positives will give a negative answer
+114,Finding the Gradient and Intercept of a Line from the Equation,Work out the y-intercept of a line from an accurate drawing,"Use a graphing program (e.g. Desmos) to plot the following pairs of functions.
+\[
+y=x^{2} - 4 \quad \text { and } \quad y=x-4
+\]
+
+Tom says both functions are linear
+
+Katie says both functions cross the \( y \)-axis at the same point
+
+Who is correct?",Both Tom and Katie,2511.0,Does not know the properties of a linear graph
+115,Finding the Gradient and Intercept of a Line from the Equation,Work out the y-intercept of a line from an accurate drawing,"Use a graphing program (e.g. Desmos) to plot the following pairs of functions.
+\[
+y=x^{2} - 4 \quad \text { and } \quad y=x-4
+\]
+
+Tom says both functions are linear
+
+Katie says both functions cross the \( y \)-axis at the same point
+
+Who is correct?",Neither is correct,780.0,Believes the constant only gives the y-intercept for linear graphs
+116,Distance Between Two Co-ordinates,"Calculate the distance between two coordinates in 2D, where all the values are integers but at least one is negative","Amy is trying to work out the distance between these two points: \( (1,-6) \) and \( (-5,2) \) She wants to use a formula.
+
+Which formula should she use?","\( \left(\frac{x_{1}+x_{2}}{2}, \frac{y_{1}+y_{2}}{2}\right) \)",745.0,Confuses midpoint and distance between two points
+117,Distance Between Two Co-ordinates,"Calculate the distance between two coordinates in 2D, where all the values are integers but at least one is negative","Amy is trying to work out the distance between these two points: \( (1,-6) \) and \( (-5,2) \) She wants to use a formula.
+
+Which formula should she use?",\( \frac{y_{2}-y_{1}}{x_{2}-x_{1}} \),1386.0,Confuses the method for finding the gradient and length of a line segment
+118,Measuring Angles,"Describe how many degrees you would turn, and in what direction, to move between North, South, East and West on a compass",I am facing East. \( \mathrm{E} \longrightarrow \) How many degrees anti-clockwise will I need to turn so I am facing South?,\( 90^{\circ} \),860.0,Mixes up clockwise and anticlockwise
+119,Rounding to Decimal Places,Round numbers to three or more decimal places,What is \( 29.156828 \) rounded to \( 3 \) decimal places?,\( 29.267 \),2330.0,Rounds incorrectly by changing multiple place values
+120,Rounding to Decimal Places,Round numbers to three or more decimal places,What is \( 29.156828 \) rounded to \( 3 \) decimal places?,\( 29.16 \),1248.0,Rounds to the wrong degree of accuracy (rounds too little)
+121,Rounding to Decimal Places,Round numbers to three or more decimal places,What is \( 29.156828 \) rounded to \( 3 \) decimal places?,\( 29.156 \),1379.0,Rounds down instead of up
+122,Simplifying Fractions,Simplify fractions that simplify to a non-unit fraction,"Simplify fully (if possible):
+
+\( \frac{18}{30} \)",\( \frac{4.5}{7.5} \),1358.0,Believes you can have decimals in a simplified fraction
+123,Simplifying Fractions,Simplify fractions that simplify to a non-unit fraction,"Simplify fully (if possible):
+
+\( \frac{18}{30} \)",\( \frac{9}{15} \),1825.0,Does not fully simplify fraction
+124,Simplifying Fractions,Simplify fractions that simplify to a non-unit fraction,"Simplify fully (if possible):
+
+\( \frac{18}{30} \)",Cannot be simplified,606.0,Does not understand how to simplify fractions
+125,Quadratic Equations,Solve quadratic equations using factorisation in the form x(x + b) ,"Jo and Paul are arguing about how to solve this equation:
+\(
+x^{2}-9 x=0
+\)
+
+Jo says one solution is \( x=0 \)
+
+Paul says one solution is \( x=3 \)
+Who is correct?","Only
+Paul",1766.0,Thinks x^2 - a^2x is a valid form of difference of two squares
+126,Real Life Graphs,"Given the speed, calculate missing values from a displacement-time graph","This displacement-time graph shows the first \( 10 \) seconds of Mo's journey.
+
+During that time he travelled at a speed of \( 6 \mathrm{~m} / \mathrm{s.} \)
+
+What distance should replace the star? ![A graph showing Time in seconds on the x axis and Distance in metres on the y axis. A straight line is drawn from the origin to the point (10, \(\bigstar \))]()",\( 30 \mathrm{~m} \),1674.0,Believes distance is the area under the graph on a displacement time graph
+127,Real Life Graphs,"Given the speed, calculate missing values from a displacement-time graph","This displacement-time graph shows the first \( 10 \) seconds of Mo's journey.
+
+During that time he travelled at a speed of \( 6 \mathrm{~m} / \mathrm{s.} \)
+
+What distance should replace the star? ![A graph showing Time in seconds on the x axis and Distance in metres on the y axis. A straight line is drawn from the origin to the point (10, \(\bigstar \))]()",\( 6 \mathrm{~m} \),747.0,Believes scales on graphs must match on both axes
+128,Real Life Graphs,"Given the speed, calculate missing values from a displacement-time graph","This displacement-time graph shows the first \( 10 \) seconds of Mo's journey.
+
+During that time he travelled at a speed of \( 6 \mathrm{~m} / \mathrm{s.} \)
+
+What distance should replace the star? ![A graph showing Time in seconds on the x axis and Distance in metres on the y axis. A straight line is drawn from the origin to the point (10, \(\bigstar \))]()",\( 16 \mathrm{~m} \),119.0,Believes distance = speed + time
+129,Time,Convert from years to days,How many days in a non-leap year?,\( 350 \),2239.0,Thinks there are 50 weeks in a year
+130,Time,Convert from years to days,How many days in a non-leap year?,\( 100 \),1322.0,Does not know how many days are in a leap year
+131,"Squares, Cubes, etc",Calculate the cube of a number,\( 3^{3}=? \),\( 6 \),952.0,Adds the index to the number
+132,"Squares, Cubes, etc",Calculate the cube of a number,\( 3^{3}=? \),\( 9 \),1072.0,Multiplies by the index
+133,"Squares, Cubes, etc",Calculate the cube of a number,\( 3^{3}=? \),\( 33 \),2352.0,Writes the index as a digit on the end of a number
+134,Place Value,Use inequality notation to order integers with the same number of digits,"Which signs belong in the boxes to make the statement correct?
+\( 76426 \)\[ {\color{blue}\square} \]\( 76462 \)\[ {\color{orange}\square} \]\( 74662 \)","![A blue box containing a ""greater than"" symbol  and an orange box containing a ""less than"" symbol]()",1880.0,Mixes up greater than and less than symbols
+135,Place Value,Use inequality notation to order integers with the same number of digits,"Which signs belong in the boxes to make the statement correct?
+\( 76426 \)\[ {\color{blue}\square} \]\( 76462 \)\[ {\color{orange}\square} \]\( 74662 \)","![A blue box containing a ""less than"" symbol and an orange box containing a ""less than"" symbol]()",655.0,Assumes that a list is given in size order
+136,Place Value,Use inequality notation to order integers with the same number of digits,"Which signs belong in the boxes to make the statement correct?
+\( 76426 \)\[ {\color{blue}\square} \]\( 76462 \)\[ {\color{orange}\square} \]\( 74662 \)","![A blue box containing a ""greater than"" symbol  and an orange box containing a ""greater than"" symbol]()",655.0,Assumes that a list is given in size order
+137,Place Value,Use inequality notation to order integers with a different number of digits,"Which symbol makes the following statement correct?
+\(
+725,912 \quad \square \quad 2,705,291
+\)",\( > \),1880.0,Mixes up greater than and less than symbols
+138,Place Value,Use inequality notation to order integers with a different number of digits,"Which symbol makes the following statement correct?
+\(
+725,912 \quad \square \quad 2,705,291
+\)",None of these,1828.0,Does not understand inequality notation
+139,Place Value,Use inequality notation to order integers with a different number of digits,"Which symbol makes the following statement correct?
+\(
+725,912 \quad \square \quad 2,705,291
+\)",\( = \),1828.0,Does not understand inequality notation
+140,BIDMAS,"Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division","What does the following equal?
+
+\(
+3 \times 5+4-2
+\)",\( 25 \),328.0,Performs addition ahead of multiplication
+141,BIDMAS,"Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division","What does the following equal?
+
+\(
+3 \times 5+4-2
+\)",\( 21 \),328.0,Performs addition ahead of multiplication
+142,BIDMAS,"Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division","What does the following equal?
+
+\(
+3 \times 5+4-2
+\)",\( 9 \),2532.0,Believes order of operations does not affect the answer to a calculation
+143,Substitution into Formula,Substitute into simple formulae given in words,"To work out the area of a triangle you multiply the base by the perpendicular height and then halve your answer.
+What is the area of this triangle? ![Triangle with base b=5cm and perpendicular height h=3cm]()",\( 15 \mathrm{~cm}^{2} \),159.0,Does not divide by 2 when calculating the area of a triangle
+144,Substitution into Formula,Substitute into simple formulae given in words,"To work out the area of a triangle you multiply the base by the perpendicular height and then halve your answer.
+What is the area of this triangle? ![Triangle with base b=5cm and perpendicular height h=3cm]()",\( 4 \mathrm{~cm}^{2} \),1319.0,Adds instead of multiples
+145,Substitution into Formula,Substitute into simple formulae given in words,"To work out the area of a triangle you multiply the base by the perpendicular height and then halve your answer.
+What is the area of this triangle? ![Triangle with base b=5cm and perpendicular height h=3cm]()",\( 30 \mathrm{~cm}^{2} \),1663.0,Thinks halving is the same as multiplying by 2
+146,Names and Properties of 3D Shapes,Identify non-prisms from a diagram,Which of the following is a correct name of this shape? ![A 3D shape with 1 square face and 4 triangular faces. 1 triangular face is attached to each side of the square face.](),Triangular prism,1927.0,Does not know the definition of a prism
+147,Names and Properties of 3D Shapes,Identify non-prisms from a diagram,Which of the following is a correct name of this shape? ![A 3D shape with 1 square face and 4 triangular faces. 1 triangular face is attached to each side of the square face.](),Cone,402.0,Does not know the definition of a cone
+148,Names and Properties of 3D Shapes,Identify non-prisms from a diagram,Which of the following is a correct name of this shape? ![A 3D shape with 1 square face and 4 triangular faces. 1 triangular face is attached to each side of the square face.](),Triangular-based pyramid,816.0,Only counts visible faces
+149,Other Sequences,Identify triangular numbers,![The triangle numbers represented using purple circles with the first term having 3 purple circles. The second and third terms are also shown.]() How many circles will the next term in this sequence have?,\( 20 \),108.0,Uses only the first two terms of a sequence to work out a term-to-term rule
+150,Other Sequences,Identify triangular numbers,![The triangle numbers represented using purple circles with the first term having 3 purple circles. The second and third terms are also shown.]() How many circles will the next term in this sequence have?,\( 14 \),1737.0,Only looks at the difference between one pair of terms when discerning the pattern
+151,Substitution into Formula,Identify pairs of numbers that satisfy an equation with two unknowns ,"\[
+x+y=8
+\]
+Which pair of numbers fits the equation?",\( \begin{array}{l}x=10 \\ y=2\end{array} \),2487.0,Changes the given operation when substituting
+152,Substitution into Formula,Identify pairs of numbers that satisfy an equation with two unknowns ,"\[
+x+y=8
+\]
+Which pair of numbers fits the equation?",\( \begin{array}{l}x=8 \\ y=1\end{array} \),2487.0,Changes the given operation when substituting
+153,Substitution into Formula,Identify pairs of numbers that satisfy an equation with two unknowns ,"\[
+x+y=8
+\]
+Which pair of numbers fits the equation?",\( \begin{array}{c}x=-8 \\ y=1\end{array} \),2230.0,substitutes incorrectly
+154,Parts of a Circle,Identify a diameter,"The straight line across this circle is called a ....? ![A circle with a line across from edge to edge, passing through the centre]()",Diagram,1746.0,Does not know the term 'diameter'
+155,Parts of a Circle,Identify a diameter,"The straight line across this circle is called a ....? ![A circle with a line across from edge to edge, passing through the centre]()",Diagonal,1746.0,Does not know the term 'diameter'
+156,Parts of a Circle,Identify a diameter,"The straight line across this circle is called a ....? ![A circle with a line across from edge to edge, passing through the centre]()",Diamond,1746.0,Does not know the term 'diameter'
+157,Angle Facts with Parallel Lines,Identify corresponding angles,"\( \mathrm{M} \) and \( \mathrm{N} \) are the intersections of the line \( X Y \) with the lines \( P Q \) and \( R S \).
+Which angle is corresponding to angle QMY? ![A pair of parallel lines pointing up to the left. PQ and RS are the ends of the parallel lines. PQ is on the left of the diagram with Q being the top left.
+A red straight line, XY, crosses the parallel lines. X is on the left of the diagram.
+Line XY crosses line PQ at a point marked M.
+Line XY crosses line RS at a point marked N.
+The angle QMY is marked in red.]()",XMP,625.0,Confuses corresponding and vertically opposite angles
+158,Angle Facts with Parallel Lines,Identify corresponding angles,"\( \mathrm{M} \) and \( \mathrm{N} \) are the intersections of the line \( X Y \) with the lines \( P Q \) and \( R S \).
+Which angle is corresponding to angle QMY? ![A pair of parallel lines pointing up to the left. PQ and RS are the ends of the parallel lines. PQ is on the left of the diagram with Q being the top left.
+A red straight line, XY, crosses the parallel lines. X is on the left of the diagram.
+Line XY crosses line PQ at a point marked M.
+Line XY crosses line RS at a point marked N.
+The angle QMY is marked in red.]()",SNX,2336.0,Confuses co-interior and corresponding angles
+159,Angle Facts with Parallel Lines,Identify corresponding angles,"\( \mathrm{M} \) and \( \mathrm{N} \) are the intersections of the line \( X Y \) with the lines \( P Q \) and \( R S \).
+Which angle is corresponding to angle QMY? ![A pair of parallel lines pointing up to the left. PQ and RS are the ends of the parallel lines. PQ is on the left of the diagram with Q being the top left.
+A red straight line, XY, crosses the parallel lines. X is on the left of the diagram.
+Line XY crosses line PQ at a point marked M.
+Line XY crosses line RS at a point marked N.
+The angle QMY is marked in red.]()",XNR,2454.0,Confuses corresponding and alternate angles
+160,Writing Expressions,Recognise and name an identity,"Which of the following is the most appropriate name for this:
+\(p-3 \equiv-(3-p)\)",Equation,553.0,Confuses an equation with an identity
+161,Writing Expressions,Recognise and name an identity,"Which of the following is the most appropriate name for this:
+\(p-3 \equiv-(3-p)\)",Expression,2022.0,"
+Has incorrect belief about the meaning of ""expression"""
+162,Writing Expressions,Recognise and name an identity,"Which of the following is the most appropriate name for this:
+\(p-3 \equiv-(3-p)\)",Formula,1311.0,"
+Has incorrect belief about the meaning of ""formula"""
+163,Converting Mixed Number and Improper Fractions,Convert from improper fractions to mixed number fractions,"Convert this into a mixed number fraction:
+\(
+\frac{13}{5}
+\)",\( 1 \frac{3}{5} \),893.0,"Believes when changing an improper fraction to a mixed number you divide the numerator by 10, regardless of the denominator"
+164,Converting Mixed Number and Improper Fractions,Convert from improper fractions to mixed number fractions,"Convert this into a mixed number fraction:
+\(
+\frac{13}{5}
+\)",\( 3 \frac{2}{5} \),1492.0,Believes the whole and remainder are the other way when changing an improper fraction to a mixed number
+165,Converting Mixed Number and Improper Fractions,Convert from improper fractions to mixed number fractions,"Convert this into a mixed number fraction:
+\(
+\frac{13}{5}
+\)",\( 13 \frac{1}{5} \),20.0,Believes the number of wholes in a mixed number multiplies by the fraction part
+166,Solving Linear Inequalities,Solve linear inequalities in one variable that require three or more steps where the variable appears on one side of the equation ,"Solve
+\[
+42 \geq 6(2 n+1)
+\]",\( n \geq 3 \),38.0,Believes the sides of an inequality can be switched without changing the direction of the sign
+167,Solving Linear Inequalities,Solve linear inequalities in one variable that require three or more steps where the variable appears on one side of the equation ,"Solve
+\[
+42 \geq 6(2 n+1)
+\]",\( \frac{35}{12} \geq n \),107.0,"When expanding brackets, multiplies out the first term correctly but adds together the number outside the bracket with the second term inside the bracket."
+168,Substitution into Formula,Substitute positive integer values into expressions involving no powers or roots,"When \( h=10 \)
+\(
+\frac{h}{2}=
+\)",\( 8 \),2093.0,Thinks the fraction bar means subtract rather than divide
+169,Substitution into Formula,Substitute positive integer values into expressions involving no powers or roots,"When \( h=10 \)
+\(
+\frac{h}{2}=
+\)",\( -5 \),1648.0,Believes dividing two positives will give a negative answer
+170,Other Sequences,Recognise a Fibonacci sequence expressed as a pattern,"Which of the following is the best way to describe this sequence: ![A pattern with 6 terms made of green and red dots. The first term is a green dot, the second a red dot, the third is one red and one green dot. The fourth term is made of one green and two red dots. The fifth term is made from two green dots and three red dots. The sixth term is made of five red dots and three green dots. ]()",Linear,1198.0,Does not recognise that a linear sequence must increase or decrease by same amount
+171,Other Sequences,Recognise a Fibonacci sequence expressed as a pattern,"Which of the following is the best way to describe this sequence: ![A pattern with 6 terms made of green and red dots. The first term is a green dot, the second a red dot, the third is one red and one green dot. The fourth term is made of one green and two red dots. The fifth term is made from two green dots and three red dots. The sixth term is made of five red dots and three green dots. ]()",Quadratic,1388.0,Does not understand the term quadratic
+172,Other Sequences,Recognise a Fibonacci sequence expressed as a pattern,"Which of the following is the best way to describe this sequence: ![A pattern with 6 terms made of green and red dots. The first term is a green dot, the second a red dot, the third is one red and one green dot. The fourth term is made of one green and two red dots. The fifth term is made from two green dots and three red dots. The sixth term is made of five red dots and three green dots. ]()",Geometric,2228.0,Does not know what a Fibonacci sequence is
+173,Writing Ratios,Convert ratios to fractions,A lassi drink is made of yoghurt and water in the ratio \( 3: 1 \). What fraction of the drink is water?,\( \frac{3}{4} \),2262.0,Gets order of ratio wrong
+174,Writing Ratios,Convert ratios to fractions,A lassi drink is made of yoghurt and water in the ratio \( 3: 1 \). What fraction of the drink is water?,\( \frac{1}{3} \),1452.0,"When converting ratio to fractions, puts the other side of the ratio as the denominator rather than the total"
+175,Writing Ratios,Convert ratios to fractions,A lassi drink is made of yoghurt and water in the ratio \( 3: 1 \). What fraction of the drink is water?,Not enough information,888.0,Does not understand the relationship between a ratio and fraction
+176,Converting between Fractions and Percentages,Convert fractions to percentages containing 1 decimal place,What is \( \frac{13}{40} \) written as a percentage?,\( 13 \% \),800.0,Thinks you just add a % sign to the numerator to make a fraction into a percentage
+177,Converting between Fractions and Percentages,Convert fractions to percentages containing 1 decimal place,What is \( \frac{13}{40} \) written as a percentage?,\( 26 \% \),2361.0,Believes a fraction out of a number other than 100 represents a percentage
+178,Converting between Fractions and Percentages,Convert fractions to percentages containing 1 decimal place,What is \( \frac{13}{40} \) written as a percentage?,\( 52 \% \),2361.0,Believes a fraction out of a number other than 100 represents a percentage
+179,Ordering Negative Numbers,Order negative decimals with the same number of digits,"Here are the depths below sea level of \( 3 \) creatures:
+Starfish: \( -7 m \)
+Shark: \( -9 m \)
+Dolphin: \( -8.3 \mathrm{~m} \)
+Arrange their depths in ascending order, starting with the deepest","\( 1^{\text {st }} \) Dolphin
+\( 2^{\text {nd }} \) Shark
+\( 3^{\text {rd }} \) Starfish",2237.0,"Thinks the more digits a number has the greater it is, regardless of place value"
+180,Ordering Negative Numbers,Order negative decimals with the same number of digits,"Here are the depths below sea level of \( 3 \) creatures:
+Starfish: \( -7 m \)
+Shark: \( -9 m \)
+Dolphin: \( -8.3 \mathrm{~m} \)
+Arrange their depths in ascending order, starting with the deepest",\( 1^{\text {st }} \) Starfish \( 2^{\text {nd }} \) Dolphin \( 3^{\text {rd }} \) Shark,2185.0,Believes negative numbers with a larger absolute value are greater
+181,Converting between Fractions and Percentages,Convert two digit integer percentages to fractions,"Convert this percentage to a fraction
+\( 62 \% \)",\( \frac{62}{10} \),329.0,Does not understand a percentage is out of 100
+182,Converting between Fractions and Percentages,Convert two digit integer percentages to fractions,"Convert this percentage to a fraction
+\( 62 \% \)",\( \frac{6}{2} \),847.0,Thinks they can convert a 2 digit percentage to a fraction by writing one number over the other.
+183,Converting between Fractions and Percentages,Convert two digit integer percentages to fractions,"Convert this percentage to a fraction
+\( 62 \% \)",None of these,329.0,Does not understand a percentage is out of 100
+184,Writing Expressions,"Given the description of an algebraic term with powers, write the term using algebra ",Write the following using correct algebraic notation \( m \) multiplied by the cube of \( n \),\( (m n)^{3} \),315.0,Has not realised that the answer may be changed by the insertion of brackets
+185,Writing Expressions,"Given the description of an algebraic term with powers, write the term using algebra ",Write the following using correct algebraic notation \( m \) multiplied by the cube of \( n \),\( m n+3 \),260.0,Thinks cubing a number means adding 3 to that number
+186,Writing Expressions,"Given the description of an algebraic term with powers, write the term using algebra ",Write the following using correct algebraic notation \( m \) multiplied by the cube of \( n \),\( 3 m n \),438.0,Believes cubing a number means you multiply it by 3
+187,Linear Equations,"Solve linear equations with the variable appearing on both sides, with all positive integers",What is the solution for this equation? \( 4(3 x-2)=2(6 x-8) \),\( x=0 \),1598.0,Believes the solution to an equation with matching coefficients of variables on both sides will always be 0
+188,Ordering Fractions,Read a fraction on a scale where the required number is marked by a dash between two numbers,"What fraction should replace the star? ![A number line marked with 1/4, 2/4, 3/4, 4/4, 5/4. The star is halfway between 2/4 and 3/4.]()",None of these,990.0,Does not realise you can use equivalent fractions to break fractions up into smaller divisions
+189,Mental Multiplication and Division,Multiply a decimal by an integer,\( 9.4 \times 50= \),\( 4700 \),2055.0,"When multiplying a decimal by an integer, ignores decimal point and just multiplies the digits"
+190,Length Scale Factors in Similar Shapes,Identify whether two shapes are similar or not,Tom and Katie are discussing similarity. Who is correct? Tom says these two rectangles are similar ![Two rectangles of different sizes. One rectangle has width 2cm and height 3cm. The other rectangle has width 4cm and height 9cm. ]() Katie says these two rectangles are similar ![Two rectangles of different sizes. One rectangle has width 4cm and height 6cm. The other rectangle has width 7cm and height 9cm. ](),Only Tom,293.0,Does not understand that similar shapes sides must all have the same scale factor
+191,Length Scale Factors in Similar Shapes,Identify whether two shapes are similar or not,Tom and Katie are discussing similarity. Who is correct? Tom says these two rectangles are similar ![Two rectangles of different sizes. One rectangle has width 2cm and height 3cm. The other rectangle has width 4cm and height 9cm. ]() Katie says these two rectangles are similar ![Two rectangles of different sizes. One rectangle has width 4cm and height 6cm. The other rectangle has width 7cm and height 9cm. ](),Only Katie,912.0,Thinks adding the same value to each side makes shapes similar
+192,Length Scale Factors in Similar Shapes,Identify whether two shapes are similar or not,Tom and Katie are discussing similarity. Who is correct? Tom says these two rectangles are similar ![Two rectangles of different sizes. One rectangle has width 2cm and height 3cm. The other rectangle has width 4cm and height 9cm. ]() Katie says these two rectangles are similar ![Two rectangles of different sizes. One rectangle has width 4cm and height 6cm. The other rectangle has width 7cm and height 9cm. ](),Both Tom and Katie,293.0,Does not understand that similar shapes sides must all have the same scale factor
+193,Linear Sequences (nth term),Use a linear sequence expressed as a pattern to make a prediction about another term in the sequence other than the next one,"Without drawing any more terms, how many circles do you predict will be in the \( 7 \) th term of this sequence? ![A diagram showing the first 3 patterns in a sequence. Pattern 1 is a rectangle with a total of 6 circles surrounding it. Pattern 2 is 2 rectangles with a total of 10 circles surrounding it. Pattern 3 is 3 rectangles with a total of 14 circles surrounding it.]()",\( 42 \),1093.0,Has multiplied the value of the first term by the the term being asked
+194,Linear Sequences (nth term),Use a linear sequence expressed as a pattern to make a prediction about another term in the sequence other than the next one,"Without drawing any more terms, how many circles do you predict will be in the \( 7 \) th term of this sequence? ![A diagram showing the first 3 patterns in a sequence. Pattern 1 is a rectangle with a total of 6 circles surrounding it. Pattern 2 is 2 rectangles with a total of 10 circles surrounding it. Pattern 3 is 3 rectangles with a total of 14 circles surrounding it.]()",\( 26 \),52.0,When asked for a specific term in a sequence gives the term before
+195,Linear Sequences (nth term),Use a linear sequence expressed as a pattern to make a prediction about another term in the sequence other than the next one,"Without drawing any more terms, how many circles do you predict will be in the \( 7 \) th term of this sequence? ![A diagram showing the first 3 patterns in a sequence. Pattern 1 is a rectangle with a total of 6 circles surrounding it. Pattern 2 is 2 rectangles with a total of 10 circles surrounding it. Pattern 3 is 3 rectangles with a total of 14 circles surrounding it.]()",\( 34 \),1631.0,When asked for a specific term in a sequence gives the term after
+196,Expanding Single Brackets,Multiply a single term over a bracket where the term on the outside is a number and the inside contains a linear expression,"Expand:
+\[
+-(1-2 p)
+\]",\( -1-2 p \),220.0,Only multiplies the first term in the expansion of a bracket
+197,Expanding Single Brackets,Multiply a single term over a bracket where the term on the outside is a number and the inside contains a linear expression,"Expand:
+\[
+-(1-2 p)
+\]",\( 1+2 p \),1911.0,Only multiplies second term in the expansion of a bracket
+198,Expanding Single Brackets,Multiply a single term over a bracket where the term on the outside is a number and the inside contains a linear expression,"Expand:
+\[
+-(1-2 p)
+\]",\( 1-2 p \),583.0,Ignores negative sign when expanding bracket
+199,Multiplying Terms,"Multiply algebraic terms, where both are linear versions of different letters (e.g. 4a x 2b)","Simplify, if possible:
+\[
+6 a \times 4 b
+\]",\( 10 a b \),1416.0,Adds instead of multiplies
+200,Multiplying Terms,"Multiply algebraic terms, where both are linear versions of different letters (e.g. 4a x 2b)","Simplify, if possible:
+\[
+6 a \times 4 b
+\]",\( 24+a b \),1116.0,Multiplies coefficients and letters separately and writes as an addition
+201,Multiplying Terms,"Multiply algebraic terms, where both are linear versions of different letters (e.g. 4a x 2b)","Simplify, if possible:
+\[
+6 a \times 4 b
+\]",Does not simplify,346.0,Does not understand how to multiply algebraic terms
+202,"Averages (mean, median, mode) from a List of Data",Understand the limitations of the mean,"Which of the following would not be representative of this data?
+\[
+5,6,7,8,8,9,11,12,320
+\]",Median,589.0,Believes extreme values can affect the median
+203,"Averages (mean, median, mode) from a List of Data",Understand the limitations of the mean,"Which of the following would not be representative of this data?
+\[
+5,6,7,8,8,9,11,12,320
+\]",Mode,1992.0,Believes extreme values can affect the mode
+204,"Averages (mean, median, mode) from a List of Data",Understand the limitations of the mean,"Which of the following would not be representative of this data?
+\[
+5,6,7,8,8,9,11,12,320
+\]",All are representative,1126.0,Believes the mean is always representative
+205,Expanding Triple Brackets and more,Expand products of three binomials in the form (x + a)(x + b)(x + c),Which of the following answers shows a correct expansion of the expression below? \( (x-2)^{3} \),\( x^{3}-8 \),1872.0,Believes they only need to multiply the first and last pairs of terms when expanding double brackets
+206,Reflection,"Reflect an object or a point in a horizontal line with the line of reflection drawn, where the line of reflection lies on the edge or outside the object","Tom and Katie are arguing about how to reflect the object in the line of reflection. Who reflects it correctly? ![A grid with a left-leaning parallelogram drawn in the upper half and a blue line across the middle, marked 'line of reflection'. ]() ![Tom does this: an image of a grid with a left-leaning parallelogram drawn in the upper half, a blue line across the middle and a left-leaning parallelogram drawn immediately below. ]() ![Katie does this: An image of a grid with a left-leaning parallelogram drawn in the upper half, a blue line across the middle and a left-leaning parallelogram drawn one line down from the blue line. ]()","Only
+Tom",1990.0,Fails to reflect across mirror line
+207,Reflection,"Reflect an object or a point in a horizontal line with the line of reflection drawn, where the line of reflection lies on the edge or outside the object","Tom and Katie are arguing about how to reflect the object in the line of reflection. Who reflects it correctly? ![A grid with a left-leaning parallelogram drawn in the upper half and a blue line across the middle, marked 'line of reflection'. ]() ![Tom does this: an image of a grid with a left-leaning parallelogram drawn in the upper half, a blue line across the middle and a left-leaning parallelogram drawn immediately below. ]() ![Katie does this: An image of a grid with a left-leaning parallelogram drawn in the upper half, a blue line across the middle and a left-leaning parallelogram drawn one line down from the blue line. ]()",Only Katie,1990.0,Fails to reflect across mirror line
+208,Reflection,"Reflect an object or a point in a horizontal line with the line of reflection drawn, where the line of reflection lies on the edge or outside the object","Tom and Katie are arguing about how to reflect the object in the line of reflection. Who reflects it correctly? ![A grid with a left-leaning parallelogram drawn in the upper half and a blue line across the middle, marked 'line of reflection'. ]() ![Tom does this: an image of a grid with a left-leaning parallelogram drawn in the upper half, a blue line across the middle and a left-leaning parallelogram drawn immediately below. ]() ![Katie does this: An image of a grid with a left-leaning parallelogram drawn in the upper half, a blue line across the middle and a left-leaning parallelogram drawn one line down from the blue line. ]()",Both Tom and Katie,1990.0,Fails to reflect across mirror line
+209,Indirect (Inverse) Proportion,Recognise graphical representations of inverse proportion in the form y = k/x,Which of the following graphs show that \( \mathrm{x} \) is inversely proportional to \( y \) ?,"![A graph that starts in the top left, drops steeply down as you move right, briefly levels off, then steeply up back to the same level as the starting point, forming a symmetrical U shape]()",332.0,Confuses reciprocal and quadratic graphs
+210,Indirect (Inverse) Proportion,Recognise graphical representations of inverse proportion in the form y = k/x,Which of the following graphs show that \( \mathrm{x} \) is inversely proportional to \( y \) ?,![A graph with a straight line going from bottom left to top right. The graph starts from 0 on the y axis. ](),766.0,Confuses the graphs of  direct and inverse proportion
+211,Dividing Fractions,Divide mixed number fraction in the form: Integer ÷ Fraction,\( 4 \div 2 \frac{4}{5} \) Which of the following is a correct way to write the answer to this calculation?,\( \frac{7}{10} \),2359.0,Believes division is commutative 
+212,"Averages (mean, median, mode) from a List of Data",Solve missing number problems involving the median,"The median of these four numbers is \( 5 \).
+\(
+\begin{array}{cccc}
+3&12&1&?
+\end{array}
+\)
+Find the value of the missing number.",\( 4 \),732.0,Finds the mean instead of the median
+213,Adding and Subtracting Fractions,Add proper fractions with different denominators which do not share a common factor,"The fractions in the two circles below add to give the fraction in the circle above.
+
+What should replace the question mark? ![Fractions 3/5 and 1/4 in two separate circles, both linked to a third circle above.]()",\( \frac{4}{9} \),217.0,"When adding fractions, adds the numerators and denominators"
+214,Adding and Subtracting Fractions,Add proper fractions with different denominators which do not share a common factor,"The fractions in the two circles below add to give the fraction in the circle above.
+
+What should replace the question mark? ![Fractions 3/5 and 1/4 in two separate circles, both linked to a third circle above.]()",\( \frac{4}{20} \),1655.0,"When adding fractions, changes to common denominator but leaves numerators the same"
+215,Pictogram,"Solve comparison, sum and difference problems using information presented in pictograms","This pictogram shows the different types of music Bob has in his music collection.
+
+How many more Pop CDs does Bob have than Rock CDs? ![A pictogram showing the number of CDs Bob has in his musical collection. Pop has 3 and a half symbols, rock has 2 symbols, blues has 2 and a quarter symbols, jazz has 3 and a quarter symbols and classical has 1 and three-quarter symbols. Each symbol represents 4 CDs.]()",\( 4.5 \),2344.0,"When counting partial symbols on pictogram, uses the fraction rather than the amount it represents"
+216,Pictogram,"Solve comparison, sum and difference problems using information presented in pictograms","This pictogram shows the different types of music Bob has in his music collection.
+
+How many more Pop CDs does Bob have than Rock CDs? ![A pictogram showing the number of CDs Bob has in his musical collection. Pop has 3 and a half symbols, rock has 2 symbols, blues has 2 and a quarter symbols, jazz has 3 and a quarter symbols and classical has 1 and three-quarter symbols. Each symbol represents 4 CDs.]()",\( 1.5 \),1310.0,"When interpreting a pictogram, thinks each symbol stands for 1"
+217,Estimation,Identify when rounding a calculation will give an over or under approximation,"Tom and Katie are discussing how to estimate the answer to
+\[
+38.8745 \div 7.9302
+\]
+
+Tom says \( 40 \div 7.9302 \) would give an overestimate.
+
+Katie says \( 38.8745 \div 8 \) would give an overestimate.
+
+Who is correct?",Only Katie,1869.0,"Believes that the larger the divisor, the larger the answer."
+218,Estimation,Identify when rounding a calculation will give an over or under approximation,"Tom and Katie are discussing how to estimate the answer to
+\[
+38.8745 \div 7.9302
+\]
+
+Tom says \( 40 \div 7.9302 \) would give an overestimate.
+
+Katie says \( 38.8745 \div 8 \) would give an overestimate.
+
+Who is correct?",Both Tom and Katie,1869.0,"Believes that the larger the divisor, the larger the answer."
+219,Estimation,Identify when rounding a calculation will give an over or under approximation,"Tom and Katie are discussing how to estimate the answer to
+\[
+38.8745 \div 7.9302
+\]
+
+Tom says \( 40 \div 7.9302 \) would give an overestimate.
+
+Katie says \( 38.8745 \div 8 \) would give an overestimate.
+
+Who is correct?",Neither is correct,2461.0,"Believes that the larger the dividend, the smaller the answer."
+220,Written Division,Divide integers of 3 or more digits using long division,"When using long-division to solve this problem, what digit should replace the rectangle to give the correct answer (quotient)? ![Division sum written out in Bus Stop format with dividend = 735, divisor = 3, the digits of the quotient are represented by a yellow star, a purple triangle and a blue rectangle.]()",\( 0 \),1155.0,Starts at the wrong end of the dividend when dividing
+221,Written Division,Divide integers of 3 or more digits using long division,"When using long-division to solve this problem, what digit should replace the rectangle to give the correct answer (quotient)? ![Division sum written out in Bus Stop format with dividend = 735, divisor = 3, the digits of the quotient are represented by a yellow star, a purple triangle and a blue rectangle.]()",\( 2 \),2273.0,Subtracts instead of divides
+222,Written Division,Divide integers of 3 or more digits using long division,"When using long-division to solve this problem, what digit should replace the rectangle to give the correct answer (quotient)? ![Division sum written out in Bus Stop format with dividend = 735, divisor = 3, the digits of the quotient are represented by a yellow star, a purple triangle and a blue rectangle.]()",\( 1 \),1155.0,Starts at the wrong end of the dividend when dividing
+223,Distance Between Two Co-ordinates,Substitute negative integer values into expressions involving no powers or roots,"Amy is trying to work out the distance between these two points: \( (1,-6) \) and \( (-5,2) \) She labels them like this: \( \begin{array}{rrrr}x_{1} & y_{1} & x_{2} & y_{2} \\ (1, & -6) & (-5, & 2)\end{array} \) And then decides to use this formula: \( \sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2}-y_{1}\right)^{2}} \) What does the second bracket equal?",\( (-8)^{2} \),1510.0,Believes subtraction is commutative 
+224,Distance Between Two Co-ordinates,Substitute negative integer values into expressions involving no powers or roots,"Amy is trying to work out the distance between these two points: \( (1,-6) \) and \( (-5,2) \) She labels them like this: \( \begin{array}{rrrr}x_{1} & y_{1} & x_{2} & y_{2} \\ (1, & -6) & (-5, & 2)\end{array} \) And then decides to use this formula: \( \sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2}-y_{1}\right)^{2}} \) What does the second bracket equal?",\( (-4)^{2} \),55.0,"When subtracting a negative number from a positive number, uses a method which assumes one of the negative signs can be ignored "
+225,Linear Sequences (nth term),Generate a descending integer linear sequence from the nth term rule,"How many terms are greater than zero in this sequence:
+\[
+22-5 n
+\]",\( 5 \),936.0,Thinks the first term in a sequence is the term before the sequence begins (0th term)
+226,Equivalent Fractions,Identify equivalent fractions when presented as numbers,Which of the following fractions is equivalent to \( \frac{9}{12} \) ?,\( \frac{2}{3} \),848.0,Believes when simplifying a fraction you can divide the numerator and denominator by different values
+227,Equivalent Fractions,Identify equivalent fractions when presented as numbers,Which of the following fractions is equivalent to \( \frac{9}{12} \) ?,\( \frac{12}{15} \),1429.0,Believes equivalent fractions are formed with addition not multiplication
+228,Construct Triangle,Construct a triangle using Side-Angle-Side,Which combination of mathematical instruments has been used to construct this triangle? ![A triangle construction with one angle and two sides labelled ](),"Protractor 
+Compass",723.0,Forgets you need a ruler to measure lengths
+229,Construct Triangle,Construct a triangle using Side-Angle-Side,Which combination of mathematical instruments has been used to construct this triangle? ![A triangle construction with one angle and two sides labelled ](),"Ruler 
+Compass",651.0,Forgets you need a protractor to measure angles
+230,Construct Triangle,Construct a triangle using Side-Angle-Side,Which combination of mathematical instruments has been used to construct this triangle? ![A triangle construction with one angle and two sides labelled ](),"Ruler 
+Protractor",297.0,Forgets you need a compass to draw arcs
+231,Volume and Capacity Units,Identify a unit of length,"Sally has answered a question on perimeter and worked out an answer of \( 120 \).
+
+Behind the star she has written the units that she used.
+
+Which of the following units is definitely wrong? \( 120 \color{yellow}\bigstar \)",\( m \),915.0,Does not recognise metres as a unit of length
+232,Volume and Capacity Units,Identify a unit of length,"Sally has answered a question on perimeter and worked out an answer of \( 120 \).
+
+Behind the star she has written the units that she used.
+
+Which of the following units is definitely wrong? \( 120 \color{yellow}\bigstar \)",\( \mathrm{km} \),1422.0,Does not recognise km as a unit of length 
+233,Volume and Capacity Units,Identify a unit of length,"Sally has answered a question on perimeter and worked out an answer of \( 120 \).
+
+Behind the star she has written the units that she used.
+
+Which of the following units is definitely wrong? \( 120 \color{yellow}\bigstar \)",\( 11 \),1725.0,"Does not recognise inches ("") as a unit of length"
+234,Estimation,Place or identify the location of an integer between 100 and 1000 on a number line,Which number line shows a good estimate for the position of the number shown?,"![A number line from 0 to 10000 with the value 857 incorrectly labelled, with an arrow, between the midpoint and 10000]()",1957.0,"Reads 10,000 as 1000"
+235,Quadratic Equations,"Given a sketch of a quadratic graph, f(x), write down the solutions to f(x) = a","According to the graph, what is the approximate solution to
+\(x^{2}-x-9=-6\) ![A set of axes with the quadratic graph y=x^2-x-9 drawn on.]()",\( x=-9 \),379.0,Finds the y intercept when asked to read the solution to a quadratic equation from a graph
+236,Quadratic Equations,"Given a sketch of a quadratic graph, f(x), write down the solutions to f(x) = a","According to the graph, what is the approximate solution to
+\(x^{2}-x-9=-6\) ![A set of axes with the quadratic graph y=x^2-x-9 drawn on.]()","\( x=3.5, \quad x=-2.5 \)",212.0,Solves for y=0 instead of given y-value when reading from a quadratic graph
+237,Linear Sequences (nth term),"Given a term in an ascending integer linear sequence, use the nth term rule to find its position in that sequence",Here are the first \( 4 \) terms of a sequence ![\( \begin{array}{lllll}11 & 15 & 19 & 23 & \ldots\end{array} \)]() What position in the sequence is the number \( 87 ? \),\( 21.75 \),2252.0,Believes you multiply the constant difference by the term number to get the term value
+238,Real Life Graphs,Read values off a real life graph,"Lethna pays at one rate for the first \( 100 \) units of electricity she uses. She pays at a different rate for all the other units of electricity she uses.
+
+How much must she pay for using a total of \( 800 \) units of electricity? ![A graph showing how the cost changes for different numbers of units. The first 100 units cost £0.25 per unit. Then the rate changes to £0.10 per unit.]()",\( £ 110 \),1582.0,Thinks terms in linear sequence are in direct proportion
+239,BIDMAS,"Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division","What does the following equal?
+\[
+3-5+4 \times 2
+\]",\( 4 \),1507.0,Carries out operations from left to right regardless of priority order
+240,BIDMAS,"Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division","What does the following equal?
+\[
+3-5+4 \times 2
+\]",\( -12 \),2181.0,Performs addition ahead of subtraction
+241,BIDMAS,"Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division","What does the following equal?
+\[
+3-5+4 \times 2
+\]",\( -10 \),234.0,Subtracts instead of adds
+242,Reflection,"Reflect an object or a point in a horizontal line with the line of reflection drawn, where the line of reflection lies on the edge or outside the object","The triangle is reflected in the dashed line.
+What are the new coordinates of point \( P \) ? ![A set of axes: x-axis from -1 to 5, y-axis from -3 to 4. Three points are plotted and joined to make a triangle: (2, 2), (4, 2), (3, 3). Point (3, 3) is labelled with the letter ""P"". The line y=1 is shown with a purple dashed line.
+]()","\( (3,3) \)",1990.0,Fails to reflect across mirror line
+243,Reflection,"Reflect an object or a point in a horizontal line with the line of reflection drawn, where the line of reflection lies on the edge or outside the object","The triangle is reflected in the dashed line.
+What are the new coordinates of point \( P \) ? ![A set of axes: x-axis from -1 to 5, y-axis from -3 to 4. Three points are plotted and joined to make a triangle: (2, 2), (4, 2), (3, 3). Point (3, 3) is labelled with the letter ""P"". The line y=1 is shown with a purple dashed line.
+]()","\( (3,0) \)",1990.0,Fails to reflect across mirror line
+244,Reflection,"Reflect an object or a point in a horizontal line with the line of reflection drawn, where the line of reflection lies on the edge or outside the object","The triangle is reflected in the dashed line.
+What are the new coordinates of point \( P \) ? ![A set of axes: x-axis from -1 to 5, y-axis from -3 to 4. Three points are plotted and joined to make a triangle: (2, 2), (4, 2), (3, 3). Point (3, 3) is labelled with the letter ""P"". The line y=1 is shown with a purple dashed line.
+]()","\( (3,-3) \)",1990.0,Fails to reflect across mirror line
+245,Time Series and Line Graphs,Read values off a displacement-time graph,"How far away from home was Rachel at 10:15? ![A line graph with title ""A graph to show the distance Rachel travels from her home on her daily run."" 
+The x-axis is titled ""Time"" and is labelled with times from 0800 to 1300 in steps of 1 hour, with the axis going half an hour beyond 1300.
+The y-axis is titled ""Distance from home (Km)"" and the scale is from 0 to 8 in steps of 1km. The following points are plotted and joined together: (0800, 0), (0830, 2), (0900, 3.5),(1000, 6), (1030, 7), (1100, 7.5),(1230, 7.5),(1300, 4.5), (1330, 0).    ]()",\( 6.5 \mathrm{~m} \),417.0,"When reading values from graphs, writes down the wrong units"
+246,Time Series and Line Graphs,Read values off a displacement-time graph,"How far away from home was Rachel at 10:15? ![A line graph with title ""A graph to show the distance Rachel travels from her home on her daily run."" 
+The x-axis is titled ""Time"" and is labelled with times from 0800 to 1300 in steps of 1 hour, with the axis going half an hour beyond 1300.
+The y-axis is titled ""Distance from home (Km)"" and the scale is from 0 to 8 in steps of 1km. The following points are plotted and joined together: (0800, 0), (0830, 2), (0900, 3.5),(1000, 6), (1030, 7), (1100, 7.5),(1230, 7.5),(1300, 4.5), (1330, 0).    ]()",\( 650 \mathrm{~m} \),2132.0,Thinks there are 100m and a km
+247,Time Series and Line Graphs,Read values off a displacement-time graph,"How far away from home was Rachel at 10:15? ![A line graph with title ""A graph to show the distance Rachel travels from her home on her daily run."" 
+The x-axis is titled ""Time"" and is labelled with times from 0800 to 1300 in steps of 1 hour, with the axis going half an hour beyond 1300.
+The y-axis is titled ""Distance from home (Km)"" and the scale is from 0 to 8 in steps of 1km. The following points are plotted and joined together: (0800, 0), (0830, 2), (0900, 3.5),(1000, 6), (1030, 7), (1100, 7.5),(1230, 7.5),(1300, 4.5), (1330, 0).    ]()",\( 7 \mathrm{~km} \),134.0,Misreads scale
+248,Venn Diagrams,Interpret what the numbers in each region of a double Venn diagram mean,"All the students in a class were asked if they have a brother, sister, both or none.
+
+The Venn Diagram shows the results. ![A Venn diagram with two sets, one labelled Brother and one labelled Sister. The number 10 is written in Brother without the intersection , number 5 is in Sister without the intersection, the number 7 is in the intersection of Brother and Sister. The number 9 is outside the circles.]() How many students are in the class?",\( 4 \),1842.0,Confuses the number of regions in a Venn diagram as the total number of entries in the diagram
+249,Venn Diagrams,Interpret what the numbers in each region of a double Venn diagram mean,"All the students in a class were asked if they have a brother, sister, both or none.
+
+The Venn Diagram shows the results. ![A Venn diagram with two sets, one labelled Brother and one labelled Sister. The number 10 is written in Brother without the intersection , number 5 is in Sister without the intersection, the number 7 is in the intersection of Brother and Sister. The number 9 is outside the circles.]() How many students are in the class?",\( 21 \),1532.0,Forgets to include values outside of the Venn diagram when finding the total
+250,Expanding Single Brackets,"Multiply algebraic terms, where both are linear versions of different letters (e.g. 4a x 2b)",What is the answer to \( 4 c \times 5 d \) ?,\( 45 c d \),261.0,When multiplying just writes the numbers next to each other
+251,Expanding Single Brackets,"Multiply algebraic terms, where both are linear versions of different letters (e.g. 4a x 2b)",What is the answer to \( 4 c \times 5 d \) ?,\( 20 c d^{2} \),1172.0,Thinks any 2 values multiplied together can be denoted with a squared symbol
+252,Expanding Single Brackets,"Multiply algebraic terms, where both are linear versions of different letters (e.g. 4a x 2b)",What is the answer to \( 4 c \times 5 d \) ?,\( 9 c d \),2085.0,Adds instead of multiplies when multiplying algebraic terms
+253,Multiples and Lowest Common Multiple,Identify the Lowest Common Multiple of two numbers,What is the lowest common multiple of \( 8 \) and \( 4 \) ?,\( 4 \),710.0,Confuses factors and multiples
+254,Adding and Subtracting with Decimals,Add decimals where the numbers involved have a different number of decimal places,\( 0.15+0.2= \),\( 0.17 \),1730.0,"When adding decimals with a different number of decimal places, lines up the digits incorrectly"
+255,Adding and Subtracting with Decimals,Add decimals where the numbers involved have a different number of decimal places,\( 0.15+0.2= \),\( 0.152 \),1730.0,"When adding decimals with a different number of decimal places, lines up the digits incorrectly"
+256,"Basic Angle Facts (straight line, opposite, around a point, etc)",Find missing angles using angles on a straight line,"What is the value of the angle marked \( \mathbf{\square} \) ? ![Image showing three vertices of a polygon. We do not see how many sides the polygon has. The angles shown are marked 20 degrees, 120 degrees and the third is marked with a square.]()",\( 60^{\circ} \),1707.0,Misinterprets the meaning of angles on a straight line angle fact
+257,"Basic Angle Facts (straight line, opposite, around a point, etc)",Find missing angles using angles on a straight line,"What is the value of the angle marked \( \mathbf{\square} \) ? ![Image showing three vertices of a polygon. We do not see how many sides the polygon has. The angles shown are marked 20 degrees, 120 degrees and the third is marked with a square.]()",\( 120^{\circ} \),1321.0,Thinks angles which look the same on diagram will be equal
+258,"Basic Angle Facts (straight line, opposite, around a point, etc)",Find missing angles using angles on a straight line,"What is the value of the angle marked \( \mathbf{\square} \) ? ![Image showing three vertices of a polygon. We do not see how many sides the polygon has. The angles shown are marked 20 degrees, 120 degrees and the third is marked with a square.]()",\( 40^{\circ} \),1707.0,Misinterprets the meaning of angles on a straight line angle fact
+259,Translation and Vectors,Describe simple directions to translate a shape or object using words not vectors,"Describe the movements to get from
+
+\[
+(5,-2) \text { to }(0,1)
+\]","Left \( 5 \) squares, down \( 1 \) square",1488.0,Confuses negative and positive coordinates when working with graphs in four quadrants
+260,Translation and Vectors,Describe simple directions to translate a shape or object using words not vectors,"Describe the movements to get from
+
+\[
+(5,-2) \text { to }(0,1)
+\]","Left \( 5 \) squares, up \( 4 \) squares",2269.0,"When finding the distance between coordinates, includes the starting number"
+261,BIDMAS,"Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division","Tom and Katie are discussing the order of operations
+Tom says: \( 3+2-1 \equiv 3-1+2 \)
+Katie says: \( 3+2 \times 1 \equiv 2 \times 1+3 \)","Only
+Tom",328.0,Performs addition ahead of multiplication
+262,BIDMAS,"Use the order of operations to carry out calculations involving addition, subtraction, multiplication, and/or division","Tom and Katie are discussing the order of operations
+Tom says: \( 3+2-1 \equiv 3-1+2 \)
+Katie says: \( 3+2 \times 1 \equiv 2 \times 1+3 \)",Only Katie,1507.0,Carries out operations from left to right regardless of priority order
+263,Area of Simple Shapes,"Given the area of a trapezium, calculate a missing dimension","The area of this trapezium is
+\(
+30 \mathrm{~cm}^{2}
+\)
+What measurement should replace the star? ![A trapezium with 8cm and a star on the parallel sides, and the perpendicular height is 5cm.]()",\( 6 \mathrm{~cm} \),2388.0,Uses formula for area of a parallelogram when finding the area of a trapezium
+264,Area of Simple Shapes,"Given the area of a trapezium, calculate a missing dimension","The area of this trapezium is
+\(
+30 \mathrm{~cm}^{2}
+\)
+What measurement should replace the star? ![A trapezium with 8cm and a star on the parallel sides, and the perpendicular height is 5cm.]()",\( 3.75 \mathrm{~cm} \),2197.0,Thinks you multiply parallel sides to find the area of a trapezium
+265,Area of Simple Shapes,"Given the area of a trapezium, calculate a missing dimension","The area of this trapezium is
+\(
+30 \mathrm{~cm}^{2}
+\)
+What measurement should replace the star? ![A trapezium with 8cm and a star on the parallel sides, and the perpendicular height is 5cm.]()",Not enough information,305.0,Does not know the formula for area of a trapezium
+266,"Speed, Distance, Time","Given the distance travelled, complete missing values on a speed-time graph","![A speed-time graph. The vertical axis is labelled Speed (mph), with no scale labelled but 4 squares up is marked v.
+The horizontal axis is labelled Time (hours) and the scale is 0, 1, 2, 3, 4 in even steps.
+The graph first has a horizontal line from (0,v) to (2,v) and then a sloped line from (2,v) to (4,0).]() Work out the speed \( v \) if the distance travelled is \( 90 \) miles.",\( 22.5 \mathrm{mph} \),790.0,Thinks the shape of the graph does not affect the area calculation
+267,Cubics and Reciprocals,"Given a positive x value, find the corresponding y value for the curve y = x3 + c","This is a part of the table of values for the equation \( \boldsymbol{y}=\boldsymbol{x}^{\mathbf{3}} \) ![\begin{tabular}{|c|c|}
+\hline\( x \) & \( 2 \) \\
+\hline\( y \) & W \\
+\hline
+\end{tabular}]() What should replace the star?",\( 5 \),952.0,Adds the index to the number
+268,Cubics and Reciprocals,"Given a positive x value, find the corresponding y value for the curve y = x3 + c","This is a part of the table of values for the equation \( \boldsymbol{y}=\boldsymbol{x}^{\mathbf{3}} \) ![\begin{tabular}{|c|c|}
+\hline\( x \) & \( 2 \) \\
+\hline\( y \) & W \\
+\hline
+\end{tabular}]() What should replace the star?",\( 6 \),1072.0,Multiplies by the index
+269,Cubics and Reciprocals,"Given a positive x value, find the corresponding y value for the curve y = x3 + c","This is a part of the table of values for the equation \( \boldsymbol{y}=\boldsymbol{x}^{\mathbf{3}} \) ![\begin{tabular}{|c|c|}
+\hline\( x \) & \( 2 \) \\
+\hline\( y \) & W \\
+\hline
+\end{tabular}]() What should replace the star?",\( 23 \),2352.0,Writes the index as a digit on the end of a number
+270,Naming Co-ordinates in 2D,Can calculate missing coordinates in a geometric shape,"Here are \( 3 \) vertices of a rectangle:
+\((-6,-2),(-3,2),(0,0) \text {, }\)
+
+What are the coordinates of the \( 4^{\text {th }} \) vertex?","\( (-6,-4) \)",110.0,Does not know how to find the length of a line segment from coordinates
+271,Naming Co-ordinates in 2D,Can calculate missing coordinates in a geometric shape,"Here are \( 3 \) vertices of a rectangle:
+\((-6,-2),(-3,2),(0,0) \text {, }\)
+
+What are the coordinates of the \( 4^{\text {th }} \) vertex?","\( (-3,-2) \)",2464.0,"Believes the sides of a rectangle must be horizontal and vertical, not diagonal"
+272,Naming Co-ordinates in 2D,Can calculate missing coordinates in a geometric shape,"Here are \( 3 \) vertices of a rectangle:
+\((-6,-2),(-3,2),(0,0) \text {, }\)
+
+What are the coordinates of the \( 4^{\text {th }} \) vertex?","\( (-2,-3) \)",110.0,Does not know how to find the length of a line segment from coordinates
+273,Function Machines,For a given input find the output of a function machine,"Cally wants to use the function machine below to solve this problem:
+
+I think of a number, double it, subtract 5, and the answer is \( 23 \).
+
+Which of the following should replace the star? ![A function machine with 4 rectangles in a row, joined by arrows pointing from left to right. The first rectangle on the left is empty and has ""input"" written above it. The next 2 rectangles are empty and the final rectangle on the right has a purple star inside it and has ""output"" written above it.]()",\( n \),2389.0,"When using a function machine, confuses the input and the output."
+274,Function Machines,For a given input find the output of a function machine,"Cally wants to use the function machine below to solve this problem:
+
+I think of a number, double it, subtract 5, and the answer is \( 23 \).
+
+Which of the following should replace the star? ![A function machine with 4 rectangles in a row, joined by arrows pointing from left to right. The first rectangle on the left is empty and has ""input"" written above it. The next 2 rectangles are empty and the final rectangle on the right has a purple star inside it and has ""output"" written above it.]()",\( \times 2 \),931.0,Does not understand where to place inputs/ operations/ outputs when drawing a function machine
+275,Function Machines,For a given input find the output of a function machine,"Cally wants to use the function machine below to solve this problem:
+
+I think of a number, double it, subtract 5, and the answer is \( 23 \).
+
+Which of the following should replace the star? ![A function machine with 4 rectangles in a row, joined by arrows pointing from left to right. The first rectangle on the left is empty and has ""input"" written above it. The next 2 rectangles are empty and the final rectangle on the right has a purple star inside it and has ""output"" written above it.]()",\( -5 \),931.0,Does not understand where to place inputs/ operations/ outputs when drawing a function machine
+276,Direct Proportion,Read values off a real life graph,"This is a conversion graph between kilograms and pounds.
+
+Which of the following is the best estimate for the number of kilograms equivalent to \( 20 \) pounds? ![A graph on gridded paper with pounds (lb) on the y axis from 0 to 80 and kilograms (kg) on the x axis from 0 to 80. Both axis are labelled in increments of 20, with each increment split by gridlines into another 4 squares. A straight line goes from the origin and sloped upwards going through (25, 55) (not labelled - just a coordinate that it goes through) ]()",\( 44 \) kilograms,11.0,"When reading value from graph, reads from the wrong axes."
+277,Area of Simple Shapes,Calculate the area of an equilateral triangle where the dimensions are given in the same units,"How would you calculate the area of this triangle? ![A triangle, base 12m. All three sides are equal.]()",\( \frac{12 \times 12}{2} \),590.0,Has used slant height and base to find area of a triangle rather than perpendicular height and base
+278,Area of Simple Shapes,Calculate the area of an equilateral triangle where the dimensions are given in the same units,"How would you calculate the area of this triangle? ![A triangle, base 12m. All three sides are equal.]()",\( \frac{12 \times 12 \times 12}{2} \),71.0,Multiplies all given dimensions when calculating an area
+279,Finding the Gradient and Intercept of a Line from the Equation,Find the gradient of a line written in the form ax + by = c,"In which region would \( x-y=2 \) belong? ![A Venn diagram with two overlapping sets. The set on the left is 'Crosses the y-axis at (0,-2)' and the set on the right is 'Has a positive gradient'. A is in only 'Crosses the y-axis at (0,-2)' set, B is in the intersection, C is in only  'Has a positive gradient' set and D is outside both sets.]()",C,900.0,Believes the constant gives the y-intercept even when a line is not written in the form y = mx + c
+280,Rotational Symmetry,Identify the order of rotational symmetry of a shape,Which quadrilateral has the highest order of rotational symmetry?,![Trapezium](),2355.0,Does not know how to find order of rotational symmetry
+281,Rotational Symmetry,Identify the order of rotational symmetry of a shape,Which quadrilateral has the highest order of rotational symmetry?,![Irregular quadrilateral](),2355.0,Does not know how to find order of rotational symmetry
+282,Rotational Symmetry,Identify the order of rotational symmetry of a shape,Which quadrilateral has the highest order of rotational symmetry?,They each have the same order of rotational symmetry,926.0,Believes the number of sides gives the order of rotational symmetry
+283,Graphical Solution of Simultaneous Equations,Read the graphical solution to a pair of linear simultaneous equations from a diagram,"According to the graph, what are the solutions to the simultaneous equations? ![The image is of a set of axes with two straight lines drawn on. The red line goes through the points (0,6) and (3,0). The blue line goes through the points (0,3) and (6,0)and the two lines cross at (2,2).]()","\( x=3, \quad y=6 \)",1464.0,"When solving simultaneous equations graphically, they think the solutions are the y-intercepts"
+284,Graphical Solution of Simultaneous Equations,Read the graphical solution to a pair of linear simultaneous equations from a diagram,"According to the graph, what are the solutions to the simultaneous equations? ![The image is of a set of axes with two straight lines drawn on. The red line goes through the points (0,6) and (3,0). The blue line goes through the points (0,3) and (6,0)and the two lines cross at (2,2).]()","\( x=6, \quad y=3 \)",384.0,"When solving simultaneous equations graphically, they think the solutions are the x-intercepts"
+285,Estimation,Round decimals to the nearest whole number,"Jane measures the length and width of her rectangular classroom as \( 9.1 \mathrm{~m} \) and \( 11.7 \mathrm{~m} \).
+Which calculation will give the best estimate of the area?",\( 10 \times 12 \),1157.0,Rounds every number up when estimating
+286,Estimation,Round decimals to the nearest whole number,"Jane measures the length and width of her rectangular classroom as \( 9.1 \mathrm{~m} \) and \( 11.7 \mathrm{~m} \).
+Which calculation will give the best estimate of the area?",\( 9 \times 11 \),1379.0,Rounds down instead of up
+287,Equivalent Fractions,Identify equivalent fractions when presented as shapes or objects,"By comparing the fraction of the rectangle that is shaded in each diagram, decide which is the odd one out?",![A rectangle with 3/4 shaded in red](),843.0,Does not see fraction diagrams as equivalent if the shading is in a different pattern
+288,Equivalent Fractions,Identify equivalent fractions when presented as shapes or objects,"By comparing the fraction of the rectangle that is shaded in each diagram, decide which is the odd one out?",![A rectangle with 6/8 shaded in blue](),843.0,Does not see fraction diagrams as equivalent if the shading is in a different pattern
+289,Equivalent Fractions,Identify equivalent fractions when presented as shapes or objects,"By comparing the fraction of the rectangle that is shaded in each diagram, decide which is the odd one out?",![A rectangle with 12/16 shaded in orange](),843.0,Does not see fraction diagrams as equivalent if the shading is in a different pattern
+290,Multiplying and Dividing with Decimals,Multiply two decimals together with the same number of decimal places,\( 0.4^{2}= \),\( 0.8 \),2316.0,Mixes up squaring and multiplying by 2 or doubling
+291,Multiplying and Dividing with Decimals,Multiply two decimals together with the same number of decimal places,\( 0.4^{2}= \),\( 1.6 \),2481.0,"When multiplying decimals, divides by the wrong power of 10 when reinserting the decimal"
+292,Time,Convert from years to days,\( 2 \) leap years \( =\square \) days,\( 728 \),1322.0,Does not know how many days are in a leap year
+293,Time,Convert from years to days,\( 2 \) leap years \( =\square \) days,\( 730 \),1322.0,Does not know how many days are in a leap year
+294,Right-angled Triangles (SOHCAHTOA),Identify questions involving a 2D right-angled triangle that require the use of the Tangent (tan) ratio,Which ratio would you use to find the value of \( \theta \) ? ![A right angled triangle with the two shorter sides marked as 7cm and 10cm. The angle opposite the 10 cm side is labelled with θ. The longest side of the triangle has no label.](),Sin,718.0,Uses sin when tan is required
+295,Right-angled Triangles (SOHCAHTOA),Identify questions involving a 2D right-angled triangle that require the use of the Tangent (tan) ratio,Which ratio would you use to find the value of \( \theta \) ? ![A right angled triangle with the two shorter sides marked as 7cm and 10cm. The angle opposite the 10 cm side is labelled with θ. The longest side of the triangle has no label.](),Cos,809.0,Uses cos when tan is required
+296,Right-angled Triangles (SOHCAHTOA),Identify questions involving a 2D right-angled triangle that require the use of the Tangent (tan) ratio,Which ratio would you use to find the value of \( \theta \) ? ![A right angled triangle with the two shorter sides marked as 7cm and 10cm. The angle opposite the 10 cm side is labelled with θ. The longest side of the triangle has no label.](),None of these,1450.0,Does not understand how to apply sohcahtoa
+297,Finding the Gradient and Intercept of a Line from the Equation,Find the gradient of a line written in the form ax + by = c,"What is the gradient of this line?
+\(5 x+3 y=15\)",\( 5 \),1743.0,Believes that the coefficient of x represents the gradient even when a line is not in the form y = mx+c
+298,Finding the Gradient and Intercept of a Line from the Equation,Find the gradient of a line written in the form ax + by = c,"What is the gradient of this line?
+\(5 x+3 y=15\)",\( -5 \),1324.0,"When solving an equation, believes that when they get to ax = b, b is the solution"
+299,Finding the Gradient and Intercept of a Line from the Equation,Find the gradient of a line written in the form ax + by = c,"What is the gradient of this line?
+\(5 x+3 y=15\)",\( \frac{5}{3} \),1214.0,"When solving an equation, uses the same operation rather than the inverse."
+300,Plotting Lines from Tables of Values,"Given a positive x value, find a y value in a table of values for lines in the form ax + by = c","This is a table of values for \( 3 x+2 y=6 \) 
+What should replace the star? \begin{tabular}{|l|c|c|c|c|c|}
+\hline\( x \) & \( 0 \) & \( 1 \) & \( 2 \) & \( 3 \) & \( 4 \) \\
+\hline\( y \) & \( \color{gold}\bigstar \) &   \\
+\hline
+\end{tabular}",\( 2 \),391.0,Mixes up the value of two terms when substituting
+301,Plotting Lines from Tables of Values,"Given a positive x value, find a y value in a table of values for lines in the form ax + by = c","This is a table of values for \( 3 x+2 y=6 \) 
+What should replace the star? \begin{tabular}{|l|c|c|c|c|c|}
+\hline\( x \) & \( 0 \) & \( 1 \) & \( 2 \) & \( 3 \) & \( 4 \) \\
+\hline\( y \) & \( \color{gold}\bigstar \) &   \\
+\hline
+\end{tabular}",\( 1.5 \),1458.0,Believes 0 multiplied by a number gives the number
+302,Plotting Lines from Tables of Values,"Given a positive x value, find a y value in a table of values for lines in the form ax + by = c","This is a table of values for \( 3 x+2 y=6 \) 
+What should replace the star? \begin{tabular}{|l|c|c|c|c|c|}
+\hline\( x \) & \( 0 \) & \( 1 \) & \( 2 \) & \( 3 \) & \( 4 \) \\
+\hline\( y \) & \( \color{gold}\bigstar \) &   \\
+\hline
+\end{tabular}",\( 12 \),1214.0,"When solving an equation, uses the same operation rather than the inverse."
+303,Real Life Graphs,Given a situation sketch an appropriate real life graph,A taxi company has a \( £ 1.50 \) fixed charge and then charges \( 60 p \) per mile. Sam correctly sketches a graph to show the cost of different length journeys with the company. Which of the following graphs would best match Sam's sketch?,![A graph with distance on the horizontal axis and cost on the vertical axis. The graph starts at a point on the positive vertical axis and travels horizontally right.](),1784.0,Believes a horizontal line can show a constant rate of change
+304,Real Life Graphs,Given a situation sketch an appropriate real life graph,A taxi company has a \( £ 1.50 \) fixed charge and then charges \( 60 p \) per mile. Sam correctly sketches a graph to show the cost of different length journeys with the company. Which of the following graphs would best match Sam's sketch?,![A graph with distance on the horizontal axis and cost on the vertical axis. The graph starts at the origin and travels in a straight line right and upwards.](),1519.0,Assumes that a graph always starts at the origin
+305,Multiplying and Dividing with Decimals,Multiply a decimal by an integer,"Work out:
+\[
+0.03 \times 12
+\]",\( 0.036 \),1035.0,"When multiplying a decimal less than 1 by an integer, gives an answer 10 times smaller than it should be"
+306,Multiplying and Dividing with Decimals,Multiply a decimal by an integer,"Work out:
+\[
+0.03 \times 12
+\]",\( 0.306 \),151.0,"When dividing decimals, does not realize that the order and position of the digits (relative to each other) has to remain constant."
+307,Multiplying and Dividing with Decimals,Multiply a decimal by an integer,"Work out:
+\[
+0.03 \times 12
+\]",\( 3.6 \),2350.0,"When multiplying a decimal less than 1 by an integer, gives an answer 10 times bigger than it should be"
+308,Converting between Fractions and Percentages,Convert single digit integer percentages to fractions,\( 4 \% \) as a fraction is....,\( \frac{2}{5} \),619.0,Divided by 10 rather than 100
+309,Converting between Fractions and Percentages,Convert single digit integer percentages to fractions,\( 4 \% \) as a fraction is....,\( \frac{4}{10} \),619.0,Divided by 10 rather than 100
+310,Converting between Fractions and Percentages,Convert single digit integer percentages to fractions,\( 4 \% \) as a fraction is....,\( \frac{1}{4} \),329.0,Does not understand a percentage is out of 100
+311,"Basic Angle Facts (straight line, opposite, around a point, etc)",Find missing angles using angles on a straight line,"What is the size of angle \( k \) ? ![Three angles which meet to form a straight line. They are labelled 46 degrees, 115 degrees and k.]()",\( 46^{\circ} \),2365.0,Confuses vertically opposite angles with angles on a straight line
+312,"Basic Angle Facts (straight line, opposite, around a point, etc)",Find missing angles using angles on a straight line,"What is the size of angle \( k \) ? ![Three angles which meet to form a straight line. They are labelled 46 degrees, 115 degrees and k.]()",\( 65^{\circ} \),1707.0,Misinterprets the meaning of angles on a straight line angle fact
+313,"Basic Angle Facts (straight line, opposite, around a point, etc)",Find missing angles using angles on a straight line,"What is the size of angle \( k \) ? ![Three angles which meet to form a straight line. They are labelled 46 degrees, 115 degrees and k.]()",Not enough information,725.0,Does not know that angles on a straight line sum to 180 degrees
+314,Function Machines,For a given output find the input of a function machine,"![Image of a function machine. The function is add one third, and the output is 7]() What is the input of this function machine?",\( 7 \frac{1}{3} \),458.0,When finding an input of a function machine thinks you apply the operations given rather than the inverse operation.
+315,Function Machines,For a given output find the input of a function machine,"![Image of a function machine. The function is add one third, and the output is 7]() What is the input of this function machine?",\( \frac{7}{3} \),520.0,Thinks the inverse of addition is multiplication
+316,Function Machines,For a given output find the input of a function machine,"![Image of a function machine. The function is add one third, and the output is 7]() What is the input of this function machine?",\( 21 \),674.0,Thinks the inverse of addition is division
+317,Volume and Capacity Units,"Given the perimeter, work out a missing length requiring knowledge of the geometrical properties of the shape","A regular octagon has a total perimeter of \( 12 \mathrm{~cm} \).
+What is the length of each of its sides?",\( 4 \mathrm{~cm} \),1815.0,"When given the perimeter of a regular polygon, subtracts instead of divides to find each side length"
+318,Volume and Capacity Units,"Given the perimeter, work out a missing length requiring knowledge of the geometrical properties of the shape","A regular octagon has a total perimeter of \( 12 \mathrm{~cm} \).
+What is the length of each of its sides?",\( 96 \mathrm{~cm} \),545.0,"When given the perimeter of a regular polygon, multiplies instead of divides to find each side length"
+319,Volume and Capacity Units,"Given the perimeter, work out a missing length requiring knowledge of the geometrical properties of the shape","A regular octagon has a total perimeter of \( 12 \mathrm{~cm} \).
+What is the length of each of its sides?",Not enough information,255.0,Does not know the meaning of the word regular 
+320,Simplifying Expressions by Collecting Like Terms,Simplify algebraic expressions to maintain equivalence by collecting like terms involving just one linear variable,"What could go in the missing gaps? \begin{tabular}{|l|l|l|l|}
+\hline \multicolumn{4}{|c|}{\( 8 a+7 \)} \\
+\hline \( 3 a \) & \( -3 \) & \( ? \) & \( ? \) \\
+\hline
+\end{tabular}",\( 5 a \) and \( 4 \),55.0,"When subtracting a negative number from a positive number, uses a method which assumes one of the negative signs can be ignored "
+321,Place Value,Find 100 more than a given number,What number is \( 100 \) more than \( 28902 ? \),"\( 2,890,200 \)",126.0,Multiplies rather than adds when given the command word 'more'
+322,Place Value,Find 100 more than a given number,What number is \( 100 \) more than \( 28902 ? \),"\( 29,902 \)",1533.0,When adding powers of 10 adds onto the wrong column
+323,Place Value,Find 100 more than a given number,What number is \( 100 \) more than \( 28902 ? \),"\( 28,002 \)",1383.0,"When two digits sum to 10 or more during an addition problem, does not add one to the preceding digit"
+324,Multiples and Lowest Common Multiple,Identify common multiples of two numbers,"""Common multiples of \( 2 \) and \( 5 \) are also multiples of \( 25 "" \)
+Is this statement...",never true,2417.0,Does not use the associative property of multiplication to find other factors of a number
+325,Multiples and Lowest Common Multiple,Identify common multiples of two numbers,"""Common multiples of \( 2 \) and \( 5 \) are also multiples of \( 25 "" \)
+Is this statement...",Impossible to say,2417.0,Does not use the associative property of multiplication to find other factors of a number
+326,Multiplying and Dividing with Decimals,Multiply a decimal by an integer,"Work out:
+\[
+0.6 \times 11
+\]",\( 7 \),1272.0,Gives a rounded whole number instead of a decimal
+327,Multiplying and Dividing with Decimals,Multiply a decimal by an integer,"Work out:
+\[
+0.6 \times 11
+\]",\( 66 \),2055.0,"When multiplying a decimal by an integer, ignores decimal point and just multiplies the digits"
+328,Finding the Gradient and Intercept of a Line from the Equation,Find the gradient of a line written in the form ax + by = c,"A line has equation \( 4 x+3 y=5 \)
+What is it's gradient?",\( -4 \),1417.0,When solving an equation forgets to eliminate the coefficient in front of the variable in the last step
+329,Finding the Gradient and Intercept of a Line from the Equation,Find the gradient of a line written in the form ax + by = c,"A line has equation \( 4 x+3 y=5 \)
+What is it's gradient?",\( 4 \),130.0,"Believes that for a line written in the form ax + by = c, a is the gradient"
+330,Finding the Gradient and Intercept of a Line from the Equation,Find the gradient of a line written in the form ax + by = c,"A line has equation \( 4 x+3 y=5 \)
+What is it's gradient?",\( \frac{4}{3} \),1214.0,"When solving an equation, uses the same operation rather than the inverse."
+331,Adding and Subtracting Negative Numbers,Carry out addition problems involving two negative integers ,\( (-5)+(-2)= \),\( 7 \),1639.0,Believes adding two negatives gives a positive answer
+332,Adding and Subtracting Negative Numbers,Carry out addition problems involving two negative integers ,\( (-5)+(-2)= \),\( -3 \),971.0,Believes that adding a negative will increase the value of the original number
+333,Expanding Single Brackets,Use area to write algebraic expressions,The area of these shapes are equal. Which of these is correct? ![An image of two rectangles. The top one is blue and has the dimensions - side length: 4 and base 3x -2. The bottom one is yellow and has the dimensions - side length: 2 and base 5x + 2.](),\( 12 x-2=10 x+2 \),220.0,Only multiplies the first term in the expansion of a bracket
+334,Expanding Single Brackets,Use area to write algebraic expressions,The area of these shapes are equal. Which of these is correct? ![An image of two rectangles. The top one is blue and has the dimensions - side length: 4 and base 3x -2. The bottom one is yellow and has the dimensions - side length: 2 and base 5x + 2.](),\( 8+6 x-4=4+10 x+4 \),982.0,Calculates perimeter when asked for area
+335,Expanding Single Brackets,Use area to write algebraic expressions,The area of these shapes are equal. Which of these is correct? ![An image of two rectangles. The top one is blue and has the dimensions - side length: 4 and base 3x -2. The bottom one is yellow and has the dimensions - side length: 2 and base 5x + 2.](),\( 4+3 x-2=2+5 x+2 \),828.0,Adds when calculating area instead of multiplying
+336,Plotting Lines from Tables of Values,"Given a positive y value, find an x value in a table of values for lines in the form ax + by = c","This is a part of the table of values for the equation
+\[
+2 x+3 y=12
+\] \begin{tabular}{|c|c|}
+\hline\( x \) &  \( \bigstar \) \\
+\hline\( y \) & \( 0 \) \\
+\hline
+\end{tabular} What should replace the star?",\( 4 \),391.0,Mixes up the value of two terms when substituting
+337,Properties of Polygons,Sort and class quadrilaterals into hierarchical families,"Tom and Katie are arguing about parallelograms. Tom says this shape is a parallelogram ![A four sided shape. All sides are equal, opposite angles are equal. There are no right angles.]() Katie says this shape is a parallelogram ![A four sided shape. Opposite sides are equal, all angles are right angles.]() Who is correct?","Only
+Tom",515.0,Does not know a rectangle is a type of parallelogram 
+338,Properties of Polygons,Sort and class quadrilaterals into hierarchical families,"Tom and Katie are arguing about parallelograms. Tom says this shape is a parallelogram ![A four sided shape. All sides are equal, opposite angles are equal. There are no right angles.]() Katie says this shape is a parallelogram ![A four sided shape. Opposite sides are equal, all angles are right angles.]() Who is correct?","Only
+Katie",1041.0,Does not know a rhombus is a type of parallelogram 
+339,Properties of Polygons,Sort and class quadrilaterals into hierarchical families,"Tom and Katie are arguing about parallelograms. Tom says this shape is a parallelogram ![A four sided shape. All sides are equal, opposite angles are equal. There are no right angles.]() Katie says this shape is a parallelogram ![A four sided shape. Opposite sides are equal, all angles are right angles.]() Who is correct?",Neither is correct,1370.0,Does not believe a shape can have two correct names e.g. rectangle and parallelogram
+340,Probability of Single Events,Represent positive unit fractions on a number line,"The probability of picking a green ball is \( \frac{1}{5} \)
+Where is this value on the probability scale? ![A diagram showing a probability scale with 10 segments. The scale starts at 0.0, has 0.5 marked after 5 segments, and 1.0 marked at the end, after 10 segments. A is marked after 2 segments, B after 4, C after 5 and D after 7.]()",C,760.0,Converts a fraction to a decimal by using the denominator after the decimal point
+341,Co-ordinate Geometry with Straight Lines,Solve coordinate geometry questions involving ratio,"Given that \( A C=3 A B \), what are the coordinates of \( C \) ? ![A straight line labelled y=2x-1 is drawn on a set of axes. Points A, B and C are all on the line. Point A is (2,3) and B is (5,9).]()","\( (14,27) \)",181.0,Assumes a ratio is part to part instead of part to whole
+342,Co-ordinate Geometry with Straight Lines,Solve coordinate geometry questions involving ratio,"Given that \( A C=3 A B \), what are the coordinates of \( C \) ? ![A straight line labelled y=2x-1 is drawn on a set of axes. Points A, B and C are all on the line. Point A is (2,3) and B is (5,9).]()","\( (21,36) \)",110.0,Does not know how to find the length of a line segment from coordinates
+343,Written Division,Round integers to the nearest 10,What is \( 5050 \) rounded to the nearest \( 10 \) ?,\( 5100 \),2392.0,Rounds to the wrong degree of accuracy (rounds too much)
+344,Written Division,Round integers to the nearest 10,What is \( 5050 \) rounded to the nearest \( 10 \) ?,\( 5000 \),2392.0,Rounds to the wrong degree of accuracy (rounds too much)
+345,Written Division,Round integers to the nearest 10,What is \( 5050 \) rounded to the nearest \( 10 \) ?,\( 5010 \),322.0,Believes that rounding must change the number
+346,Missing Lengths,"Calculate missing lengths of shapes by geometrical inference, where the lengths involve algebraic expressions","What length replaces the \( \color{green}\bigstar \) ? ![A diagram showing a compound shape. It is an L shape rotated 90 degrees clockwise. The top full width is 3x+4, the partial width to the right is x+4. The left full height is 5, the partial height on the right is 3. There is a green star on the left partial width at the bottom of the diagram.]()",\( 3 \),2504.0,"Does not realise that two letters together, or a number and letter together, are multiplying"
+347,Missing Lengths,"Calculate missing lengths of shapes by geometrical inference, where the lengths involve algebraic expressions","What length replaces the \( \color{green}\bigstar \) ? ![A diagram showing a compound shape. It is an L shape rotated 90 degrees clockwise. The top full width is 3x+4, the partial width to the right is x+4. The left full height is 5, the partial height on the right is 3. There is a green star on the left partial width at the bottom of the diagram.]()",Not enough information,1527.0,Does not know how to find missing lengths in a composite shape
+348,Adding and Subtracting with Decimals,Recognise and use efficient strategies for mental addition,This is how Dora calculates the answer to \( 12.3+4.5 \) mentally ![Image showing a cartoon girl with three thought bubbles above her head. The first bubble states 'I added the whole part first 12+4=16'. The second states 'I then added the decimal part 0.3+0.5=0.8'. The third bubble states 'I then added 16 and 0.8 to get 16.8.So 12.3+4.5=16.8']() Dora uses the same method to calculate \( 3.5+21.8 \). Which of the following shows how she would do this?,\( \begin{array}{c}3+21=24 \\ 0.5+0.8=0.13 \\ 24+0.13=24.13\end{array} \),1898.0,"When adding decimals, just adds the digits and ignores place value"
+349,Adding and Subtracting with Decimals,Recognise and use efficient strategies for mental addition,This is how Dora calculates the answer to \( 12.3+4.5 \) mentally ![Image showing a cartoon girl with three thought bubbles above her head. The first bubble states 'I added the whole part first 12+4=16'. The second states 'I then added the decimal part 0.3+0.5=0.8'. The third bubble states 'I then added 16 and 0.8 to get 16.8.So 12.3+4.5=16.8']() Dora uses the same method to calculate \( 3.5+21.8 \). Which of the following shows how she would do this?,\( \begin{array}{c}3.5+21=24.5 \\ 24.5+0.8=25.3\end{array} \),1999.0,Does not interpret the correct order of operations from a worded problem
+350,Adding and Subtracting with Decimals,Recognise and use efficient strategies for mental addition,This is how Dora calculates the answer to \( 12.3+4.5 \) mentally ![Image showing a cartoon girl with three thought bubbles above her head. The first bubble states 'I added the whole part first 12+4=16'. The second states 'I then added the decimal part 0.3+0.5=0.8'. The third bubble states 'I then added 16 and 0.8 to get 16.8.So 12.3+4.5=16.8']() Dora uses the same method to calculate \( 3.5+21.8 \). Which of the following shows how she would do this?,\( \begin{array}{c}3+21=24 \\ 0.5+0.8=1.3 \\ 24+1.3=24.13\end{array} \),2305.0,Ignores place value when adding a whole number and a decimal
+351,Angles in Polygons,Work out the sum of the interior angles in polygons,What do all the interior angles of this shape add up to? ![Image of an irregular pentagon](),\( 360^{\degree} \),28.0,Thinks the interior angles of any polygon add up to 360
+352,Angles in Polygons,Work out the sum of the interior angles in polygons,What do all the interior angles of this shape add up to? ![Image of an irregular pentagon](),\( 720^{\degree} \),455.0,Subtracts 1 rather than 2 from the number of sides when finding the sum of interior angles
+353,Angles in Polygons,Work out the sum of the interior angles in polygons,What do all the interior angles of this shape add up to? ![Image of an irregular pentagon](),Not enough information to work it out,1426.0,Thinks rule for calculating interior angles only applies to regular polygons
+354,Simplifying Algebraic Fractions,Simplify an algebraic fraction by factorising both the numerator and denominator,Write the following as simply as possible: \( \frac{6 p-9}{6 p-3} \),\( \frac{p-3}{p-1} \),2307.0,Thinks you can divide the variables and the numerical values by different numbers when simplifying an algebraic fraction
+355,Expanding Single Brackets,Multiply a single term over a bracket where the term on the outside is a number and the inside contains a linear expression,"Expand:
+\[
+3(p-1)
+\]",\( 3 p-1 \),220.0,Only multiplies the first term in the expansion of a bracket
+356,Expanding Single Brackets,Multiply a single term over a bracket where the term on the outside is a number and the inside contains a linear expression,"Expand:
+\[
+3(p-1)
+\]",\( p-3 \),1911.0,Only multiplies second term in the expansion of a bracket
+357,Expanding Single Brackets,Multiply a single term over a bracket where the term on the outside is a number and the inside contains a linear expression,"Expand:
+\[
+3(p-1)
+\]",\( 3 p-2 \),107.0,"When expanding brackets, multiplies out the first term correctly but adds together the number outside the bracket with the second term inside the bracket."
+358,Adding and Subtracting with Decimals,Subtract decimals where the numbers involved have a different number of decimal places,\( 0.55-0.2= \),\( 0.33 \),496.0,"When subtracting decimals with a different number of decimals, subtracts one digit from more than one column"
+359,Adding and Subtracting with Decimals,Subtract decimals where the numbers involved have a different number of decimal places,\( 0.55-0.2= \),\( 0.53 \),2346.0,"When subtracting decimals with a different number of decimal places, lines up the digits incorrectly"
+360,"Basic Angle Facts (straight line, opposite, around a point, etc)",Recognise the angles around a point relationship,What is the relationship between these two angles? ![\( \theta \)](),They are equal,1897.0,Confuses vertically opposite angles and angles around a point
+361,"Basic Angle Facts (straight line, opposite, around a point, etc)",Recognise the angles around a point relationship,What is the relationship between these two angles? ![\( \theta \)](),They are parallel,114.0,Does not know the meaning of the word parallel
+362,"Basic Angle Facts (straight line, opposite, around a point, etc)",Recognise the angles around a point relationship,What is the relationship between these two angles? ![\( \theta \)](),They add together to make \[180\degree\],2266.0,Believes angles around a point sum to 180
+363,Real Life Graphs,Given a situation sketch an appropriate real life graph,"Water is poured into a glass at a constant rate.
+
+This graph shows how the depth \( (d) \) of water in a glass changes over time \( (t) \).
+
+Which of the following glasses is this most likely to be the graph of? ![A depth-time graph which is a curve starting at (0, 0), with a steep gradient to begin with but then the gradient decreases and the graph levels off to almost horizontal.]()",![A cylinder sitting on one of its circular faces.](),218.0,Does not interpret a sloping gradient as a change in rate
+364,Real Life Graphs,Given a situation sketch an appropriate real life graph,"Water is poured into a glass at a constant rate.
+
+This graph shows how the depth \( (d) \) of water in a glass changes over time \( (t) \).
+
+Which of the following glasses is this most likely to be the graph of? ![A depth-time graph which is a curve starting at (0, 0), with a steep gradient to begin with but then the gradient decreases and the graph levels off to almost horizontal.]()",![A narrow cylinder with a wide cylinder on top.](),961.0,Does not spot the difference between a gradual change of gradient and 2 distinct line segments with different constant gradients
+365,Writing Expressions,"Given the description of an algebraic term with no powers, write the term using algebra ",Write the following using correct algebraic notation \( p \) multiplied by three lots of \( q \),\( p q^{3} \),1072.0,Multiplies by the index
+366,Pie Chart,Calculate the sector angle on a pie chart for a given group,"A class of students were surveyed about how many siblings they have.
+
+A selection of results are shown in the table. \begin{tabular}{|c|c|c|}
+\hline Number of siblings & Frequency & Angle on a pie chart \\
+\hline  0  & \( 7 \) & \( \bigstar \) \\
+\hline 1  & \( \) & \( 144 \degree \) \\
+\hline 2  & \(  \) & \(  \) \\
+\hline 3  & \( 4 \) & \(  \) \\
+\hline 4 or more  & \(  \) & \(  \) \\
+\hline  TOTAL  & 30  & \(  \) \\
+\end{tabular} Jenny wants to draw a pie chart of the information.
+
+Which of the following calculations would work out what replaces the star?",\( \frac{30}{360} \times 7 \),1203.0,Believes that to find an angle for a pie chart sector you divide the total frequency by 360 and multiply by its frequency
+367,Pie Chart,Calculate the sector angle on a pie chart for a given group,"A class of students were surveyed about how many siblings they have.
+
+A selection of results are shown in the table. \begin{tabular}{|c|c|c|}
+\hline Number of siblings & Frequency & Angle on a pie chart \\
+\hline  0  & \( 7 \) & \( \bigstar \) \\
+\hline 1  & \( \) & \( 144 \degree \) \\
+\hline 2  & \(  \) & \(  \) \\
+\hline 3  & \( 4 \) & \(  \) \\
+\hline 4 or more  & \(  \) & \(  \) \\
+\hline  TOTAL  & 30  & \(  \) \\
+\end{tabular} Jenny wants to draw a pie chart of the information.
+
+Which of the following calculations would work out what replaces the star?",\( \frac{30}{7} \times 360 \),1542.0,Believes that a fraction means dividing the denominator by the numerator
+368,Pie Chart,Calculate the sector angle on a pie chart for a given group,"A class of students were surveyed about how many siblings they have.
+
+A selection of results are shown in the table. \begin{tabular}{|c|c|c|}
+\hline Number of siblings & Frequency & Angle on a pie chart \\
+\hline  0  & \( 7 \) & \( \bigstar \) \\
+\hline 1  & \( \) & \( 144 \degree \) \\
+\hline 2  & \(  \) & \(  \) \\
+\hline 3  & \( 4 \) & \(  \) \\
+\hline 4 or more  & \(  \) & \(  \) \\
+\hline  TOTAL  & 30  & \(  \) \\
+\end{tabular} Jenny wants to draw a pie chart of the information.
+
+Which of the following calculations would work out what replaces the star?",\( 7 \times 30 \),1445.0,Believes you find the angle for a pie chart sector by doing its frequency multiplied by total frequency
+369,Simplifying Fractions,Simplify fractions that simplify to a non-unit fraction,Simplify fully (if possible): \( \frac{45}{60} \),\( \frac{9}{12} \),1825.0,Does not fully simplify fraction
+370,Simplifying Fractions,Simplify fractions that simplify to a non-unit fraction,Simplify fully (if possible): \( \frac{45}{60} \),\( \frac{21}{28} \),1825.0,Does not fully simplify fraction
+371,Rounding to Significant Figures,Round numbers between 0 and 1 to one significant figure,"\(
+0.095643
+\)
+
+What is this number rounded to \( 1 \) significant figure?",\( 0 \),1876.0,Counts leading zero as a significant figure
+372,Rounding to Significant Figures,Round numbers between 0 and 1 to one significant figure,"\(
+0.095643
+\)
+
+What is this number rounded to \( 1 \) significant figure?",\( 0.09 \),1402.0,Rounds down instead of up when next digit is 5
+373,Rounding to Significant Figures,Round numbers between 0 and 1 to one significant figure,"\(
+0.095643
+\)
+
+What is this number rounded to \( 1 \) significant figure?",\( 0.01 \),1605.0,"When rounding up from a 9, does not add one on to the digit to the left"
+374,Expanding Double Brackets,Multiply an integer and an algebraic term ,"John is expanding these two brackets.
+
+What should he get when he multiplies the two terms indicated by the arrows? ![\( (x+5)(x-3) \)]()",\( +3 x \),583.0,Ignores negative sign when expanding bracket
+375,Expanding Double Brackets,Multiply an integer and an algebraic term ,"John is expanding these two brackets.
+
+What should he get when he multiplies the two terms indicated by the arrows? ![\( (x+5)(x-3) \)]()",\( x-3 \),2143.0,Adds instead of multiplying when expanding bracket
+376,"Basic Angle Facts (straight line, opposite, around a point, etc)",Find missing angles using angles around a point,"What is the size of angle \( x \) ? ![Angles around a point split into two parts, one is labelled 290 degrees and the other x]()",\( 290^{\circ} \),415.0,Incorrectly identifies angles as vertically opposite
+377,"Basic Angle Facts (straight line, opposite, around a point, etc)",Find missing angles using angles around a point,"What is the size of angle \( x \) ? ![Angles around a point split into two parts, one is labelled 290 degrees and the other x]()",\( 50^{\circ} \),2334.0,Does not know that angles around a point sum to 360
+378,"Basic Angle Facts (straight line, opposite, around a point, etc)",Find missing angles using angles around a point,"What is the size of angle \( x \) ? ![Angles around a point split into two parts, one is labelled 290 degrees and the other x]()",\( 45^{\circ} \),2334.0,Does not know that angles around a point sum to 360
+379,Area of Simple Shapes,"Given the area of a trapezium, calculate a missing dimension","The area of this trapezium is \( 63 \mathrm{~cm}^{2} \).
+
+What is the value of \( a \) ? ![A trapezium with the parallel sides labelled with 3cm and a and the height labelled with 9cm]()",\( 4 \mathrm{~cm} \),2353.0,Does not divide by 2 when calculating the area of a trapezium
+380,Algebraic Proof,Prove statements involving multiples,Which of the following expressions is always a multiple of \( 5 \) if \( n \) is a positive integer.,\( n+5 \),1524.0,Believes adding b to any integer gives a multiple of b
+381,Algebraic Proof,Prove statements involving multiples,Which of the following expressions is always a multiple of \( 5 \) if \( n \) is a positive integer.,\( 2 n+3 \),845.0,Believes they can find the nth term based on the first term only
+382,Algebraic Proof,Prove statements involving multiples,Which of the following expressions is always a multiple of \( 5 \) if \( n \) is a positive integer.,\( 5 n+2 \),2027.0,Believes that an + b is still a multiple of a
+383,Adding and Subtracting Negative Numbers,Carry out addition problems involving one negative integer,"What number belongs in the box?
+\(
+(-8)+3=
+\square\)",\( -11 \),815.0,Counts in the wrong direction on a number line
+384,Adding and Subtracting Negative Numbers,Carry out addition problems involving one negative integer,"What number belongs in the box?
+\(
+(-8)+3=
+\square\)",\( -6 \),670.0,Counts the starting number when counting on
+385,Written Multiplication,Interpret the value of digits in multiplication calculations using long multiplication,What does the product of the two circled numbers represent? ![3847 times 28 written as a long multiplication question. The 8 in 3847 and the 2 in 28 are circled.](),\( 1600 \),955.0,"When multiplying, treats digits in other columns as if they are units"
+386,Written Multiplication,Interpret the value of digits in multiplication calculations using long multiplication,What does the product of the two circled numbers represent? ![3847 times 28 written as a long multiplication question. The 8 in 3847 and the 2 in 28 are circled.](),\( 160 \),1708.0,Does not understand place value within a number
+387,Written Multiplication,Interpret the value of digits in multiplication calculations using long multiplication,What does the product of the two circled numbers represent? ![3847 times 28 written as a long multiplication question. The 8 in 3847 and the 2 in 28 are circled.](),\( 16 \),955.0,"When multiplying, treats digits in other columns as if they are units"
+388,Adding and Subtracting Fractions,Add proper fractions with different denominators which do not share a common factor,"\(
+\frac{1}{3}+\frac{1}{10}=\frac{\bigstar}{30}
+\)
+What should replace the star?",\( 2 \),907.0,Does not find a common denominator when adding/subtracting fractions
+389,Adding and Subtracting Fractions,Add proper fractions with different denominators which do not share a common factor,"\(
+\frac{1}{3}+\frac{1}{10}=\frac{\bigstar}{30}
+\)
+What should replace the star?",\( 4 \),907.0,Does not find a common denominator when adding/subtracting fractions
+390,Adding and Subtracting Fractions,Add proper fractions with different denominators which do not share a common factor,"\(
+\frac{1}{3}+\frac{1}{10}=\frac{\bigstar}{30}
+\)
+What should replace the star?",\( 11 \),907.0,Does not find a common denominator when adding/subtracting fractions
+391,Function Machines,For a given output find the input of a function machine,"![A function machine with 4 rectangles in a row, joined by arrows pointing from left to right. The first rectangle on the left is empty and says ""input"" above it. The next rectangle has ""− 1"" written inside it, the next rectangle has ""✕ 2"" written inside it and the final rectangle on the right has ""output"" written above it and ""8"" written inside it.]() What is the input of this function machine?",\( 15 \),656.0,Reverses the order of operations but does not apply the inverse operations when finding the input of a function machine
+392,Function Machines,For a given output find the input of a function machine,"![A function machine with 4 rectangles in a row, joined by arrows pointing from left to right. The first rectangle on the left is empty and says ""input"" above it. The next rectangle has ""− 1"" written inside it, the next rectangle has ""✕ 2"" written inside it and the final rectangle on the right has ""output"" written above it and ""8"" written inside it.]() What is the input of this function machine?",\( 14 \),1026.0,Does not reverse the order of operations when finding the input of a function machine
+393,Function Machines,For a given output find the input of a function machine,"![A function machine with 4 rectangles in a row, joined by arrows pointing from left to right. The first rectangle on the left is empty and says ""input"" above it. The next rectangle has ""− 1"" written inside it, the next rectangle has ""✕ 2"" written inside it and the final rectangle on the right has ""output"" written above it and ""8"" written inside it.]() What is the input of this function machine?",\( 4.5 \),1026.0,Does not reverse the order of operations when finding the input of a function machine
+394,Properties of Quadrilaterals,Identify the order of rotational symmetry of a shape,Which shape has rotational symmetry order \( 4 \) ?,![Rectangle](),1877.0,Thinks rectangles have rotational symmetry or order 4
+395,Properties of Quadrilaterals,Identify the order of rotational symmetry of a shape,Which shape has rotational symmetry order \( 4 \) ?,![Trapezium](),2355.0,Does not know how to find order of rotational symmetry
+396,Properties of Quadrilaterals,Identify the order of rotational symmetry of a shape,Which shape has rotational symmetry order \( 4 \) ?,![Hexagon](),1007.0,Does not connect rotational symmetry to number of sides/vertices
+397,Properties of Triangles,Identify a right-angled triangle from a description of the properties,"A triangle has the following angles: \( 90\degree, 50\degree, 40\degree \)
+Tom says the triangle is right-angled
+Katie says the triangle is isosceles
+Who is correct?",Only Katie,1886.0,Does not understand that base angles in an isosceles are equal
+398,Properties of Triangles,Identify a right-angled triangle from a description of the properties,"A triangle has the following angles: \( 90\degree, 50\degree, 40\degree \)
+Tom says the triangle is right-angled
+Katie says the triangle is isosceles
+Who is correct?",Neither are correct,219.0,Does not know that a right angle is 90 degrees
+399,"Basic Angle Facts (straight line, opposite, around a point, etc)",Use angles around a point to form and solve algebraic equations,Which of the following equations is true based on the diagram? ![Angles around a point made up of two angles labelled: f and f-20](),\( 2 f-20=180 \),2266.0,Believes angles around a point sum to 180
+400,"Basic Angle Facts (straight line, opposite, around a point, etc)",Use angles around a point to form and solve algebraic equations,Which of the following equations is true based on the diagram? ![Angles around a point made up of two angles labelled: f and f-20](),\( f^{2}-20=360 \),923.0,Thinks index notation represents repeated addition rather than repeated multiplication
+401,"Basic Angle Facts (straight line, opposite, around a point, etc)",Use angles around a point to form and solve algebraic equations,Which of the following equations is true based on the diagram? ![Angles around a point made up of two angles labelled: f and f-20](),\( f-20=f \),1897.0,Confuses vertically opposite angles and angles around a point
+402,Pie Chart,Interpret a pie chart,"\( 24 \) people went to an local ice hockey match.
+The pie chart shows the colours of their shirts.
+How many people wore red? ![Pie chart divided into 8 equal sections. 4 sections are yellow, 2 sections are red, 1 section is black and 1 section is white.]()",\( \frac{1}{4} \),1490.0,Writes fraction rather than fraction of amount
+403,Pie Chart,Interpret a pie chart,"\( 24 \) people went to an local ice hockey match.
+The pie chart shows the colours of their shirts.
+How many people wore red? ![Pie chart divided into 8 equal sections. 4 sections are yellow, 2 sections are red, 1 section is black and 1 section is white.]()",\( 3 \),1057.0,Finds the unit fraction when asked to find a non-unit fraction of an amount
+404,Pie Chart,Interpret a pie chart,"\( 24 \) people went to an local ice hockey match.
+The pie chart shows the colours of their shirts.
+How many people wore red? ![Pie chart divided into 8 equal sections. 4 sections are yellow, 2 sections are red, 1 section is black and 1 section is white.]()",\( 2 \),1260.0,Gives number of sections of pie chart rather than the amount it represents
+405,Pie Chart,"Given the sector angle on a pie chart, calculate the frequency of a group","The pie chart shows the meal choices of guests at a wedding.
+
+If there were \( 540 \) people at the wedding, which of the following would calculate how many people chose pork? ![A pie chart split into four parts, labelled with meal choices. The part for Beef is 150 degrees, Pork is 40 degrees and Other is 80 degrees. The angle for Vegetarian is labelled with a square right angle symbol.]()",\( \frac{360}{40} \times 540 \),946.0,Believes a proportion of a whole is whole/part not part/whole
+406,Pie Chart,"Given the sector angle on a pie chart, calculate the frequency of a group","The pie chart shows the meal choices of guests at a wedding.
+
+If there were \( 540 \) people at the wedding, which of the following would calculate how many people chose pork? ![A pie chart split into four parts, labelled with meal choices. The part for Beef is 150 degrees, Pork is 40 degrees and Other is 80 degrees. The angle for Vegetarian is labelled with a square right angle symbol.]()",You need more information,1329.0,Believes it is not possible to calculate the frequency for a pie chart sector despite being given enough information to do so
+407,Simultaneous Equations,Manipulate both equations so that they are in a form to be added or subtracted,"Tom and Katie are discussing how to get this pair of simultaneous equations in a form where they can eliminate \( y \) \(( 1)\)  \(-2 x+6 y=4 \)
+\( (2)\)  \( x+2 y=8 \) Tom says you need to multiply equation \( (2) \) by \( 3 \).
+
+Katie says you need to multiply equation \( (1) \) by \( 2 \) and multiply equation \( (2) \) by \( 6 \).
+
+Who is correct?",Only Tom,2291.0,"When solving simultaneous equations, thinks they can't multiply each equation by a different number"
+408,Estimation,Round the elements of a calculation to one significant figure to perform an estimation,"Estimate the value of
+\(
+\frac{3.24 \times 17.6}{0.224}
+\)",\( 10.8 \),1809.0,Rounds too little when estimating
+409,Estimation,Round the elements of a calculation to one significant figure to perform an estimation,"Estimate the value of
+\(
+\frac{3.24 \times 17.6}{0.224}
+\)",\( 12 \),2542.0,Believes that dividing by a decimal is the same as dividing by its reciprocal
+410,Estimation,Round the elements of a calculation to one significant figure to perform an estimation,"Estimate the value of
+\(
+\frac{3.24 \times 17.6}{0.224}
+\)",\( 270 \),1705.0,Rounds to the nearest integer when estimating
+411,Mental Multiplication and Division,Carry out mental divisions when the answer leaves a remainder,"Sarah has some apples.
+She shares them into \( 6 \) equal groups and there is one left over.
+How many apples could she have?",\( 35 \),2329.0,Thinks the remainder is the difference between the dividend and the next biggest multiple
+412,Multiplying Fractions,Multiply proper fractions in the form: Fraction × Integer,"Tom and Katie are arguing about the answer to \( \frac{1}{5} \times 9 \)
+Tom says \( \frac{1}{5} \times 9=1 \frac{4}{5} \)
+Katie says \( \frac{1}{5} \times 9=\frac{9}{45} \)
+Who is correct?","Only
+Katie",1976.0,"When multiplying a fraction by an integer, multiplies both numerator and denominator by the integer"
+413,Parallel Lines,Identify parallel lines with at least one equation written in another form,"Which of the following lines is not parallel to
+\(y=3 x+5 \text { ? }\)",\( 2 y=6 x-5 \),1743.0,Believes that the coefficient of x represents the gradient even when a line is not in the form y = mx+c
+414,Parallel Lines,Identify parallel lines with at least one equation written in another form,"Which of the following lines is not parallel to
+\(y=3 x+5 \text { ? }\)",\( y=3 x-2 \),1868.0,Believes lines are parallel if they have the same y intercept 
+415,Parallel Lines,Identify parallel lines with at least one equation written in another form,"Which of the following lines is not parallel to
+\(y=3 x+5 \text { ? }\)",\( y=3(1+x) \),1743.0,Believes that the coefficient of x represents the gradient even when a line is not in the form y = mx+c
+416,"Basic Angle Facts (straight line, opposite, around a point, etc)",Recognise the angles on a straight line relationship,What is the relationship between these two angles? ![Angles around a point made up of two angles: a green one and a pink one](),They are equal,8.0,Student thinks that any two angles along a straight line are equal
+417,"Basic Angle Facts (straight line, opposite, around a point, etc)",Recognise the angles on a straight line relationship,What is the relationship between these two angles? ![Angles around a point made up of two angles: a green one and a pink one](),They are parallel,114.0,Does not know the meaning of the word parallel
+418,"Basic Angle Facts (straight line, opposite, around a point, etc)",Recognise the angles on a straight line relationship,What is the relationship between these two angles? ![Angles around a point made up of two angles: a green one and a pink one](),"They add together to make
+\[
+360^{\circ}
+\]",2362.0,Believes angles on a straight line add to 360 degrees
+419,Time,Convert from seconds to hours,How many hours is \( 3600 \) seconds?,\( 60 \),2149.0,Converted seconds to minutes instead of seconds to hours
+420,Time,Convert from seconds to hours,How many hours is \( 3600 \) seconds?,\( 36 \),1718.0,Thinks there are 100 seconds in an hour
+421,Time,Convert from seconds to hours,How many hours is \( 3600 \) seconds?,\( 3.6 \),508.0,Thinks there are 1000 seconds in an hour
+422,Sequences-Others,Write the next term of a descending integer linear sequence,"What is the next term in this sequence?
+
+
+\[
+23, \quad 13, \quad 3, \quad \ldots
+\]",\( -3 \),2126.0,Miscounts when subtracting over zero
+423,Sequences-Others,Write the next term of a descending integer linear sequence,"What is the next term in this sequence?
+
+
+\[
+23, \quad 13, \quad 3, \quad \ldots
+\]",\( -10 \),1720.0,Identifies the term-to-term rule rather than the next term
+424,Sequences-Others,Write the next term of a descending integer linear sequence,"What is the next term in this sequence?
+
+
+\[
+23, \quad 13, \quad 3, \quad \ldots
+\]",Not enough information,2472.0,Does not know how to find the next term in a sequence
+425,"Averages (mean, median, mode) from a List of Data",Calculate the median as an average from an even numbered list of data,"What is the median of the following numbers?
+\( 1, \quad 0.1, \quad 0.01,\quad 0.001 \)",\( 0.22 \),2427.0,Does not divide by 2 when finding midpoint
+426,"Averages (mean, median, mode) from a List of Data",Calculate the median as an average from an even numbered list of data,"What is the median of the following numbers?
+\( 1, \quad 0.1, \quad 0.01,\quad 0.001 \)",\( 0.11 \),2426.0,When finding the median from a even dataset does not understand we must find the midpoint of the two values in the middle
+427,Nets,Identify the net of a prism,This is the net of a... ![An image of six connected rectangles. The six rectangles are 3 lots of identical rectangle pairs. There is a central rectangle with identical rectangles attached to the left and right of it. It then has identical rectangles attached to its top and bottom sides. Below the rectangle attached to the bottom side is another attached rectangle which is identical to the central rectangle.](),Rectangle,1837.0,Names one of the faces of a 3D shape rather than the 3D shape name
+428,Nets,Identify the net of a prism,This is the net of a... ![An image of six connected rectangles. The six rectangles are 3 lots of identical rectangle pairs. There is a central rectangle with identical rectangles attached to the left and right of it. It then has identical rectangles attached to its top and bottom sides. Below the rectangle attached to the bottom side is another attached rectangle which is identical to the central rectangle.](),Cube,1043.0,Mixes up cubes and cuboids
+429,Nets,Identify the net of a prism,This is the net of a... ![An image of six connected rectangles. The six rectangles are 3 lots of identical rectangle pairs. There is a central rectangle with identical rectangles attached to the left and right of it. It then has identical rectangles attached to its top and bottom sides. Below the rectangle attached to the bottom side is another attached rectangle which is identical to the central rectangle.](),Rectanglebased pyramid,1783.0,Confuses pyramid with prism
+430,Expanding Single Brackets,Simplify algebraic expressions to maintain equivalence by collecting like terms involving non-linear variables,"\(
+x(3 x-5)+6(2 x-3) \equiv P x^{2}+Q x+R
+\)
+
+What is the value of \( R \) ?",\( -23 \),373.0,Believes you can add or subtract from inside brackets without expanding when solving an equation
+431,Expanding Single Brackets,Simplify algebraic expressions to maintain equivalence by collecting like terms involving non-linear variables,"\(
+x(3 x-5)+6(2 x-3) \equiv P x^{2}+Q x+R
+\)
+
+What is the value of \( R \) ?",\( -8 \),373.0,Believes you can add or subtract from inside brackets without expanding when solving an equation
+432,Expanding Single Brackets,Simplify algebraic expressions to maintain equivalence by collecting like terms involving non-linear variables,"\(
+x(3 x-5)+6(2 x-3) \equiv P x^{2}+Q x+R
+\)
+
+What is the value of \( R \) ?",\( -3 \),220.0,Only multiplies the first term in the expansion of a bracket
+433,"Types, Naming and Estimating",Label angles using correct 3-letter notation (e.g. angle ADB),Which of the following correctly describes the marked angle? ![An image of square ABCE. D lies 1/3 from C on the line CE and is connected to A by a line. Attached to the square at line CE is a pentagon CEFGH. G is connected to C and E by lines. The angle highlighted is the interior angle at G.](),\( \mathrm{GFH} \),1906.0,Gives 3-letter angle notation in the wrong order
+434,Other Sequences,Continue a sequence involving triangle numbers,If you add together consecutive triangle numbers you get...,another triangle number,271.0,Believes triangle numbers are formed differently to the correct way
+435,Midpoint Between Two Co-ordinates,"Calculate the midpoint between two coordinates in 2D, where all the values are integers but at least one is negative","Cara is trying to work out the midpoint of these two points: \( (-5,7) \) and \( (-2,-1) \) She labels them like this: \( \left.\begin{array}{cccc}x_{1} & y_{1} & x_{2} & y_{2} \\ (-5, & 7) & (-2, & -1) \end{array}\right.\) And then decides to use this formula: \( \left(\frac{x_{1}+x_{2}}{2}, \frac{y_{1}+y_{2}}{2}\right) \) What is the \( \boldsymbol{y} \) value of the midpoint?",\( 6 \),2427.0,Does not divide by 2 when finding midpoint
+436,Midpoint Between Two Co-ordinates,"Calculate the midpoint between two coordinates in 2D, where all the values are integers but at least one is negative","Cara is trying to work out the midpoint of these two points: \( (-5,7) \) and \( (-2,-1) \) She labels them like this: \( \left.\begin{array}{cccc}x_{1} & y_{1} & x_{2} & y_{2} \\ (-5, & 7) & (-2, & -1) \end{array}\right.\) And then decides to use this formula: \( \left(\frac{x_{1}+x_{2}}{2}, \frac{y_{1}+y_{2}}{2}\right) \) What is the \( \boldsymbol{y} \) value of the midpoint?",\( 4 \),971.0,Believes that adding a negative will increase the value of the original number
+437,Writing Ratios,Convert ratios to fractions,"Kate and Isaac share some yoghurt in the ratio \( 2: 5 \).
+Kate has \(_____\) of the total yoghurt
+What fraction completes the sentence?",\( \frac{2}{5} \),1452.0,"When converting ratio to fractions, puts the other side of the ratio as the denominator rather than the total"
