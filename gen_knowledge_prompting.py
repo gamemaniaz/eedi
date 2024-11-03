@@ -1,12 +1,12 @@
 # %%
 import re
 import gc
-import shutil
 from functools import partial
 from pathlib import Path
 from typing import Any
 from uuid import uuid4
 
+import random
 import numpy as np
 import pandas as pd
 import torch
@@ -15,7 +15,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from torch import Tensor
 from tqdm import tqdm
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
 from transformers.models.llama.modeling_llama import LlamaForCausalLM
 from transformers.tokenization_utils_base import BatchEncoding
 from transformers.tokenization_utils_fast import PreTrainedTokenizerFast
@@ -33,11 +33,16 @@ sbert_model_id = "/home/e/e1374073/models/bge-large-en-finetune-v1"
 # sbert_model_id = ".tmp/bge-large-en-finetune-v1"
 submission_csv = "submission.csv"
 intermediate_dir = ".intm"
-last_dir = ".last"
 random_seed = 20241030
 sample_size = -1  # -1 to run all data
-batch_size = 20
+batch_size = 1
 disable_tqdm = True
+
+# %%
+set_seed(random_seed)
+torch.manual_seed(random_seed)
+np.random.seed(random_seed)
+random.seed(random_seed)
 
 # %%
 knowledge_prompt = """
@@ -149,15 +154,11 @@ def dfpersist(trigger: bool, df: pd.DataFrame, int_dir: str, run_id: str, fn: st
         return
     assert run_id is not None
     d = Path(int_dir) / run_id
-    d_last = Path(int_dir) / last_dir
     d.mkdir(parents=True, exist_ok=True)
     p = d / fn
     if p.exists():
         raise FileExistsError(p.as_posix())
-    d_last.mkdir(parents=True, exist_ok=True)
-    p_last = d_last / fn
     df.to_parquet(p, index=False)
-    shutil.copyfile(p, p_last)
 
 # %%
 def prepare_base_data(*, persist: bool = False, run_id: str = None) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -260,19 +261,6 @@ def filter_data(df_xy: pd.DataFrame, persist: bool = False, run_id: str = None) 
     df_xy_filtered = filter_func(df_xy)
     dfpersist(persist, df_xy_filtered, intermediate_dir, run_id, "df_xy_filtered.parquet")
     return df_xy_filtered
-
-# %%
-run_id = str(uuid4())
-print("run_id:", run_id)
-df_xy, df_miscon = prepare_base_data(persist=True, run_id=run_id)
-df_xy = filter_data(df_xy, persist=True, run_id=run_id)
-if sample_size > 0:
-    df_xy = df_xy.sample(sample_size)
-tokenizer = AutoTokenizer.from_pretrained(llm_model_id, padding_side="left")
-tokenizer.pad_token = tokenizer.eos_token
-model: LlamaForCausalLM = AutoModelForCausalLM.from_pretrained(llm_model_id).to(device)
-model.generation_config.pad_token_id = tokenizer.pad_token_id
-sbert_model = SentenceTransformer(sbert_model_id)
 
 # %%
 def generate_knowledge(
@@ -443,10 +431,12 @@ def main() -> None:
     df_xy = filter_data(df_xy, persist=True, run_id=run_id)
     if sample_size > 0:
         df_xy = df_xy.sample(sample_size)
+
     tokenizer = AutoTokenizer.from_pretrained(llm_model_id, padding_side="left")
     tokenizer.pad_token = tokenizer.eos_token
     model: LlamaForCausalLM = AutoModelForCausalLM.from_pretrained(llm_model_id).to(device)
     model.generation_config.pad_token_id = tokenizer.pad_token_id
+
     df_xy_enhanced = generate_knowledge(model, tokenizer, df_xy, persist=True, run_id=run_id)
     df_prompt, token_batches = tokenize_for_llm(tokenizer, df_xy_enhanced, persist=True, run_id=run_id)
     df_responses = generate_zeroshot(model, tokenizer, token_batches, df_prompt, persist=True, run_id=run_id)
