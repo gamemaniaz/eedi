@@ -10,7 +10,7 @@ import os
 # Set paths and parameters
 DATA_PATH = 'dataset'
 CACHE_DIR = 'pretrained_model/'
-EMBEDDING_MODEL_NAME = 'fblgit/TheBeagle-v2beta-32B-MGS'
+EMBEDDING_MODEL_NAME = 'Qwen/Qwen2-Math-72B-Instruct'
 RERANK_MODEL_NAME = 'upstage/SOLAR-10.7B-Instruct-v1.0'
 RETRIEVE_NUM_HARD_NEGATIVES = 200  # Number of hard negatives for embedding model training
 RETRIEVE_NUM_RERANK = 100  # Number of hard negatives for rerank model training
