@@ -9,7 +9,7 @@
 
 TMPDIR=`mktemp -d`
 WORK_DIR=$HOME/coursework/eedi
-OUTPUT_DIR=$HOME/coursework/eedi/qwen72b_math
+OUTPUT_DIR=$HOME/coursework/eedi/output_qwen14b
 
 cd $WORK_DIR
 cp -r dataset train.py $TMPDIR
