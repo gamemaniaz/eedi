@@ -9,13 +9,24 @@
 
 TMPDIR=`mktemp -d`
 WORK_DIR=$HOME/coursework/eedi
+OUTPUT_DIR=$HOME/coursework/eedi/output_qwen32b
 
 cd $WORK_DIR
 cp -r dataset train.py $TMPDIR
+if [ -d "$OUTPUT_DIR/pretrained_model" ]; then
+    cp -r $OUTPUT_DIR/pretrained_model $TMPDIR
+fi
+
+cleanup() {
+    echo "Copying files back to local directory..."
+    mkdir -p $OUTPUT_DIR
+    cd $TMP_DIR
+    tar -czf model.tar.gz model
+    cp -r model pretrained_model model.tar.gz $OUTPUT_DIR
+    rm -rf $TMPDIR
+    echo "Cleanup completed."
+}
+trap cleanup EXIT
 
 cd $TMPDIR
 python3 train.py
-tar -czf model.tar.gz model
-
-cp -r model model.tar.gz $WORK_DIR
-rm -rf $TMPDIR
