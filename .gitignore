@@ -6,6 +6,9 @@ model/
 logs/
 *.out
 .DS_Store
+*.zip
+*.tar.gz
+pretrained_model/
 
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
