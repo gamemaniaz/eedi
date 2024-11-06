@@ -9,7 +9,7 @@ import os
 
 # Set paths and parameters
 DATA_PATH = 'dataset'
-CACHE_DIR = 'pretrained_model/'
+CACHE_DIR = 'pretrained_model'
 EMBEDDING_MODEL_NAME = 'Qwen/Qwen2.5-Math-7B-Instruct'
 RERANK_MODEL_NAME = 'upstage/SOLAR-10.7B-Instruct-v1.0'
 RETRIEVE_NUM_HARD_NEGATIVES = 200  # Number of hard negatives for embedding model training

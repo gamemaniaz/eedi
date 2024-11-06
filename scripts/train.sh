@@ -20,7 +20,7 @@ fi
 cleanup() {
     echo "Copying files back to local directory..."
     mkdir -p $OUTPUT_DIR
-    cd $TMP_DIR
+    cd $TMPDIR
     tar -czf model.tar.gz model
     cp -r model pretrained_model model.tar.gz $OUTPUT_DIR
     rm -rf $TMPDIR
