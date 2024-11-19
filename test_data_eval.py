@@ -1,10 +1,10 @@
-#from baseline.py
+# from baseline.py
 def apk(actual, predicted, k=25):
     if not actual:
         return 0.0
 
     actual = [actual]
-    #comment below line if predicted is already a list
+    # comment below line if predicted is already a list
     predicted = list(map(int, predicted.split()))
 
     if len(predicted) > k:
@@ -20,26 +20,28 @@ def apk(actual, predicted, k=25):
 
     return score / min(len(actual), k)
 
-#from baseline.py
+
+# from baseline.py
 def mapk(actual, predicted, k=25):
     return np.mean([apk(a, p, k) for a, p in zip(actual, predicted)])
 
 
 def process_pred(df):
-    df[['QuestionId', 'Answer']] = df['QuestionId_Answer'].str.split('_', expand=True)
+    df[["QuestionId", "Answer"]] = df["QuestionId_Answer"].str.split("_", expand=True)
 
     target = []
     pred = []
     for _, row in df.iterrows():
-        question_id = row['QuestionId']
-        answer = row['Answer']
-        if int(question_id) in data_df['QuestionId'].values:
-            misconception_column = f'Misconception{answer}Id'
-            r = data_df[data_df['QuestionId'] == int(question_id)]
+        question_id = row["QuestionId"]
+        answer = row["Answer"]
+        if int(question_id) in data_df["QuestionId"].values:
+            misconception_column = f"Misconception{answer}Id"
+            r = data_df[data_df["QuestionId"] == int(question_id)]
             targ = int(r[misconception_column].values[0])
             target.append(targ)
-            pred.append(row['MisconceptionId'])
+            pred.append(row["MisconceptionId"])
     return mapk(target, pred)
 
-df = pd.read_parquet('df_submission.parquet')
+
+df = pd.read_parquet("df_submission.parquet")
 print(process_pred(df))

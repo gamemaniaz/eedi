@@ -1,12 +1,12 @@
 # %%
-import re
 import gc
+import random
+import re
 from functools import partial
 from pathlib import Path
 from typing import Any
 from uuid import uuid4
 
-import random
 import numpy as np
 import pandas as pd
 import torch
@@ -70,6 +70,7 @@ Subject Name: {SubjectName}
 Your task: Identify the misconception behind Incorrect Answer. Answer concisely and generically inside <response>$$INSERT TEXT HERE$$</response>. Before answering the math question, think step by step concisely in 1-2 sentence inside <thinking>$$INSERT TEXT HERE$$</thinking> tag and respond your final misconception inside <response>$$INSERT TEXT HERE$$</response> tag.
 """
 task_prompt = task_prompt.strip()
+
 
 # %%
 def apply_knowledge_template(row, tokenizer):
@@ -160,6 +161,7 @@ def dfpersist(trigger: bool, df: pd.DataFrame, int_dir: str, run_id: str, fn: st
         raise FileExistsError(p.as_posix())
     df.to_parquet(p, index=False)
 
+
 # %%
 def prepare_base_data(*, persist: bool = False, run_id: str = None) -> tuple[pd.DataFrame, pd.DataFrame]:
     # read info
@@ -242,6 +244,7 @@ def prepare_base_data(*, persist: bool = False, run_id: str = None) -> tuple[pd.
 
     return df_xy, df_miscon
 
+
 # %%
 def filter_by_wrong_answers_only(df_xy: pd.DataFrame) -> pd.DataFrame:
     df_xy = df_xy[~df_xy["IsCorrectAnswer"]]
@@ -261,6 +264,7 @@ def filter_data(df_xy: pd.DataFrame, persist: bool = False, run_id: str = None) 
     df_xy_filtered = filter_func(df_xy)
     dfpersist(persist, df_xy_filtered, intermediate_dir, run_id, "df_xy_filtered.parquet")
     return df_xy_filtered
+
 
 # %%
 def generate_knowledge(
@@ -304,6 +308,7 @@ def generate_knowledge(
     dfpersist(persist, df_xy_enhanced, intermediate_dir, run_id, persist_fn)
     return df_xy_enhanced
 
+
 # %%
 def tokenize_for_llm(
     tokenizer: PreTrainedTokenizerFast,
@@ -328,6 +333,7 @@ def tokenize_for_llm(
         model_inputs = tokenizer(pb, return_tensors="pt", padding=True).to(device)
         model_inputs_batches.append(model_inputs)
     return df_prompt, model_inputs_batches
+
 
 # %%
 def generate_zeroshot(
@@ -362,6 +368,7 @@ def generate_zeroshot(
     dfpersist(persist, df_prompt, intermediate_dir, run_id, persist_fn)
     return df_prompt
 
+
 # %%
 def generate_misconceptions(
     model: SentenceTransformer,
@@ -384,6 +391,7 @@ def generate_misconceptions(
     df_submission = df_responses[["QuestionId_Answer", "MisconceptionId"]]
     dfpersist(persist, df_submission, intermediate_dir, run_id, persist_fn)
     return df_submission
+
 
 # %%
 def apk(actual, predicted, k=25):
@@ -410,6 +418,7 @@ def apk(actual, predicted, k=25):
 def mapk(actual, predicted, k=25):
     return np.mean([apk(a, p, k) for a, p in zip(actual, predicted)])
 
+
 # %%
 def evaluate(df_xy, df_submission, *, run_id: str, fn: str = "results.txt"):
     print(">> evaluating")
@@ -422,6 +431,7 @@ def evaluate(df_xy, df_submission, *, run_id: str, fn: str = "results.txt"):
         raise FileExistsError(p.as_posix())
     p.write_text(f"Results of MapK=25 : {results}")
     print("Results of MapK=25 :", results)
+
 
 # %%
 def main() -> None:
@@ -453,7 +463,6 @@ def main() -> None:
     df_submission = generate_misconceptions(sbert_model, df_responses, df_miscon, persist=True, run_id=run_id)
     evaluate(df_xy_enhanced, df_submission, run_id=run_id)
 
+
 # %%
 main()
-
-

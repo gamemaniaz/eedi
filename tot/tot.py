@@ -11,27 +11,31 @@ Tree of Thoughts
 Tree of Thoughts Data Structure
 """
 
+
 class ThoughtNode:
-    def __init__(self, thought=None, result = None, children=None):
+    def __init__(self, thought=None, result=None, children=None):
         self.thought = thought
         self.result = result
         self.children = children or []
+
 
 class TreeOfThought:
     def __init__(self, root_prompt, ai_service=None, max_iterations=3, max_tokens=250):
         self.root = ThoughtNode(root_prompt)
         self.max_iterations = max_iterations
-        #self.prompt_service = ai_service or AnthropicService()
-        #self.evaluate_service = ...
+        # self.prompt_service = ai_service or AnthropicService()
+        # self.evaluate_service = ...
         self.current_thoughts = [self.root]
         self.max_tokens = max_tokens
+
 
 # Commented out IPython magic to ensure Python compatibility.
 # %pip install groq
 # %pip install tenacity
 
 from google.colab import drive
-drive.mount('/content/drive/')
+
+drive.mount("/content/drive/")
 
 # import sys
 # sys.path.append('/content/drive/MyDrive/CSXX46A2')
@@ -39,7 +43,7 @@ drive.mount('/content/drive/')
 import pandas as pd
 
 # Path to your CSV file
-csv_path = '/content/drive/My Drive/test_data.csv'
+csv_path = "/content/drive/My Drive/test_data.csv"
 
 # Read the CSV file into a pandas DataFrame
 df = pd.read_csv(csv_path)
@@ -89,67 +93,70 @@ explain_correct_option = "Please succinctly explain the correction option:"
 
 rate_correct_option = "Please reply only with the best explanation, in the format 'explanation X' and nothing else "
 
-#misconception_prompt = f"If a student chose option {option}, please explain the misconception the student might have"
+# misconception_prompt = f"If a student chose option {option}, please explain the misconception the student might have"
 
 rate_correct_misconception = "Please reply only with the best misconception, in the format 'misconception X' and nothing else "
 
 # Get Data
 # Question - option - result
 results = []
-class misconcept:
-  def __init__(self, question_id = None, option_id = None, ans = None):
-    self.question_id = question_id
-    self.option_id = option_id
-    self.ans = ans
 
-resultDf = pd.DataFrame(columns=['question_id', 'option_id', 'ans'])
+
+class misconcept:
+    def __init__(self, question_id=None, option_id=None, ans=None):
+        self.question_id = question_id
+        self.option_id = option_id
+        self.ans = ans
+
+
+resultDf = pd.DataFrame(columns=["question_id", "option_id", "ans"])
 
 from tenacity import *
+
+
 @retry(wait=wait_fixed(100))
-def wait_2_inference(content="",chat_persona = "you are a teacher",temp=0.5):
-  print('inferencing')
-  chat_completion = client.chat.completions.create(
+def wait_2_inference(content="", chat_persona="you are a teacher", temp=0.5):
+    print("inferencing")
+    chat_completion = client.chat.completions.create(
         messages=[
-        {
-            "role": "system",
-            "content": chat_persona
-        },
-        {
-            "role": "user",
-            "content": content,
-        }
+            {"role": "system", "content": chat_persona},
+            {
+                "role": "user",
+                "content": content,
+            },
         ],
         model="llama3-8b-8192",
         temperature=temp,
         max_tokens=1024,
-
         # Controls diversity via nucleus sampling: 0.5 means half of all
         # likelihood-weighted options are considered.
         top_p=1,
-
         # A stop sequence is a predefined or user-specified text string that
         # signals an AI to stop generating content, ensuring its responses
         # remain focused and concise. Examples include punctuation marks and
         # markers like "[end]".
         stop=None,
         stream=False,
-        )
-  print('done')
-  time.sleep(0.4)
-  return chat_completion.choices[0].message.content
+    )
+    print("done")
+    time.sleep(0.4)
+    return chat_completion.choices[0].message.content
+
 
 import time
-def bfs(qId, ps, qtype, o_a, o_b, o_c, o_d, correct, resultDf):
-  problem_statement = ps
-  q_type = qtype
-  option_a = o_a
-  option_b = o_b
-  option_c = o_c
-  option_d = o_d
-  correct_option = correct
 
-  # prompt template
-  final_prompt_template = f"""
+
+def bfs(qId, ps, qtype, o_a, o_b, o_c, o_d, correct, resultDf):
+    problem_statement = ps
+    q_type = qtype
+    option_a = o_a
+    option_b = o_b
+    option_c = o_c
+    option_d = o_d
+    correct_option = correct
+
+    # prompt template
+    final_prompt_template = f"""
 The following is a mathematical problem:
 \n{problem_statement}\n
 Question type: {q_type}
@@ -161,104 +168,104 @@ option D : {option_d}
 Correct option: {correct_option}
 
 """
-  #print(final_prompt_template)
+    # print(final_prompt_template)
 
-  # might not need for local training
-  chat_persona = "you are a teacher"
-  level_prompts = [explain_correct_option, rate_correct_option]
-  opt_list = []
-  for i in (['A','B','C','D']):
-    # only append incorrect options
-    if i == correct_option:
-      continue
-    opt_list.append(i)
-    misconception_prompt = f"If a student chose option {i}, please explain succinctly the misconception the student might have"
-    copy = misconception_prompt
-    level_prompts.append(copy)
-    level_prompts.append(rate_correct_misconception)
-  # Every level will have two prompts, the questioning prompt and the evaluation prompt
-  # Current system is to let model be critic and choose best node from previous
-  # Chosen node is pushed into queue
-  #print(len(level_prompts))
+    # might not need for local training
+    chat_persona = "you are a teacher"
+    level_prompts = [explain_correct_option, rate_correct_option]
+    opt_list = []
+    for i in ["A", "B", "C", "D"]:
+        # only append incorrect options
+        if i == correct_option:
+            continue
+        opt_list.append(i)
+        misconception_prompt = f"If a student chose option {i}, please explain succinctly the misconception the student might have"
+        copy = misconception_prompt
+        level_prompts.append(copy)
+        level_prompts.append(rate_correct_misconception)
+    # Every level will have two prompts, the questioning prompt and the evaluation prompt
+    # Current system is to let model be critic and choose best node from previous
+    # Chosen node is pushed into queue
+    # print(len(level_prompts))
 
-  fanout = 3
+    fanout = 3
 
-  queue = [ThoughtNode(thought = final_prompt_template)]
-  count = 0
-  opt_count = 0
+    queue = [ThoughtNode(thought=final_prompt_template)]
+    count = 0
+    opt_count = 0
 
-  while len(queue):
-    curr_node = queue.pop()
-    thought = curr_node.thought
-    if count >= len(level_prompts):
-      break
-    prompt = level_prompts[count]
-    # Collate different prompts
-    tmp = []
-    for i in range(3):
-      res = wait_2_inference(content = thought + "\n" + prompt, chat_persona = "you are a teacher", temp=0.8)
+    while len(queue):
+        curr_node = queue.pop()
+        thought = curr_node.thought
+        if count >= len(level_prompts):
+            break
+        prompt = level_prompts[count]
+        # Collate different prompts
+        tmp = []
+        for i in range(3):
+            res = wait_2_inference(content=thought + "\n" + prompt, chat_persona="you are a teacher", temp=0.8)
 
-      # Print the completion returned by the LLM.
-      tmp.append(res)
-      time.sleep(0.2)
+            # Print the completion returned by the LLM.
+            tmp.append(res)
+            time.sleep(0.2)
 
-    count += 1
-    # collate and aggregate for evaluation, if count > len(level_prompts) break
-    if count >= len(level_prompts):
-      break
-    eval_statement = level_prompts[count]
-    evaluate_prompt = f"""
+        count += 1
+        # collate and aggregate for evaluation, if count > len(level_prompts) break
+        if count >= len(level_prompts):
+            break
+        eval_statement = level_prompts[count]
+        evaluate_prompt = f"""
     {thought}
     {eval_statement}
     """
 
-    rate_type = None
-    if "explanation" in eval_statement:
-      rate_type = "explanation"
-    else:
-      rate_type = "misconception"
+        rate_type = None
+        if "explanation" in eval_statement:
+            rate_type = "explanation"
+        else:
+            rate_type = "misconception"
 
-    for i in range(len(tmp)):
-      evaluate_prompt = evaluate_prompt + "\n" + f"{rate_type} {i}: " + tmp[i]
+        for i in range(len(tmp)):
+            evaluate_prompt = evaluate_prompt + "\n" + f"{rate_type} {i}: " + tmp[i]
 
-    res = wait_2_inference(content = evaluate_prompt, chat_persona = "you are a teacher", temp=0.3)
-    #print(evaluate_prompt)
+        res = wait_2_inference(content=evaluate_prompt, chat_persona="you are a teacher", temp=0.3)
+        # print(evaluate_prompt)
 
-    chosen = 0
-    #print("-")
-    ans = res
-    _ = ans.split()
-    if rate_type == _[0]:
-      _ = ans.split()
-      raw = ''.join(filter(str.isdigit, _[1]))
-      if raw.isdigit():
-        chosen = int(raw)
-      #print(f"Check for {raw}")
+        chosen = 0
+        # print("-")
+        ans = res
+        _ = ans.split()
+        if rate_type == _[0]:
+            _ = ans.split()
+            raw = "".join(filter(str.isdigit, _[1]))
+            if raw.isdigit():
+                chosen = int(raw)
+            # print(f"Check for {raw}")
 
-    if rate_type == "misconception":
-      # new_data = pd.DataFrame({'question_id': qId, 'option_id': opt_list[opt_count], 'ans': tmp[chosen]})
-      # resultDf = pd.concat(resultDf, new_data)
-      resultDf.loc[len(resultDf)] = [qId, opt_list[opt_count], tmp[chosen]]
-      print(resultDf[-2:-1])
-      opt_count += 1
+        if rate_type == "misconception":
+            # new_data = pd.DataFrame({'question_id': qId, 'option_id': opt_list[opt_count], 'ans': tmp[chosen]})
+            # resultDf = pd.concat(resultDf, new_data)
+            resultDf.loc[len(resultDf)] = [qId, opt_list[opt_count], tmp[chosen]]
+            print(resultDf[-2:-1])
+            opt_count += 1
+
+        result = curr_node.thought
+        if rate_type == "explanation":
+            result = curr_node.thought + "\n" + tmp[chosen]
+        curr_node.result = result
+        count += 1
+        nxt = ThoughtNode(thought=result)
+
+        # print(result)
+        # print(tmp[chosen])
+        # print("--\n")
+        queue.append(nxt)
 
 
-    result = curr_node.thought
-    if rate_type == "explanation":
-      result = curr_node.thought + "\n" + tmp[chosen]
-    curr_node.result = result
-    count += 1
-    nxt = ThoughtNode(thought = result)
-
-    #print(result)
-    #print(tmp[chosen])
-    #print("--\n")
-    queue.append(nxt)
-
-#resultDf = pd.DataFrame(columns=['question_id', 'option_id', 'ans'])
-file_path = '/content/drive/My Drive/data_test_0.csv'
+# resultDf = pd.DataFrame(columns=['question_id', 'option_id', 'ans'])
+file_path = "/content/drive/My Drive/data_test_0.csv"
 for index, row in df[15:].iterrows():
-  print(f"getting data for {index} \n\n")
-  #print(f"Index: {index}, Name: {row['QuestionId']}, Age: {row['QuestionText']}")
-  bfs(row['QuestionId'], row['QuestionText'], row['SubjectName'], row['AnswerAText'], row['AnswerBText'], row['AnswerCText'], row['AnswerDText'], row['CorrectAnswer'], resultDf)
-  resultDf.to_csv(file_path)
+    print(f"getting data for {index} \n\n")
+    # print(f"Index: {index}, Name: {row['QuestionId']}, Age: {row['QuestionText']}")
+    bfs(row["QuestionId"], row["QuestionText"], row["SubjectName"], row["AnswerAText"], row["AnswerBText"], row["AnswerCText"], row["AnswerDText"], row["CorrectAnswer"], resultDf)
+    resultDf.to_csv(file_path)
