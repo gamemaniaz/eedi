@@ -19,7 +19,7 @@ from eedi import RESULTS_DIR, TEST_SET_CSV, TRAIN_SET_CSV
 from eedi.eval import mapk
 from eedi.knowledge import KNOWLEDGE_ENHANCER_MAP
 from eedi.preprocess import FilterOption, filter_data, get_miscon, preproc_base_data
-from eedi.prompt_processor import PROMPT_REMOVER_MAP, TEMPLATE_FUNC_MAP
+from eedi.prompt_processor import PROMPT_REMOVER_MAP, TASK_TEMPLATE_FUNC_MAP, KNOWLEDGE_TEMPLATE_FUNC_MAP
 from eedi.utils import get_device, get_logger, get_response, save_df
 
 
@@ -28,12 +28,12 @@ def build_task_prompts(
     tokenizer: PreTrainedTokenizerFast,
     df_xy: DataFrame,
     run_id: str,
-    template_func: Callable,
+    task_template_func: Callable,
     batch_size: int,
 ) -> tuple[DataFrame, list[BatchEncoding]]:
     df_prompt = df_xy.copy(deep=True)
     df_prompt["Prompt"] = df_prompt.apply(
-        partial(template_func, tokenizer=tokenizer),
+        partial(task_template_func, tokenizer=tokenizer),
         axis=1,
     )
     df_prompt = df_prompt[["QuestionId_Answer", "Prompt"]]
@@ -63,7 +63,7 @@ def generate_responses(
         for tokens in tqdm(token_batches, disable=disable_tqdm):
             output_ids_batch: Tensor = model.generate(
                 tokens.input_ids,
-                max_new_tokens=4096,
+                max_new_tokens=8192,
                 num_return_sequences=1,
                 attention_mask=tokens.attention_mask,
             )
@@ -75,7 +75,7 @@ def generate_responses(
     resp_key = "FullResponse"
     df_responses[resp_key] = responses
     df_responses["Response"] = df_responses.apply(
-        f=partial(remove_prompt_func, resp_key=resp_key),
+        partial(remove_prompt_func, resp_key=resp_key),
         axis=1,
     )
     df_responses["Misconception"] = [get_response(x) for x in df_responses["Response"]]
@@ -162,6 +162,11 @@ def run_experiment(
     llm.generation_config.pad_token_id = llm_tokenizer.pad_token_id
     encoder = SentenceTransformer(encoder_id)
 
+    # get model-knowledge specific functions
+    remove_prompt_func = PROMPT_REMOVER_MAP[llm_id]
+    knowledge_template_func = KNOWLEDGE_TEMPLATE_FUNC_MAP[llm_id][knowledge]
+    task_template_func = TASK_TEMPLATE_FUNC_MAP[llm_id][knowledge]
+
     # enhance with knowledge
     df_xy_enhanced = KNOWLEDGE_ENHANCER_MAP[knowledge](
         llm=llm,
@@ -170,6 +175,9 @@ def run_experiment(
         df_xy=df_xy_filtered,
         batch_size=batch_size,
         disable_tqdm=disable_tqdm,
+        knowledge_template_func=knowledge_template_func,
+        remove_prompt_func=remove_prompt_func,
+        run_id=run_id,
     )
 
     # generate misconceptions
@@ -177,7 +185,7 @@ def run_experiment(
         tokenizer=llm_tokenizer,
         df_xy=df_xy_enhanced,
         run_id=run_id,
-        template_func=TEMPLATE_FUNC_MAP[llm_id][knowledge],
+        task_template_func=task_template_func,
         batch_size=batch_size,
     )
     df_responses = generate_responses(
@@ -185,7 +193,7 @@ def run_experiment(
         tokenizer=llm_tokenizer,
         token_batches=token_batches,
         df_prompt=df_prompt,
-        remove_prompt_func=PROMPT_REMOVER_MAP[llm_id],
+        remove_prompt_func=remove_prompt_func,
         run_id=run_id,
         disable_tqdm=disable_tqdm,
     )
