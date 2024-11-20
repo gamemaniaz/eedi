@@ -17,7 +17,9 @@ from transformers.tokenization_utils_fast import PreTrainedTokenizerFast
 
 from eedi import RESULTS_DIR, TEST_SET_CSV, TRAIN_SET_CSV
 from eedi.eval import mapk
+from eedi.knowledge import KNOWLEDGE_ENHANCER_MAP
 from eedi.preprocess import FilterOption, filter_data, get_miscon, preproc_base_data
+from eedi.prompt_processor import PROMPT_REMOVER_MAP, TEMPLATE_FUNC_MAP
 from eedi.utils import get_device, get_logger, get_response, save_df
 
 
@@ -158,14 +160,24 @@ def run_experiment(
         device_map="auto",
     )
     llm.generation_config.pad_token_id = llm_tokenizer.pad_token_id
+    encoder = SentenceTransformer(encoder_id)
 
-    # TODO generate knowledge
-    df_xy_enhanced, template_func, remove_prompt_func = None
+    # enhance with knowledge
+    df_xy_enhanced = KNOWLEDGE_ENHANCER_MAP[knowledge](
+        llm=llm,
+        llm_tokenizer=llm_tokenizer,
+        encoder=encoder,
+        df_xy=df_xy_filtered,
+        batch_size=batch_size,
+        disable_tqdm=disable_tqdm,
+    )
+
+    # generate misconceptions
     df_prompt, token_batches = build_task_prompts(
         tokenizer=llm_tokenizer,
         df_xy=df_xy_enhanced,
         run_id=run_id,
-        template_func=template_func,
+        template_func=TEMPLATE_FUNC_MAP[llm_id][knowledge],
         batch_size=batch_size,
     )
     df_responses = generate_responses(
@@ -173,7 +185,7 @@ def run_experiment(
         tokenizer=llm_tokenizer,
         token_batches=token_batches,
         df_prompt=df_prompt,
-        remove_prompt_func=remove_prompt_func,
+        remove_prompt_func=PROMPT_REMOVER_MAP[llm_id],
         run_id=run_id,
         disable_tqdm=disable_tqdm,
     )
@@ -190,7 +202,6 @@ def run_experiment(
     gc.collect()
 
     # get similar misconceptions and evaluate
-    encoder = SentenceTransformer(encoder_id)
     df_submission = generate_misconceptions(
         model=encoder,
         df_responses=df_responses,

@@ -4,39 +4,9 @@ import sys
 from argparse import ArgumentParser
 from dataclasses import dataclass
 
-from eedi import (
-    MODEL_ID_ALL_MINILM_L6,
-    MODEL_ID_ALL_MINILM_L6_FT,
-    MODEL_ID_BGE_LARGE_EN,
-    MODEL_ID_BGE_LARGE_EN_FT,
-    MODEL_ID_LLAMA31_8B,
-    MODEL_ID_LLAMA32_3B,
-    MODEL_ID_MSMARCO_MINILM_L6,
-    MODEL_ID_MSMARCO_MINILM_L6_FT,
-    MODEL_ID_PARAPHRASE_MINILM_L6,
-    MODEL_ID_PARAPHRASE_MINILM_L6_FT,
-    MODEL_ID_QWEN25_7B,
-    SEED,
-)
+from eedi import ENCODERS, KNOWLEDGES, LLMS, SEED
 from eedi.experiment import run_experiment
 from eedi.utils import get_logger
-
-LLMS = {
-    "llama3b": MODEL_ID_LLAMA32_3B,
-    "llama8b": MODEL_ID_LLAMA31_8B,
-    "qwen7b": MODEL_ID_QWEN25_7B,
-}
-KNOWLEDGES = ["none", "genk", "tot"]
-ENCODERS = {
-    "bge": MODEL_ID_BGE_LARGE_EN,
-    "bge-ft": MODEL_ID_BGE_LARGE_EN_FT,
-    "allmini": MODEL_ID_ALL_MINILM_L6,
-    "allmini-ft": MODEL_ID_ALL_MINILM_L6_FT,
-    "marcomini": MODEL_ID_MSMARCO_MINILM_L6,
-    "marcomini-ft": MODEL_ID_MSMARCO_MINILM_L6_FT,
-    "paramini": MODEL_ID_PARAPHRASE_MINILM_L6,
-    "paramini-ft": MODEL_ID_PARAPHRASE_MINILM_L6_FT,
-}
 
 
 @dataclass(frozen=True)
