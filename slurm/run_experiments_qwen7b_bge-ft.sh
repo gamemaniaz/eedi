@@ -6,5 +6,8 @@
 #SBATCH --mail-user=e1374073@u.nus.edu
 #SBATCH --cpus-per-task=10
 #SBATCH --mem=64G
-CONDA_ENV=eedi2
-$HOME/miniforge3/envs/$CONDA_ENV/bin/python baseline-llama3_1-8b.py
+
+python eedi/run.py -m qwen7b -k none -e bge-ft
+python eedi/run.py -m qwen7b -k genk -e bge-ft
+python eedi/run.py -m qwen7b -k tot -e bge-ft
+python eedi/run.py -m qwen7b -k rag -e bge-ft
