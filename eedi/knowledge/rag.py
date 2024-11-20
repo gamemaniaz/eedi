@@ -1,8 +1,9 @@
+from typing import Callable
+
 from pandas import DataFrame
 from sentence_transformers import SentenceTransformer
 from transformers.generation import GenerationMixin
 from transformers.tokenization_utils_fast import PreTrainedTokenizerFast
-from typing import Callable
 
 
 def enhance_with_knowledge(
@@ -17,6 +18,5 @@ def enhance_with_knowledge(
     remove_prompt_func: Callable,
     run_id: str,
 ) -> DataFrame:
-    """should return dataframe with new knowledge column
-    """
+    """should return dataframe with new knowledge column"""
     return

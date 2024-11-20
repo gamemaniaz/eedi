@@ -1,14 +1,17 @@
-from pandas import DataFrame
-from sentence_transformers import SentenceTransformer
-from transformers.generation import GenerationMixin
-from transformers.tokenization_utils_fast import PreTrainedTokenizerFast
 from functools import partial
 from typing import Callable
-from eedi.utils import get_device, save_df
+
 import torch
-from tqdm import tqdm
+from pandas import DataFrame
+from sentence_transformers import SentenceTransformer
 from torch import Tensor
+from tqdm import tqdm
+from transformers.generation import GenerationMixin
+from transformers.tokenization_utils_fast import PreTrainedTokenizerFast
+
 from eedi import RESULTS_DIR
+from eedi.utils import get_device, save_df
+
 
 def enhance_with_knowledge(
     *,

@@ -19,7 +19,11 @@ from eedi import RESULTS_DIR, TEST_SET_CSV, TRAIN_SET_CSV
 from eedi.eval import mapk
 from eedi.knowledge import KNOWLEDGE_ENHANCER_MAP
 from eedi.preprocess import FilterOption, filter_data, get_miscon, preproc_base_data
-from eedi.prompt_processor import PROMPT_REMOVER_MAP, TASK_TEMPLATE_FUNC_MAP, KNOWLEDGE_TEMPLATE_FUNC_MAP
+from eedi.prompt_processor import (
+    KNOWLEDGE_TEMPLATE_FUNC_MAP,
+    PROMPT_REMOVER_MAP,
+    TASK_TEMPLATE_FUNC_MAP,
+)
 from eedi.utils import get_device, get_logger, get_response, save_df
 
 
