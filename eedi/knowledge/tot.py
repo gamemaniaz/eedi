@@ -35,11 +35,12 @@ def gen(prompt: str, model: GenerationMixin, tokenizer: PreTrainedTokenizerFast)
     with torch.no_grad():
         output_ids = model.generate(
             tokens.input_ids,
-            max_new_tokens=1024,
+            max_new_tokens=512,
             num_return_sequences=1,
             attention_mask=tokens.attention_mask,
+            temperature=0.7,
         )
-    return tokenizer.decode(output_ids)
+    return tokenizer.decode(output_ids[0], skip_special_tokens=True)
 
 
 initial_prompt_template = """Question: {Question}
