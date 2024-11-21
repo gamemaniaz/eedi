@@ -25,3 +25,5 @@ options:
                         sentence encoder
   ...
 ```
+
+For encoders, "-ft" tagged models require manual path manipulation within the `eedi/__init__.py` file. This differs from server to server.
