@@ -1,32 +1,25 @@
+from __future__ import annotations
 from typing import Callable
+import re
 
-from pandas import DataFrame
+from pandas import DataFrame, Series
 from sentence_transformers import SentenceTransformer
 from transformers.generation import GenerationMixin
 from transformers.tokenization_utils_fast import PreTrainedTokenizerFast
 from tqdm import tqdm
 from eedi.utils import get_device
 import torch
-
-class ThoughtNode:
-    def __init__(self, thought=None, result=None, children=None):
-        self.thought = thought
-        self.result = result
-        self.children = children or []
+from eedi import RESULTS_DIR
+from eedi.utils import save_df
 
 
-class TreeOfThought:
-    def __init__(self, root_prompt, max_iterations=3, max_tokens=4096):
-        self.root = ThoughtNode(root_prompt)
-        self.max_iterations = max_iterations
-        self.current_thoughts = [self.root]
-        self.max_tokens = max_tokens
-
-
-explain_correct_option = "Please succinctly explain the correction option:"
-rate_correct_option = "Please reply only with the best explanation, in the format 'explanation X' and nothing else "
-# misconception_prompt = f"If a student chose option {option}, please explain the misconception the student might have"
-rate_correct_misconception = "Please reply only with the best misconception, in the format 'misconception X' and nothing else "
+prompt_template = """Question: {Question}
+Incorrect Answer: {IncorrectAnswer}
+Correct Answer: {CorrectAnswer}
+Construct Name: {ConstructName}
+Subject Name: {SubjectName}"""
+ask_misconception = "Given the above details, explain the misconception the student has and wrap it in these tags <misconception></misconception>"
+rate_prompt = "Given the above details and the misconceptions in tags <misconception></misconception>, choose only the best misconception and put it in <bestmisconception></bestmisconception>"
 
 
 def gen(prompt: str, model: GenerationMixin, tokenizer: PreTrainedTokenizerFast) -> str:
@@ -43,11 +36,16 @@ def gen(prompt: str, model: GenerationMixin, tokenizer: PreTrainedTokenizerFast)
     return tokenizer.decode(output_ids[0], skip_special_tokens=True)
 
 
-initial_prompt_template = """Question: {Question}
-Incorrect Answer: {IncorrectAnswer}
-Correct Answer: {CorrectAnswer}
-Construct Name: {ConstructName}
-Subject Name: {SubjectName}"""
+def get_miscon(text: str) -> str:
+    miscons = re.findall(r"<misconception>(?s:.*?)</misconception>", text)
+    miscons = [x.strip().replace("<misconception>", "").replace("</misconception>", "") for x in miscons]
+    return " ".join(miscons).strip()
+
+
+def get_bestmiscon(text: str) -> str:
+    miscons = re.findall(r"<bestmisconception>(?s:.*?)</bestmisconception>", text)
+    miscons = [x.strip().replace("<bestmisconception>", "").replace("</bestmisconception>", "") for x in miscons]
+    return " ".join(miscons).strip()
 
 
 def generate_knowledge(
@@ -60,7 +58,36 @@ def generate_knowledge(
     ConstructName: str,
     SubjectName: str,
 ) -> str:
-    root_node = ThoughtNode()
+    question_prompt = prompt_template.format(
+        Question=Question,
+        IncorrectAnswer=IncorrectAnswer,
+        CorrectAnswer=CorrectAnswer,
+        ConstructName=ConstructName,
+        SubjectName=SubjectName,
+    )
+    depth = 3
+    fanout = 3
+
+    selected_miscon = ""
+    for _ in range(depth):
+        miscons = []
+        if selected_miscon != "":
+            curr_question_prompt = question_prompt + f"\n\n<current-misconception>{selected_miscon}</current-misconception>"
+        for _ in range(fanout):
+            question = curr_question_prompt + f"\n\n{ask_misconception}"
+            response = gen(question)[len(question):]
+            miscon = get_miscon(response)
+            miscons.append(miscon)
+        if not miscons:
+            break
+        compiled_miscon_prompt = curr_question_prompt + "\n"
+        for miscon in miscons:
+            compiled_miscon_prompt += f"\n<misconception>{miscon}</misconception>"
+        rate_prompt_with_given_miscon = compiled_miscon_prompt + f"\n\n{rate_prompt}"
+        best_response = gen(rate_prompt_with_given_miscon)[len(rate_prompt_with_given_miscon):]
+        selected_miscon = get_bestmiscon(best_response)
+
+    return selected_miscon
 
 
 def enhance_with_knowledge(
@@ -89,4 +116,5 @@ def enhance_with_knowledge(
             row["SubjectName"],
         ))
     df_xy_enhanced["Knowledge"] = knowledges
+    save_df(df_xy_enhanced, RESULTS_DIR, run_id, "df_xy_enhanced.parquet")
     return df_xy_enhanced
