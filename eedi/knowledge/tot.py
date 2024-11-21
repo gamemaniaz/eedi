@@ -1,17 +1,17 @@
 from __future__ import annotations
-from typing import Callable
-import re
 
+import re
+from typing import Callable
+
+import torch
 from pandas import DataFrame, Series
 from sentence_transformers import SentenceTransformer
+from tqdm import tqdm
 from transformers.generation import GenerationMixin
 from transformers.tokenization_utils_fast import PreTrainedTokenizerFast
-from tqdm import tqdm
-from eedi.utils import get_device
-import torch
-from eedi import RESULTS_DIR
-from eedi.utils import save_df
 
+from eedi import RESULTS_DIR
+from eedi.utils import get_device, save_df
 
 prompt_template = """Question: {Question}
 Incorrect Answer: {IncorrectAnswer}
@@ -75,7 +75,7 @@ def generate_knowledge(
             curr_question_prompt = question_prompt + f"\n\n<current-misconception>{selected_miscon}</current-misconception>"
         for _ in range(fanout):
             question = curr_question_prompt + f"\n\n{ask_misconception}"
-            response = gen(question, llm, llm_tokenizer)[len(question):]
+            response = gen(question, llm, llm_tokenizer)[len(question) :]
             miscon = get_miscon(response)
             miscons.append(miscon)
         if not miscons:
@@ -84,7 +84,7 @@ def generate_knowledge(
         for miscon in miscons:
             compiled_miscon_prompt += f"\n<misconception>{miscon}</misconception>"
         rate_prompt_with_given_miscon = compiled_miscon_prompt + f"\n\n{rate_prompt}"
-        best_response = gen(rate_prompt_with_given_miscon, llm, llm_tokenizer)[len(rate_prompt_with_given_miscon):]
+        best_response = gen(rate_prompt_with_given_miscon, llm, llm_tokenizer)[len(rate_prompt_with_given_miscon) :]
         selected_miscon = get_bestmiscon(best_response)
 
     return selected_miscon
@@ -106,15 +106,17 @@ def enhance_with_knowledge(
     df_xy_enhanced = df_xy.copy(deep=True)
     knowledges = []
     for _, row in tqdm(df_xy_enhanced.iterrows(), desc="gentot"):
-        knowledges.append(generate_knowledge(
-            llm,
-            llm_tokenizer,
-            row["Question"],
-            row["IncorrectAnswer"],
-            row["CorrectAnswer"],
-            row["ConstructName"],
-            row["SubjectName"],
-        ))
+        knowledges.append(
+            generate_knowledge(
+                llm=llm,
+                llm_tokenizer=llm_tokenizer,
+                Question=row["Question"],
+                IncorrectAnswer=row["IncorrectAnswer"],
+                CorrectAnswer=row["CorrectAnswer"],
+                ConstructName=row["ConstructName"],
+                SubjectName=row["SubjectName"],
+            )
+        )
     df_xy_enhanced["Knowledge"] = knowledges
     save_df(df_xy_enhanced, RESULTS_DIR, run_id, "df_xy_enhanced.parquet")
     return df_xy_enhanced

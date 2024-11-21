@@ -33,6 +33,7 @@ def preproc_base_data(
     df_miscon: DataFrame,
     dataset: Path,
     run_id: str,
+    persist: bool = True,
 ) -> DataFrame:
     # read info from train or test set
     df = pd.read_csv(
@@ -105,7 +106,8 @@ def preproc_base_data(
     df_xy = df_x.merge(df_y, how="left", on="QuestionId_Answer")
 
     # persist df_xy
-    save_df(df_xy, RESULTS_DIR, run_id, "df_xy.parquet")
+    if persist:
+        save_df(df_xy, RESULTS_DIR, run_id, "df_xy.parquet")
 
     return df_xy
 
@@ -127,6 +129,7 @@ def filter_data(
     df_xy: pd.DataFrame,
     filter_option: FilterOption,
     run_id: str,
+    persist: bool = True,
 ) -> pd.DataFrame:
     match filter_option:
         case FilterOption.X:
@@ -138,5 +141,6 @@ def filter_data(
         case _:
             raise FilterDataException(filter_option)
     df_xy_filtered = filter_func(df_xy)
-    save_df(df_xy_filtered, RESULTS_DIR, run_id, "df_xy_filtered.parquet")
+    if persist:
+        save_df(df_xy_filtered, RESULTS_DIR, run_id, "df_xy_filtered.parquet")
     return df_xy_filtered
