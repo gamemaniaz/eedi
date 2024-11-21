@@ -75,7 +75,7 @@ def generate_knowledge(
             curr_question_prompt = question_prompt + f"\n\n<current-misconception>{selected_miscon}</current-misconception>"
         for _ in range(fanout):
             question = curr_question_prompt + f"\n\n{ask_misconception}"
-            response = gen(question)[len(question):]
+            response = gen(question, llm, llm_tokenizer)[len(question):]
             miscon = get_miscon(response)
             miscons.append(miscon)
         if not miscons:
@@ -84,7 +84,7 @@ def generate_knowledge(
         for miscon in miscons:
             compiled_miscon_prompt += f"\n<misconception>{miscon}</misconception>"
         rate_prompt_with_given_miscon = compiled_miscon_prompt + f"\n\n{rate_prompt}"
-        best_response = gen(rate_prompt_with_given_miscon)[len(rate_prompt_with_given_miscon):]
+        best_response = gen(rate_prompt_with_given_miscon, llm, llm_tokenizer)[len(rate_prompt_with_given_miscon):]
         selected_miscon = get_bestmiscon(best_response)
 
     return selected_miscon
